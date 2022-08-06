@@ -1,0 +1,41 @@
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset="UTF-8">
+
+{% seo %}
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#720a8d">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    {% include head-custom.html %}
+    <style>
+      table, th, td {border: 2px solid #ffffff;border-collapse: collapse;align="center"}
+      tr:nth-child(even) {background-color: #e2e5ff;}
+      tr:nth-child(odd) {background-color: #c9ceff;}
+    </style>
+  </head>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+        <a href="https://nbareplay.net/" class="btn">NBA replays here</a>
+        <a href="https://fullmatchtv.com/nba/" class="btn">here</a>
+        <a href="https://basketball-video.com/" class="btn">or even there!</a>
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      {{ content }}
+
+      <footer class="site-footer">
+        {% if site.github.is_project_page %}
+          <span class="site-footer-owner"><a href="https://github.com/LouHeb/doUwatchNBAtonight">View on GitHub</a>.</span>
+        {% endif %}
+        <span class="site-footer-credits">Created by <a href="https://twitter.com/JpjpProduct">Jean Pierre Jean Pierre Product</a> - Greatly inspirated by <a href="http://stats.inpredictable.com/nba/preCap.php">Mike Beuoy</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
