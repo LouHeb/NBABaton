@@ -1,37 +1,61 @@
-## Welcome to GitHub Pages
+<html>
+  
+  
 
-You can use the [editor on GitHub](https://github.com/LouHeb/NBABaton/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+  
+  
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg" width="70">
+<img src="https://content.sportslogos.net/logos/16/1152/full/6613__wnba-alternate-2020.png" height="150">
+</center>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<br>
+<center>
 
-### Markdown
+  <table align="center">
+<tr>
+<td style="text-align:center">August 6th, 2022</td>
+<td style="text-align:center">
+<img src="https://upload.wikimedia.org/wikipedia/en/a/a1/New_York_Liberty_logo.svg" width="15" title="New York Liberty">  <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/At_sign.svg" width="10"> <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Phoenix_Mercury_logo.svg" width="15" title="Phoenix Mercury">
+</td>
+<td style="text-align:center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Star-full.png" width="13">
+</td>
+</tr>
+<tr>
+<td style="text-align:center">August 6th, 2022</td>
+<td style="text-align:center">
+<img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="15" title="Utah Jazz">  <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/At_sign.svg" width="10"> <img src="https://upload.wikimedia.org/wikipedia/en/9/97/Dallas_Mavericks_logo.svg" width="15" title="Dallas Mavericks">
+</td>
+<td style="text-align:center">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Star-empty.png" width="13">
+</td>
+</tr>
+  </table>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+  
+</center>
+<br>
 
-```markdown
-Syntax highlighted code block
+ 
+<center>
+<img src="https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg" width="70">
+<img src="https://content.sportslogos.net/logos/16/1152/full/6613__wnba-alternate-2020.png" height="155">
+</center>
+  
+  
+  
+  
+</html>
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LouHeb/NBABaton/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
