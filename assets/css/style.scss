@@ -5,7 +5,7 @@
 @import "normalize";
 @import "rouge-github";
 @import "variables";
-@import url('https://fonts.googleapis.com/css?family=Tangerine');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -114,6 +114,7 @@ a {
   text-align: center;
   background-color: #66c8c9;
   background-image: linear-gradient(120deg, #66c8c9, #66c8c9);
+  
   @include large {
     padding: 5rem 6rem;
   }
