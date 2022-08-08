@@ -11,11 +11,7 @@
   </div>
 </div>
   
-  
-<center>
-<img src="https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg" width="70">
-<img src="https://content.sportslogos.net/logos/16/1152/full/6613__wnba-alternate-2020.png" height="150">
-</center>
+
 
 <br>
 <center>
@@ -45,12 +41,6 @@
 </center>
 <br>
 
- 
-<center>
-<img src="https://upload.wikimedia.org/wikipedia/en/0/03/National_Basketball_Association_logo.svg" width="70">
-<img src="https://content.sportslogos.net/logos/16/1152/full/6613__wnba-alternate-2020.png" height="155">
-</center>
-  
   
   
   
