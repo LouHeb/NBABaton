@@ -1,8 +1,7 @@
-<html>
-  
+
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
+  <div class="column" style="background-color:#c9ceff;">
     <h2>Column 1</h2>
     <p>Some text..</p>
   </div>
@@ -55,6 +54,3 @@
   
   
   
-</html>
-
-
