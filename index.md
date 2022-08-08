@@ -46,7 +46,7 @@
 
   <table align="center">
 <tr>
-<td style="text-align:center">August 6th, 2022</td>
+<td style="text-align:center">August 6th, 2022 oki</td>
 <td style="text-align:center">
 <img src="https://upload.wikimedia.org/wikipedia/en/a/a1/New_York_Liberty_logo.svg" width="15" title="New York Liberty">  <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/At_sign.svg" width="10"> <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Phoenix_Mercury_logo.svg" width="15" title="Phoenix Mercury">
 </td>
