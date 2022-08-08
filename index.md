@@ -18,7 +18,7 @@ Since this date, the Baton is virtually handed off by the NBA teams.
     <h2>NBA Baton defenders</h2>
 
   <table align="center">
-<tr><th style="text-align:center">  Acquisition date</th><th style="text-align:center"> NBA Team       </th><th style="text-align:center">  Number of games with the Baton</th></tr>
+<tr><th style="text-align:center">  Winning date</th><th style="text-align:center"> NBA Baton defender       </th><th style="text-align:center">  # of games</th></tr>
 <tr><td style="text-align:center">  10/04/2022</td><td style="text-align:center"> Sacramento_Kings       </td><td style="text-align:center">  1</td></tr>
 <tr><td style="text-align:center">  08/04/2022</td><td style="text-align:center"> Phoenix_Suns           </td><td style="text-align:center">  1</td></tr>
 <tr><td style="text-align:center">  05/04/2022</td><td style="text-align:center"> Utah_Jazz              </td><td style="text-align:center">  2</td></tr>
