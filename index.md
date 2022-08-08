@@ -14,7 +14,7 @@
   <div class="column right" style="background-color:#b3e5e6;">
 
 <center>
-    <h2>NBA Baton defenders</h2>
+    <h2>NBA Baton history</h2>
 
   <table align="center">
 <tr><th style="text-align:center">  Winning date</th><th style="text-align:center"> NBA Baton defender       </th><th style="text-align:center">  # of games</th></tr>
