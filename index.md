@@ -13,27 +13,44 @@
 <center>
     <h2>Column 2</h2>
     <p>Some text..</p>
-
   <table align="center">
-<tr>
-<td style="text-align:center">August 6th, 2022 oki</td>
-<td style="text-align:center">
-<img src="https://upload.wikimedia.org/wikipedia/en/a/a1/New_York_Liberty_logo.svg" width="15" title="New York Liberty">  <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/At_sign.svg" width="10"> <img src="https://upload.wikimedia.org/wikipedia/en/a/a6/Phoenix_Mercury_logo.svg" width="15" title="Phoenix Mercury">
-</td>
-<td style="text-align:center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/30/Star-full.png" width="13">
-</td>
-</tr>
-<tr>
-<td style="text-align:center">August 6th, 2022</td>
-<td style="text-align:center">
-<img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="15" title="Utah Jazz">  <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/At_sign.svg" width="10"> <img src="https://upload.wikimedia.org/wikipedia/en/9/97/Dallas_Mavericks_logo.svg" width="15" title="Dallas Mavericks">
-</td>
-<td style="text-align:center">
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Star-empty.png" width="13">
-</td>
-</tr>
-  </table>
+<tr><td style="text-align:center">  10/04/2022</td><td style="text-align:center"> Sacramento_Kings       </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  08/04/2022</td><td style="text-align:center"> Phoenix_Suns           </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  05/04/2022</td><td style="text-align:center"> Utah_Jazz              </td><td style="text-align:center">  2</td></tr>
+<tr><td style="text-align:center">  01/04/2022</td><td style="text-align:center"> Memphis_Grizzlies      </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  27/03/2022</td><td style="text-align:center"> Phoenix_Suns           </td><td style="text-align:center">  2</td></tr>
+<tr><td style="text-align:center">  23/03/2022</td><td style="text-align:center"> Philadelphia_76ers     </td><td style="text-align:center">  2</td></tr>
+<tr><td style="text-align:center">  21/03/2022</td><td style="text-align:center"> Los_Angeles_Lakers     </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  18/03/2022</td><td style="text-align:center"> Cleveland_Cavaliers    </td><td style="text-align:center">  2</td></tr>
+<tr><td style="text-align:center">  14/03/2022</td><td style="text-align:center"> Denver_Nuggets         </td><td style="text-align:center">  2</td></tr>
+<tr><td style="text-align:center">  13/03/2022</td><td style="text-align:center"> Philadelphia_76ers     </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  11/03/2022</td><td style="text-align:center"> Orlando_Magic          </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  04/03/2022</td><td style="text-align:center"> Minnesota_Timberwolves </td><td style="text-align:center">  4</td></tr>
+<tr><td style="text-align:center">  02/03/2022</td><td style="text-align:center"> Oklahoma_City_Thunder  </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  12/02/2022</td><td style="text-align:center"> Denver_Nuggets         </td><td style="text-align:center">  6</td></tr>
+<tr><td style="text-align:center">  04/02/2022</td><td style="text-align:center"> Toronto_Raptors        </td><td style="text-align:center">  4</td></tr>
+<tr><td style="text-align:center">  03/02/2022</td><td style="text-align:center"> Atlanta_Hawks          </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  20/01/2022</td><td style="text-align:center"> Phoenix_Suns           </td><td style="text-align:center">  7</td></tr>
+<tr><td style="text-align:center">  15/01/2022</td><td style="text-align:center"> Dallas_Mavericks       </td><td style="text-align:center">  3</td></tr>
+<tr><td style="text-align:center">  14/01/2022</td><td style="text-align:center"> Orlando_Magic          </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  05/01/2022</td><td style="text-align:center"> Charlotte_Hornets      </td><td style="text-align:center">  4</td></tr>
+<tr><td style="text-align:center">  03/01/2022</td><td style="text-align:center"> Detroit_Pistons        </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  25/12/2021</td><td style="text-align:center"> Milwaukee_Bucks        </td><td style="text-align:center">  4</td></tr>
+<tr><td style="text-align:center">  22/12/2021</td><td style="text-align:center"> Boston_Celtics         </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  08/12/2021</td><td style="text-align:center"> Cleveland_Cavaliers    </td><td style="text-align:center">  6</td></tr>
+<tr><td style="text-align:center">  04/12/2021</td><td style="text-align:center"> Chicago_Bulls          </td><td style="text-align:center">  2</td></tr>
+<tr><td style="text-align:center">  30/11/2021</td><td style="text-align:center"> Brooklyn_Nets          </td><td style="text-align:center">  2</td></tr>
+<tr><td style="text-align:center">  27/11/2021</td><td style="text-align:center"> New_York_Knicks        </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  20/11/2021</td><td style="text-align:center"> Atlanta_Hawks          </td><td style="text-align:center">  4</td></tr>
+<tr><td style="text-align:center">  17/11/2021</td><td style="text-align:center"> Charlotte_Hornets      </td><td style="text-align:center">  2</td></tr>
+<tr><td style="text-align:center">  05/11/2021</td><td style="text-align:center"> Washington_Wizards     </td><td style="text-align:center">  5</td></tr>
+<tr><td style="text-align:center">  01/11/2021</td><td style="text-align:center"> Memphis_Grizzlies      </td><td style="text-align:center">  2</td></tr>
+<tr><td style="text-align:center">  30/10/2021</td><td style="text-align:center"> Denver_Nuggets         </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  27/10/2021</td><td style="text-align:center"> Minnesota_Timberwolves </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  25/10/2021</td><td style="text-align:center"> Milwaukee_Bucks        </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  23/10/2021</td><td style="text-align:center"> Indiana_Pacers         </td><td style="text-align:center">  1</td></tr>
+<tr><td style="text-align:center">  21/10/2021</td><td style="text-align:center"> Miami_Heat             </td><td style="text-align:center">  1</td></tr>
+</table>
 
   
 </center>
