@@ -1,4 +1,5 @@
-
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/GameDay.png" width="500" title="New York Liberty">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/SameHolder.png" width="500" title="New York Liberty">
 
 <div class="row">
   <div class="column left" style="background-color:#b3e5e6;">
