@@ -8,13 +8,8 @@
   <div class="column" style="background-color:#bbb;">
     <h2>Column 2</h2>
     <p>Some text..</p>
-  </div>
-</div>
-  
 
 
-<br>
-<center>
 
   <table align="center">
 <tr>
@@ -37,10 +32,9 @@
 </tr>
   </table>
 
+  </div>
+</div>
   
-</center>
-<br>
-
   
   
   
