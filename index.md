@@ -9,7 +9,7 @@
     <h2>Column 2</h2>
     <p>Some text..</p>
 
-
+<center>
 
   <table align="center">
 <tr>
@@ -32,9 +32,14 @@
 </tr>
   </table>
 
+  
+</center>
+
+
   </div>
 </div>
-  
+
+
   
   
   
