@@ -8,13 +8,18 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
 @font-face {
-  font-family: F16;
-  src: url("../../Futura-CondensedLight.otf ") format('truetype');
+  font-family: Futura;
+  src: url("../../Futura-CondensedLight.otf") format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
-
+@font-face {
+  font-family: TypoGraphica;
+  src: url("../../TypoGraphica_demo.otf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
@@ -41,7 +46,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: F16;
+  font-family: Futura;
   font-size: 16px;
   line-height: 1.5;
   color: #000000;
@@ -121,6 +126,7 @@ a {
 .page-header {
   color: #000000;
   text-align: center;
+  font-family: TypoGraphica ;
   background-color: #c4ebeb;
   background-image: url("https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/Header.jpg");
   
