@@ -7,6 +7,15 @@
 @import "variables";
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
 
+@font-face {
+  font-family: F16;
+  src: url("../../SubSkipper/Futura-CondensedLight.otf ") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
@@ -32,7 +41,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "Didact Gothic";
+  font-family: "F16";
   font-size: 16px;
   line-height: 1.5;
   color: #000000;

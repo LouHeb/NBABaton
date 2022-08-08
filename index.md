@@ -10,7 +10,7 @@
 <p>Since this date, the Baton is virtually handed off by the NBA teams.</p>
 <p style="font-size:12px">(If the NBA Baton defender disappears, the trophy is given back to the previous defender)</p>
 
-<p class="FuturaFont">Hello</p>
+<p class="FuturaFont">Hello test en futura ces grand morts</p>
 </center>
   </div>
   <div class="column right" style="background-color:#b3e5e6;">
