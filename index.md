@@ -4,17 +4,20 @@
 <div class="row">
   <div class="column left" style="background-color:#b3e5e6;">
 <center>
-    <h2>Column 1</h2>
-    <p>Some text..</p>
+    <h2>Rules</h2>
+    <p>On November 1st, 1946, the first NBA (at the time called the BAA) basketball game took place in Toronto. The New York Knicks defeated the Toronto Huskies and became the first team ever to own the NBA Baton, a fictitious trophy which belongs to the team that beat the current defender.
+Since this date, the Baton is virtually handed off by the NBA teams.
+
+(If the NBA Baton defender disappears, the trophy is given back to the previous defender)</p>
 </center>
   </div>
   <div class="column right" style="background-color:#b3e5e6;">
 
 <center>
-    <h2>Column 2</h2>
-    <p>Some text..</p>
+    <h2>NBA Baton defenders</h2>
+
   <table align="center">
-<tr><th style="text-align:center">  Baton acquisition date</th><th style="text-align:center"> Team       </th><th style="text-align:center">  Nb of games with the Baton</th></tr>
+<tr><th style="text-align:center">  Acquisition date</th><th style="text-align:center"> NBA Team       </th><th style="text-align:center">  Number of games with the Baton</th></tr>
 <tr><td style="text-align:center">  10/04/2022</td><td style="text-align:center"> Sacramento_Kings       </td><td style="text-align:center">  1</td></tr>
 <tr><td style="text-align:center">  08/04/2022</td><td style="text-align:center"> Phoenix_Suns           </td><td style="text-align:center">  1</td></tr>
 <tr><td style="text-align:center">  05/04/2022</td><td style="text-align:center"> Utah_Jazz              </td><td style="text-align:center">  2</td></tr>
