@@ -9,7 +9,7 @@
 
 @font-face {
   font-family: F16;
-  src: url("../../SubSkipper/Futura-CondensedLight.otf ") format('truetype');
+  src: url("../../Futura-CondensedLight.otf ") format('truetype');
   font-weight: bold;
   font-style: normal;
 }
@@ -41,7 +41,7 @@
 body {
   padding: 0;
   margin: 0;
-  font-family: "F16";
+  font-family: F16;
   font-size: 16px;
   line-height: 1.5;
   color: #000000;
