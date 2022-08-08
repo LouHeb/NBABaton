@@ -1,11 +1,11 @@
 
 
 <div class="row">
-  <div class="column" style="background-color:#ffffff;">
+  <div class="column left" style="background-color:#b3e5e6;">
     <h2>Column 1</h2>
     <p>Some text..</p>
   </div>
-  <div class="column" style="background-color:#ffffff;">
+  <div class="column right" style="background-color:#b3e5e6;">
     <h2>Column 2</h2>
     <p>Some text..</p>
 
