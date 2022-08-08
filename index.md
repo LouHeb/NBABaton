@@ -14,6 +14,7 @@
     <h2>Column 2</h2>
     <p>Some text..</p>
   <table align="center">
+<tr><th style="text-align:center">  Baton acquisition date</th><th style="text-align:center"> Team       </th><th style="text-align:center">  Nb of games with the Baton</th></tr>
 <tr><td style="text-align:center">  10/04/2022</td><td style="text-align:center"> Sacramento_Kings       </td><td style="text-align:center">  1</td></tr>
 <tr><td style="text-align:center">  08/04/2022</td><td style="text-align:center"> Phoenix_Suns           </td><td style="text-align:center">  1</td></tr>
 <tr><td style="text-align:center">  05/04/2022</td><td style="text-align:center"> Utah_Jazz              </td><td style="text-align:center">  2</td></tr>
