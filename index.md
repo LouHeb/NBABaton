@@ -7,10 +7,10 @@
     <p>Some text..</p>
   </div>
   <div class="column right" style="background-color:#b3e5e6;">
-    <h2>Column 2</h2>
-    <p>Some text..</p>
 
 <center>
+    <h2>Column 2</h2>
+    <p>Some text..</p>
 
   <table align="center">
 <tr>
