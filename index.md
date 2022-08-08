@@ -3,8 +3,10 @@
 
 <div class="row">
   <div class="column left" style="background-color:#b3e5e6;">
+<center>
     <h2>Column 1</h2>
     <p>Some text..</p>
+</center>
   </div>
   <div class="column right" style="background-color:#b3e5e6;">
 
