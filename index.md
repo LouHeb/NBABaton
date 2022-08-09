@@ -83,13 +83,13 @@
 
 <table>
 <tr>
-<th style="text-align:center><div class="RotationTable">Team</div></th>
-<th style="text-align:center><div class="RotationTable">Longest streak</div></th>
-<th style="text-align:center><div class="RotationTable">Total number of games with the Baton</div></th>
-<th style="text-align:center><div class="RotationTable2">Last time with the Baton</div></th>
-<th style="text-align:center><div class="RotationTable">Number of streaks with 10+ games</div></th>
-<th style="text-align:center><div class="RotationTable">Average streak</div></th>
-<th style="text-align:center><div class="RotationTable">Streak per season</div></th>
+<th style="text-align:center"><div class="RotationTable">Team</div></th>
+<th style="text-align:center"><div class="RotationTable">Longest streak</div></th>
+<th style="text-align:center"><div class="RotationTable">Total number of games with the Baton</div></th>
+<th style="text-align:center"><div class="RotationTable2">Last time with the Baton</div></th>
+<th style="text-align:center"><div class="RotationTable">Number of streaks with 10+ games</div></th>
+<th style="text-align:center"><div class="RotationTable">Average streak</div></th>
+<th style="text-align:center"><div class="RotationTable">Streak per season</div></th>
 </tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Anderson_Packers_logo.PNG" width="20" title="Anderson Packers"></td><td style="text-align:center">  2</td><td style="text-align:center">  2</td><td style="text-align:center">  April 5th, 1950</td><td style="text-align:center">  0</td><td style="text-align:center">  2.0</td><td style="text-align:center">  1.0</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/The_logo_of_the_original_Baltimore_Bullets_from_the_postwar_era.gif" width="20" title="Baltimore Bullets"></td><td style="text-align:center">  5</td><td style="text-align:center">  39</td><td style="text-align:center">  February 14th, 1954</td><td style="text-align:center">  0</td><td style="text-align:center">  1.56</td><td style="text-align:center">  3.57</td></tr>
