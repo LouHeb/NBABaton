@@ -38,7 +38,7 @@
 <th style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Team</div></th>
 <th style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Longest streak</div></th>
 <th style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Total number of games with the Baton</div></th>
-<th style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Last time with the Baton</div></th>
+<th style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable2">Last time with the Baton</div></th>
 <th style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Number of streaks with 10+ games</div></th>
 <th style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Average streak</div></th>
 <th style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Streak per season</div></th>
