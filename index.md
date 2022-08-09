@@ -2,16 +2,20 @@
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/GameDay.png" width="1000" title="New York Liberty">
 </center>
 
-
+<br> 
 <center>
-    <h2>Rules</h2>
+
+    <h2>The Concept</h2>
+<div>
     <p>On November 1st, 1946, the first NBA (at the time called the BAA) basketball game took place in Toronto. The New York Knicks defeated the Toronto Huskies and became the first team ever to own the NBA Baton, a fictitious trophy which belongs to the team that beat the current defender.</p>
 <p>Since this date, the Baton is virtually handed off by the NBA teams.</p>
 <p style="font-size:12px">(If the NBA Baton defender disappears, the trophy is given back to the previous defender)</p>
+</div>
 </center>
 
+<br> 
 <center>
-    <h2>NBA Baton history</h2>
+    <h2>The Stats</h2>
 
   <table align="center">
 
@@ -48,8 +52,11 @@
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Washington_Wizards_logo.svg" width="20" title="Washington Wizards"></td><td style="text-align:center">  8</td><td style="text-align:center">  209</td><td style="text-align:center">  November 17th, 2021</td><td style="text-align:center">  0</td><td style="text-align:center">  1.99</td><td style="text-align:center">  1.72</td></tr>
 
 </table>
+</center>
 
 <p>Folded teams</p>
+
+<center>
   <table align="center">
 
 <tr><th style="text-align:center; font-family: FuturaHeavy"> Team</th><th style="text-align:center; font-family: FuturaHeavy">  Longest streak</th><th style="text-align:center; font-family: FuturaHeavy">  Total number of games with the Baton</th><th style="text-align:center; font-family: FuturaHeavy">  Last time with the Baton</th><th style="text-align:center; font-family: FuturaHeavy">  Number of streaks with 10+ games </th><th style="text-align:center; font-family: FuturaHeavy">  Average streak</th><th style="text-align:center; font-family: FuturaHeavy">  Streak per season</th></tr>
@@ -76,11 +83,11 @@
 
 
 
-  
+  <br> 
   <center>
 
   
-   <h2>NBA Baton history</h2>
+   <h2>The History</h2>
 
   <table align="center">
 <tr><th style="text-align:center; font-family: FuturaHeavy">  Winning date</th><th style="text-align:center; font-family: FuturaHeavy"> NBA Baton defender       </th><th style="text-align:center; font-family: FuturaHeavy">  # of games</th></tr>
