@@ -70,7 +70,7 @@
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Washington_Wizards_logo.svg" width="20" title="Washington Wizards"></td><td style="text-align:center">  8</td><td style="text-align:center">  209</td><td style="text-align:center">  November 17th, 2021</td><td style="text-align:center">  0</td><td style="text-align:center">  1.99</td><td style="text-align:center">  1.72</td></tr>
 </table>
 </center>
-
+  <br> 
 <center>
 
 <table>
