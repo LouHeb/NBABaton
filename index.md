@@ -18,12 +18,9 @@
     <h2>The Stats</h2>
 
 
-<table id="myTable">
+<table class="table table-header-rotated">
 
-
-
-
-<tr><th onclick="sortTable(0)"; style="text-align:center; font-family: FuturaHeavy"> Team</th><th  onclick="sortTable(1)"; style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(1)">  Longest streak</th><th onclick="sortTable(2)";  style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(2)">  Total number of games with the Baton</th><th style onclick="sortTable(3)"; ="text-align:center; font-family: FuturaHeavy; onclick=sortTable(3)">  Last time with the Baton</th><th  onclick="sortTable(4)"; style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(4)">  Number of streaks with 10+ games </th><th onclick="sortTable(5)";  style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(5)">  Average streak</th><th onclick="sortTable(6)";  style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(6)">  Streak per season</th></tr>
+<tr><th class="rotate"; style="text-align:center; font-family: FuturaHeavy"> Team</th><th class="rotate"; style="text-align:center; font-family: FuturaHeavy>  Longest streak</th><th  class="rotate";  style="text-align:center; font-family: FuturaHeavy">  Total number of games with the Baton</th><th class="rotate"; ="text-align:center; font-family: FuturaHeavy">  Last time with the Baton</th><th class="rotate"; style="text-align:center; font-family: FuturaHeavy">  Number of streaks with 10+ games </th><th class="rotate";  style="text-align:center; font-family: FuturaHeavy">  Average streak</th><th class="rotate";  style="text-align:center; font-family: FuturaHeavy">  Streak per season</th></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center">  11</td><td style="text-align:center">  343</td><td style="text-align:center">  February 4th, 2022</td><td style="text-align:center">  2</td><td style="text-align:center">  1.97</td><td style="text-align:center">  2.38</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="20" title="Boston Celtics"></td><td style="text-align:center">  17</td><td style="text-align:center">  844</td><td style="text-align:center">  December 25th, 2021</td><td style="text-align:center">  9</td><td style="text-align:center">  2.94</td><td style="text-align:center">  3.77</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="20" title="Brooklyn Nets"></td><td style="text-align:center">  8</td><td style="text-align:center">  110</td><td style="text-align:center">  December 4th, 2021</td><td style="text-align:center">  0</td><td style="text-align:center">  2.03</td><td style="text-align:center">  1.17</td></tr>
@@ -55,64 +52,7 @@
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="20" title="Utah Jazz"></td><td style="text-align:center">  12</td><td style="text-align:center">  213</td><td style="text-align:center">  April 8th, 2022</td><td style="text-align:center">  5</td><td style="text-align:center">  2.73</td><td style="text-align:center">  1.62</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Washington_Wizards_logo.svg" width="20" title="Washington Wizards"></td><td style="text-align:center">  8</td><td style="text-align:center">  209</td><td style="text-align:center">  November 17th, 2021</td><td style="text-align:center">  0</td><td style="text-align:center">  1.99</td><td style="text-align:center">  1.72</td></tr>
 </table>
-
-<script>
-function sortTable(n) {
-  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;
-  table = document.getElementById("myTable");
-  switching = true;
-  //Set the sorting direction to ascending:
-  dir = "asc"; 
-  /*Make a loop that will continue until
-  no switching has been done:*/
-  while (switching) {
-    //start by saying: no switching is done:
-    switching = false;
-    rows = table.rows;
-    /*Loop through all table rows (except the
-    first, which contains table headers):*/
-    for (i = 1; i < (rows.length - 1); i++) {
-      //start by saying there should be no switching:
-      shouldSwitch = false;
-      /*Get the two elements you want to compare,
-      one from current row and one from the next:*/
-      x = rows[i].getElementsByTagName("TD")[n];
-      y = rows[i + 1].getElementsByTagName("TD")[n];
-      /*check if the two rows should switch place,
-      based on the direction, asc or desc:*/
-      if (dir == "asc") {
-        if (x.innerHTML.toLowerCase() > y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch= true;
-          break;
-        }
-      } else if (dir == "desc") {
-        if (x.innerHTML.toLowerCase() < y.innerHTML.toLowerCase()) {
-          //if so, mark as a switch and break the loop:
-          shouldSwitch = true;
-          break;
-        }
-      }
-    }
-    if (shouldSwitch) {
-      /*If a switch has been marked, make the switch
-      and mark that a switch has been done:*/
-      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
-      switching = true;
-      //Each time a switch is done, increase this count by 1:
-      switchcount ++;      
-    } else {
-      /*If no switching has been done AND the direction is "asc",
-      set the direction to "desc" and run the while loop again.*/
-      if (switchcount == 0 && dir == "asc") {
-        dir = "desc";
-        switching = true;
-      }
-    }
-  }
-}
-</script>
-
+</center>
 
 <p>Folded teams</p>
 

@@ -14,7 +14,24 @@
       table, th, td {border: 2px solid #ffffff;border-collapse: collapse;align="center"}
       table, tr:nth-child(even) {background-color: #daf3f3}
       table, tr:nth-child(odd) {background-color: #8dd8d8}
-      table, th {cursor: pointer}
+      th.rotate {
+  /* Something you can count on */
+  height: 140px;
+  white-space: nowrap;
+}
+
+th.rotate > div {
+  transform: 
+    /* Magic Numbers */
+    translate(25px, 51px)
+    /* 45 is really 360 - 45 */
+    rotate(315deg);
+  width: 30px;
+}
+th.rotate > div > span {
+  border-bottom: 1px solid #ccc;
+  padding: 5px 10px;
+}
 
 div {
   background-color: #8dd8d8;
