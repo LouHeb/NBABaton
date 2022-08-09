@@ -17,7 +17,7 @@
 <center>
     <h2>The Stats</h2>
 
-  <table align="center">
+  <table id="myTable">
 
 
 <tr><th style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(0)"> Team</th><th style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(1)">  Longest streak</th><th style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(2)">  Total number of games with the Baton</th><th style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(3)">  Last time with the Baton</th><th style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(4)">  Number of streaks with 10+ games </th><th style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(5)">  Average streak</th><th style="text-align:center; font-family: FuturaHeavy; onclick=sortTable(6)">  Streak per season</th></tr>
