@@ -19,9 +19,6 @@
 
   <table align="center">
 
-    <th onclick="sortTable(0)">Name</th>
-    <th onclick="sortTable(1)">Country</th>
-
 
 <tr><th style="text-align:center; font-family: FuturaHeavy;  onclick="sortTable(0)"> Team</th><th style="text-align:center; font-family: FuturaHeavy;  onclick="sortTable(1)">  Longest streak</th><th style="text-align:center; font-family: FuturaHeavy;  onclick="sortTable(2)">  Total number of games with the Baton</th><th style="text-align:center; font-family: FuturaHeavy;  onclick="sortTable(3)">  Last time with the Baton</th><th style="text-align:center; font-family: FuturaHeavy">  Number of streaks with 10+ games </th><th style="text-align:center; font-family: FuturaHeavy">  Average streak</th><th style="text-align:center; font-family: FuturaHeavy">  Streak per season</th></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center">  11</td><td style="text-align:center">  343</td><td style="text-align:center">  February 4th, 2022</td><td style="text-align:center">  2</td><td style="text-align:center">  1.97</td><td style="text-align:center">  2.38</td></tr>
