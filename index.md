@@ -30,17 +30,18 @@
 
 
 <table class="table table-header-rotated">
-
+  <thead>
 <tr>
 <th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Team</span></div></th>
 <th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Longest streak</span></div></th>
 <th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Total number of games with the Baton</span></div></th>
 <th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Last time with the Baton</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Number of streaks with 10+ games </span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Number of streaks with 10+ games</span></div></th>
 <th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Average streak</span></div></th>
 <th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Streak per season</span></div></th>
 </tr>
-
+  </thead>
+    <tbody>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center">  11</td><td style="text-align:center">  343</td><td style="text-align:center">  February 4th, 2022</td><td style="text-align:center">  2</td><td style="text-align:center">  1.97</td><td style="text-align:center">  2.38</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="20" title="Boston Celtics"></td><td style="text-align:center">  17</td><td style="text-align:center">  844</td><td style="text-align:center">  December 25th, 2021</td><td style="text-align:center">  9</td><td style="text-align:center">  2.94</td><td style="text-align:center">  3.77</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="20" title="Brooklyn Nets"></td><td style="text-align:center">  8</td><td style="text-align:center">  110</td><td style="text-align:center">  December 4th, 2021</td><td style="text-align:center">  0</td><td style="text-align:center">  2.03</td><td style="text-align:center">  1.17</td></tr>
@@ -71,6 +72,7 @@
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Toronto_Raptors_logo.svg" width="20" title="Toronto Raptors"></td><td style="text-align:center">  5</td><td style="text-align:center">  44</td><td style="text-align:center">  February 12th, 2022</td><td style="text-align:center">  0</td><td style="text-align:center">  1.83</td><td style="text-align:center">  0.88</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="20" title="Utah Jazz"></td><td style="text-align:center">  12</td><td style="text-align:center">  213</td><td style="text-align:center">  April 8th, 2022</td><td style="text-align:center">  5</td><td style="text-align:center">  2.73</td><td style="text-align:center">  1.62</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Washington_Wizards_logo.svg" width="20" title="Washington Wizards"></td><td style="text-align:center">  8</td><td style="text-align:center">  209</td><td style="text-align:center">  November 17th, 2021</td><td style="text-align:center">  0</td><td style="text-align:center">  1.99</td><td style="text-align:center">  1.72</td></tr>
+  </tbody>
 </table>
 </center>
 
