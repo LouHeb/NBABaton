@@ -21,6 +21,69 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: FuturaBold;
+  src: url("../../Futura Bold font.ttf ") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FuturaBook;
+  src: url("../../Futura Book font.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FuturaHeavy;
+  src: url("../../Futura Heavy font.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FuturaLight;
+  src: url("../../futura light bt.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: RobotoBlack;
+  src: url("../../Roboto-Black.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: RobotoBold;
+  src: url("../../Roboto-Bold.ttf ") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: RobotoLight;
+  src: url("../../Roboto-Light.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url("../../Roboto-Regular.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: RobotoThin;
+  src: url("../../Roboto-Thin.ttf") format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 @mixin large {
   @media screen and (min-width: #{$large-breakpoint}) {
     @content;
