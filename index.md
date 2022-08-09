@@ -33,8 +33,8 @@
 <th style="text-align:center"><div class='vrt-header'>Team</div></th>
 <th style="text-align:center"><div class='vrt-header'>Longest streak</div></th>
 <th style="text-align:center"><div class='vrt-header'>Total number of games with the Baton</div></th>
-<th style="text-align:center"><div class='vrt-header'>Last time with the Baton<.div></th>
-<th style="text-align:center"><div class='vrt-header'>Number of streaks with 10+ games<.div></th>
+<th style="text-align:center"><div class='vrt-header'>Last time with the Baton</div></th>
+<th style="text-align:center"><div class='vrt-header'>Number of streaks with 10+ games</div></th>
 <th style="text-align:center"><div class='vrt-header'>Average streak</div></th>
 <th style="text-align:center"><div class='vrt-header'>Streak per season</div></th>
 </tr>
@@ -79,8 +79,8 @@
 <th style="text-align:center"><div class='vrt-header'>Team</div></th>
 <th style="text-align:center"><div class='vrt-header'>Longest streak</div></th>
 <th style="text-align:center"><div class='vrt-header'>Total number of games with the Baton</div></th>
-<th style="text-align:center"><div class='vrt-header'>Last time with the Baton<.div></th>
-<th style="text-align:center"><div class='vrt-header'>Number of streaks with 10+ games<.div></th>
+<th style="text-align:center"><div class='vrt-header'>Last time with the Baton</div></th>
+<th style="text-align:center"><div class='vrt-header'>Number of streaks with 10+ games</div></th>
 <th style="text-align:center"><div class='vrt-header'>Average streak</div></th>
 <th style="text-align:center"><div class='vrt-header'>Streak per season</div></th>
 </tr>
