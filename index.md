@@ -1,18 +1,17 @@
 
+<center>
+<div class="LaBoite">
+<h2>Current Defender</h2>
+<img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="100" title="Sacramento Kings">
+<p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
+</div>
+</center>
+
+<br> 
 
 <center>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/GameDay.png" width="1000" title="Next NBA Baton Game">
 </center>
-<br> 
-<center>
-
-    <h2>Current Defender</h2>
-<div class="Defender">
-<img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="200" title="Sacramento Kings">
-<p style="font-size:20px">For 1 game.</p>
-</div>
-</center>
-
 <br> 
 <center>
 
@@ -34,7 +33,7 @@
 <th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Longest streak</div></th>
 <th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Total nb of Baton defense</div></th>
 <th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Last time with the Baton</div></th>
-<th style="text-align:center;vertical-align: middle"><div class='vrt-header'># 10+ games streaks</div></th>
+<th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Nb of 10+ games streaks</div></th>
 <th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Games per streak</div></th>
 <th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Streaks per season</div></th>
 </tr>
@@ -63,7 +62,7 @@
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="20" title="Philadelphia 76ers"></td><td style="text-align:center">  11</td><td style="text-align:center">  429</td><td style="text-align:center">  March 27th, 2022</td><td style="text-align:center">  3</td><td style="text-align:center">  2.23</td><td style="text-align:center">  2.63</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="20" title="Phoenix Suns"></td><td style="text-align:center">  10</td><td style="text-align:center">  188</td><td style="text-align:center">  April 10th, 2022</td><td style="text-align:center">  1</td><td style="text-align:center">  2.06</td><td style="text-align:center">  1.68</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Portland_Trail_Blazers_logo.svg" width="20" title="Portland Trail Blazers"></td><td style="text-align:center">  12</td><td style="text-align:center">  164</td><td style="text-align:center">  August 20th, 2020</td><td style="text-align:center">  1</td><td style="text-align:center">  2.12</td><td style="text-align:center">  1.48</td></tr>
-<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="20" title="Sacramento Kings"></td><td style="text-align:center">  12</td><td style="text-align:center">  319</td><td style="text-align:center;color: red">  Current defender</td><td style="text-align:center">  3</td><td style="text-align:center">  2.15</td><td style="text-align:center">  2.0</td></tr>
+<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="20" title="Sacramento Kings"></td><td style="text-align:center">  12</td><td style="text-align:center">  319</td><td style="text-align:center;color: red; font-family: FuturaHeavy;">  Current defender</td><td style="text-align:center">  3</td><td style="text-align:center">  2.15</td><td style="text-align:center">  2.0</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/San_Antonio_Spurs.svg" width="20" title="San Antonio Spurs"></td><td style="text-align:center">  13</td><td style="text-align:center">  275</td><td style="text-align:center">  April 28th, 2021</td><td style="text-align:center">  4</td><td style="text-align:center">  3.02</td><td style="text-align:center">  1.97</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Toronto_Raptors_logo.svg" width="20" title="Toronto Raptors"></td><td style="text-align:center">  5</td><td style="text-align:center">  44</td><td style="text-align:center">  February 12th, 2022</td><td style="text-align:center">  0</td><td style="text-align:center">  1.83</td><td style="text-align:center">  0.88</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="20" title="Utah Jazz"></td><td style="text-align:center">  12</td><td style="text-align:center">  213</td><td style="text-align:center">  April 8th, 2022</td><td style="text-align:center">  5</td><td style="text-align:center">  2.73</td><td style="text-align:center">  1.62</td></tr>
@@ -73,34 +72,10 @@
   <br> 
 <center>
 
-<table>
-<tr>
-<th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Folded Teams</div></th>
-<th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Longest streak</div></th>
-<th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Total nb of Baton defense</div></th>
-<th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Last time with the Baton</div></th>
-<th style="text-align:center;vertical-align: middle"><div class='vrt-header'># 10+ games streaks</div></th>
-<th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Games per streak</div></th>
-<th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Streaks per season</div></th>
-</tr>
-<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Anderson_Packers_logo.PNG" width="20" title="Anderson Packers"></td><td style="text-align:center">  2</td><td style="text-align:center">  2</td><td style="text-align:center">  April 5th, 1950</td><td style="text-align:center">  0</td><td style="text-align:center">  2.0</td><td style="text-align:center">  1.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/The_logo_of_the_original_Baltimore_Bullets_from_the_postwar_era.gif" width="20" title="Baltimore Bullets"></td><td style="text-align:center">  5</td><td style="text-align:center">  39</td><td style="text-align:center">  February 14th, 1954</td><td style="text-align:center">  0</td><td style="text-align:center">  1.56</td><td style="text-align:center">  3.57</td></tr>
-<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Chicago_Stags_logo.png" width="20" title="Chicago Stags"></td><td style="text-align:center">  6</td><td style="text-align:center">  44</td><td style="text-align:center">  February 4th, 1950</td><td style="text-align:center">  0</td><td style="text-align:center">  2.93</td><td style="text-align:center">  3.75</td></tr>
-<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/5/58/Cleveland_Rebels_logo.svg" width="20" title="Cleveland Rebels"></td><td style="text-align:center">  1</td><td style="text-align:center">  1</td><td style="text-align:center">  December 10th, 1946</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  1.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/b/bd/The_logo_of_the_original_Denver_Nuggets.gif" width="20" title="Denver Nuggets"></td><td style="text-align:center">  0</td><td style="text-align:center">  0</td><td style="text-align:center">  Never</td><td style="text-align:center">  0</td><td style="text-align:center">  0.0</td><td style="text-align:center">  0.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://sportsteamhistory.com/wp-content/uploads/2020/03/detroit-falcons-1946-1947.png" width="20" title="Detroit Falcons"></td><td style="text-align:center">  3</td><td style="text-align:center">  7</td><td style="text-align:center">  November 12th, 1947</td><td style="text-align:center">  0</td><td style="text-align:center">  1.75</td><td style="text-align:center">  4.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://sportsecyclopedia.com/wp-content/uploads/2019/10/KatuskysLogo.gif" width="20" title="Indianapolis Jets"></td><td style="text-align:center">  1</td><td style="text-align:center">  1</td><td style="text-align:center">  December 13th, 1948</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  1.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://www.thesportsdb.com/images/media/team/badge/yyc3au1574971439.png" width="20" title="Indianapolis Olympians"></td><td style="text-align:center">  4</td><td style="text-align:center">  19</td><td style="text-align:center">  November 25th, 1952</td><td style="text-align:center">  0</td><td style="text-align:center">  1.58</td><td style="text-align:center">  3.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://sportslogohistory.com/wp-content/uploads/2018/12/pittsburgh_ironmen_1946-1947.png" width="20" title="Pittsburgh Ironmen"></td><td style="text-align:center">  1</td><td style="text-align:center">  2</td><td style="text-align:center">  January 23rd, 1947</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  2.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/4/42/Providence_Steamrollers_logo.svg" width="20" title="Provodence Steamrollers"></td><td style="text-align:center">  2</td><td style="text-align:center">  6</td><td style="text-align:center">  February 5th, 1949</td><td style="text-align:center">  0</td><td style="text-align:center">  1.5</td><td style="text-align:center">  1.33</td></tr>
-<tr><td style="text-align:center">  <img src="https://nbahoopsonline.com/teams/Xdefunct/SheboyganRedskins/SheboyganRedskins49.gif" width="20" title="Sheboygan Red Skins"></td><td style="text-align:center">  1</td><td style="text-align:center">  2</td><td style="text-align:center">  March 25th, 1950</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  2.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://content.sportslogos.net/logos/6/1125/full/5042.gif" width="20" title="St Louis Bombers"></td><td style="text-align:center">  1</td><td style="text-align:center">  4</td><td style="text-align:center">  February 9th, 1949</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  1.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://content.sportslogos.net/logos/6/1118/full/5039.gif" width="20" title="Toronto Huskies"></td><td style="text-align:center">  1</td><td style="text-align:center">  3</td><td style="text-align:center">  March 29th, 1947</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  3.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Waterloo_hawks_logo.png" width="20" title="Waterloo Hawks"></td><td style="text-align:center">  0</td><td style="text-align:center">  0</td><td style="text-align:center">  Never</td><td style="text-align:center">  0</td><td style="text-align:center">  0.0</td><td style="text-align:center">  0.0</td></tr>
-<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/0/06/Washington_Capitols_logo.svg" width="20" title="Washington Capitols"></td><td style="text-align:center">  13</td><td style="text-align:center">  36</td><td style="text-align:center">  November 21st, 1950</td><td style="text-align:center">  1</td><td style="text-align:center">  3.6</td><td style="text-align:center">  2.0</td></tr>
-
-
-</table>
+<div class="LaBoite">
+<h2>Current Defender</h2>
+<p style="font-size:20px;">Folded teams stats</p>
+</div>
 
 </center>
 
