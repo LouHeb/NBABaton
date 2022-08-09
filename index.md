@@ -2,23 +2,19 @@
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/GameDay.png" width="1000" title="New York Liberty">
 </center>
 
-<div class="row">
-  <div class="column left" style="background-color:#b3e5e6;">
 <center>
     <h2>Rules</h2>
     <p>On November 1st, 1946, the first NBA (at the time called the BAA) basketball game took place in Toronto. The New York Knicks defeated the Toronto Huskies and became the first team ever to own the NBA Baton, a fictitious trophy which belongs to the team that beat the current defender.</p>
 <p>Since this date, the Baton is virtually handed off by the NBA teams.</p>
 <p style="font-size:12px">(If the NBA Baton defender disappears, the trophy is given back to the previous defender)</p>
 </center>
-  </div>
-  <div class="column right" style="background-color:#b3e5e6;">
 
 <center>
     <h2>NBA Baton history</h2>
 
   <table align="center">
 
-<tr><th style="text-align:center"> Team</th><th style="text-align:center">  xx</th><th style="text-align:center">  xx</th><th style="text-align:center">  xx</th><th style="text-align:center">  xx</th><th style="text-align:center">  xx</th><th style="text-align:center">  xx</th></tr>
+<tr><th style="text-align:center"> Team</th><th style="text-align:center">  Longest streak</th><th style="text-align:center">  Total number of games with the Baton</th><th style="text-align:center">  Last time with the Baton</th><th style="text-align:center">  Number of streaks with 10+ games </th><th style="text-align:center">  Average streak</th><th style="text-align:center">  Streak per season</th></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center">  11</td><td style="text-align:center">  343</td><td style="text-align:center">  February 4th, 2022</td><td style="text-align:center">  2</td><td style="text-align:center">  1.97</td><td style="text-align:center">  2.38</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="20" title="Boston Celtics"></td><td style="text-align:center">  17</td><td style="text-align:center">  844</td><td style="text-align:center">  December 25th, 2021</td><td style="text-align:center">  9</td><td style="text-align:center">  2.94</td><td style="text-align:center">  3.77</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="20" title="Brooklyn Nets"></td><td style="text-align:center">  8</td><td style="text-align:center">  110</td><td style="text-align:center">  December 4th, 2021</td><td style="text-align:center">  0</td><td style="text-align:center">  2.03</td><td style="text-align:center">  1.17</td></tr>
@@ -50,6 +46,11 @@
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="20" title="Utah Jazz"></td><td style="text-align:center">  12</td><td style="text-align:center">  213</td><td style="text-align:center">  April 8th, 2022</td><td style="text-align:center">  5</td><td style="text-align:center">  2.73</td><td style="text-align:center">  1.62</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Washington_Wizards_logo.svg" width="20" title="Washington Wizards"></td><td style="text-align:center">  8</td><td style="text-align:center">  209</td><td style="text-align:center">  November 17th, 2021</td><td style="text-align:center">  0</td><td style="text-align:center">  1.99</td><td style="text-align:center">  1.72</td></tr>
 
+</table>
+
+Folded teams
+  <table align="center">
+
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Anderson_Packers_logo.PNG" width="20" title="Anderson Packers"></td><td style="text-align:center">  2</td><td style="text-align:center">  2</td><td style="text-align:center">  April 5th, 1950</td><td style="text-align:center">  0</td><td style="text-align:center">  2.0</td><td style="text-align:center">  1.0</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/The_logo_of_the_original_Baltimore_Bullets_from_the_postwar_era.gif" width="20" title="Baltimore Bullets"></td><td style="text-align:center">  5</td><td style="text-align:center">  39</td><td style="text-align:center">  February 14th, 1954</td><td style="text-align:center">  0</td><td style="text-align:center">  1.56</td><td style="text-align:center">  3.57</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/4/4d/Chicago_Stags_logo.png" width="20" title="Chicago Stags"></td><td style="text-align:center">  6</td><td style="text-align:center">  44</td><td style="text-align:center">  February 4th, 1950</td><td style="text-align:center">  0</td><td style="text-align:center">  2.93</td><td style="text-align:center">  3.75</td></tr>
@@ -76,9 +77,6 @@
   
   
   
-  </div>
-</div>
-
    <h2>NBA Baton history</h2>
 
   <table align="center">
