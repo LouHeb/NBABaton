@@ -1,5 +1,14 @@
 <center>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/GameDay.png" width="1000" title="New York Liberty">
+
+    <h2>Current Defender</h2>
+<div>
+<img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="30" title="Sacramento Kings">
+<p>For 1 game.</p>
+</div>
+</center>
+
+<center>
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/GameDay.png" width="1000" title="Next NBA Baton Game">
 </center>
 
 <br> 
