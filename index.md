@@ -21,13 +21,13 @@
 <table class="table table-header-rotated">
 
 <tr>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy">Team</th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy">Longest streak</th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy">Total number of games with the Baton</th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy">Last time with the Baton</th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy">Number of streaks with 10+ games </th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy">Average streak</th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy">Streak per season</th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div><span>Team</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div><span>Longest streak</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div><span>Total number of games with the Baton</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div><span>Last time with the Baton</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div><span>Number of streaks with 10+ games </span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div><span>Average streak</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div><span>Streak per season</span></div></th>
 </tr>
 
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center">  11</td><td style="text-align:center">  343</td><td style="text-align:center">  February 4th, 2022</td><td style="text-align:center">  2</td><td style="text-align:center">  1.97</td><td style="text-align:center">  2.38</td></tr>
