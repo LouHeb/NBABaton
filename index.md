@@ -1,3 +1,9 @@
+
+
+<center>
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/GameDay.png" width="1000" title="Next NBA Baton Game">
+</center>
+<br> 
 <center>
 
     <h2>Current Defender</h2>
@@ -5,10 +11,6 @@
 <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="200" title="Sacramento Kings">
 <p style="font-size:20px">For 1 game.</p>
 </div>
-</center>
-<br> 
-<center>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/GameDay.png" width="1000" title="Next NBA Baton Game">
 </center>
 
 <br> 
@@ -30,13 +32,13 @@
 <table class="table table-header-rotated">
 
 <tr>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotateHeader"><span>Team</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotateHeader"><span>Longest streak</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotateHeader"><span>Total number of games with the Baton</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotateHeader"><span>Last time with the Baton</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotateHeader"><span>Number of streaks with 10+ games </span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotateHeader"><span>Average streak</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotateHeader"><span>Streak per season</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Team</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Longest streak</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Total number of games with the Baton</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Last time with the Baton</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Number of streaks with 10+ games </span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Average streak</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Streak per season</span></div></th>
 </tr>
 
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center">  11</td><td style="text-align:center">  343</td><td style="text-align:center">  February 4th, 2022</td><td style="text-align:center">  2</td><td style="text-align:center">  1.97</td><td style="text-align:center">  2.38</td></tr>
