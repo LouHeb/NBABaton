@@ -1,7 +1,7 @@
 
 <center>
 <div class="LaBoite">
-<h2>Current Defender</h2>
+<h2 font-family: FuturaHeavy;>Current Defender</h2>
 <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="100" title="Sacramento Kings">
 <p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
 </div>
@@ -73,8 +73,7 @@
 <center>
 
 <div class="LaBoite">
-<h2>Current Defender</h2>
-<p style="font-size:20px;">Folded teams stats</p>
+<p style="font-size:20px;">Folded teams stats : IMAGE TO CLICK</p>
 </div>
 
 </center>
@@ -612,7 +611,7 @@
 </table>
 </center>
 <center>
-  <p>Results before 2010 HERE (to complete by decade)</p>
+  <p>Results before 2010 HERE (to complete by decade IMAGE TO CLICK)</p>
 </center>
 
 
