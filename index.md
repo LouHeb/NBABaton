@@ -30,13 +30,13 @@
 
 <table>
 <tr>
-<th style="text-align:center"><div class='vrt-header'>Team</div></th>
-<th style="text-align:center"><div class='vrt-header'>Longest streak</div></th>
-<th style="text-align:center"><div class='vrt-header'>Total number of games with the Baton</div></th>
-<th style="text-align:center"><div class='vrt-header'>Last time with the Baton</div></th>
-<th style="text-align:center"><div class='vrt-header'>Number of streaks with 10+ games</div></th>
-<th style="text-align:center"><div class='vrt-header'>Average streak</div></th>
-<th style="text-align:center"><div class='vrt-header'>Streak per season</div></th>
+<th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Team</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'>Longest streak</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'>Total nb of Baton defense</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'>Last time with the Baton</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'># 10+ games streaks</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'>Games per streak</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'>Streaks per season</div></th>
 </tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center">  11</td><td style="text-align:center">  343</td><td style="text-align:center">  February 4th, 2022</td><td style="text-align:center">  2</td><td style="text-align:center">  1.97</td><td style="text-align:center">  2.38</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="20" title="Boston Celtics"></td><td style="text-align:center">  17</td><td style="text-align:center">  844</td><td style="text-align:center">  December 25th, 2021</td><td style="text-align:center">  9</td><td style="text-align:center">  2.94</td><td style="text-align:center">  3.77</td></tr>
@@ -63,7 +63,7 @@
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="20" title="Philadelphia 76ers"></td><td style="text-align:center">  11</td><td style="text-align:center">  429</td><td style="text-align:center">  March 27th, 2022</td><td style="text-align:center">  3</td><td style="text-align:center">  2.23</td><td style="text-align:center">  2.63</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="20" title="Phoenix Suns"></td><td style="text-align:center">  10</td><td style="text-align:center">  188</td><td style="text-align:center">  April 10th, 2022</td><td style="text-align:center">  1</td><td style="text-align:center">  2.06</td><td style="text-align:center">  1.68</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Portland_Trail_Blazers_logo.svg" width="20" title="Portland Trail Blazers"></td><td style="text-align:center">  12</td><td style="text-align:center">  164</td><td style="text-align:center">  August 20th, 2020</td><td style="text-align:center">  1</td><td style="text-align:center">  2.12</td><td style="text-align:center">  1.48</td></tr>
-<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="20" title="Sacramento Kings"></td><td style="text-align:center">  12</td><td style="text-align:center">  319</td><td style="text-align:center">  Current defender</td><td style="text-align:center">  3</td><td style="text-align:center">  2.15</td><td style="text-align:center">  2.0</td></tr>
+<tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="20" title="Sacramento Kings"></td><td style="text-align:center">  12</td><td style="text-align:center">  319</td><td style="text-align:center;color: red">  Current defender</td><td style="text-align:center">  3</td><td style="text-align:center">  2.15</td><td style="text-align:center">  2.0</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/San_Antonio_Spurs.svg" width="20" title="San Antonio Spurs"></td><td style="text-align:center">  13</td><td style="text-align:center">  275</td><td style="text-align:center">  April 28th, 2021</td><td style="text-align:center">  4</td><td style="text-align:center">  3.02</td><td style="text-align:center">  1.97</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Toronto_Raptors_logo.svg" width="20" title="Toronto Raptors"></td><td style="text-align:center">  5</td><td style="text-align:center">  44</td><td style="text-align:center">  February 12th, 2022</td><td style="text-align:center">  0</td><td style="text-align:center">  1.83</td><td style="text-align:center">  0.88</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="20" title="Utah Jazz"></td><td style="text-align:center">  12</td><td style="text-align:center">  213</td><td style="text-align:center">  April 8th, 2022</td><td style="text-align:center">  5</td><td style="text-align:center">  2.73</td><td style="text-align:center">  1.62</td></tr>
@@ -76,13 +76,13 @@
 
 <table>
 <tr>
-<th style="text-align:center"><div class='vrt-header'>Team</div></th>
-<th style="text-align:center"><div class='vrt-header'>Longest streak</div></th>
-<th style="text-align:center"><div class='vrt-header'>Total number of games with the Baton</div></th>
-<th style="text-align:center"><div class='vrt-header'>Last time with the Baton</div></th>
-<th style="text-align:center"><div class='vrt-header'>Number of streaks with 10+ games</div></th>
-<th style="text-align:center"><div class='vrt-header'>Average streak</div></th>
-<th style="text-align:center"><div class='vrt-header'>Streak per season</div></th>
+<th style="text-align:center;vertical-align: middle"><div class='vrt-header'>Team</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'>Longest streak</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'>Total nb of Baton defense</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'>Last time with the Baton</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'># 10+ games streaks</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'>Games per streak</div></th>
+<th style="text-align:center;vertical-align: middle""><div class='vrt-header'>Streaks per season</div></th>
 </tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/commons/9/92/Anderson_Packers_logo.PNG" width="20" title="Anderson Packers"></td><td style="text-align:center">  2</td><td style="text-align:center">  2</td><td style="text-align:center">  April 5th, 1950</td><td style="text-align:center">  0</td><td style="text-align:center">  2.0</td><td style="text-align:center">  1.0</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/The_logo_of_the_original_Baltimore_Bullets_from_the_postwar_era.gif" width="20" title="Baltimore Bullets"></td><td style="text-align:center">  5</td><td style="text-align:center">  39</td><td style="text-align:center">  February 14th, 1954</td><td style="text-align:center">  0</td><td style="text-align:center">  1.56</td><td style="text-align:center">  3.57</td></tr>
