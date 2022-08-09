@@ -34,13 +34,13 @@
 
 <table class='vrt-header'>
 <tr>
-<th style="text-align:center>Team</th>
-<th style="text-align:center>Longest streak</th>
-<th style="text-align:center>Total number of games with the Baton</th>
-<th style="text-align:center>>Last time with the Baton</th>
-<th style="text-align:center>Number of streaks with 10+ games</th>
-<th style="text-align:center>Average streak</th>
-<th style="text-align:center>Streak per season</th>
+<th style="text-align:center">Team</th>
+<th style="text-align:center">Longest streak</th>
+<th style="text-align:center">Total number of games with the Baton</th>
+<th style="text-align:center">Last time with the Baton</th>
+<th style="text-align:center">Number of streaks with 10+ games</th>
+<th style="text-align:center">Average streak</th>
+<th style="text-align:center">Streak per season</th>
 </tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center">  11</td><td style="text-align:center">  343</td><td style="text-align:center">  February 4th, 2022</td><td style="text-align:center">  2</td><td style="text-align:center">  1.97</td><td style="text-align:center">  2.38</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="20" title="Boston Celtics"></td><td style="text-align:center">  17</td><td style="text-align:center">  844</td><td style="text-align:center">  December 25th, 2021</td><td style="text-align:center">  9</td><td style="text-align:center">  2.94</td><td style="text-align:center">  3.77</td></tr>
