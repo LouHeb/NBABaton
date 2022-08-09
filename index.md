@@ -1,12 +1,12 @@
 <center>
 
     <h2>Current Defender</h2>
-<div>
-<img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="30" title="Sacramento Kings">
-<p>For 1 game.</p>
+<div class="Defender">
+<img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="200" title="Sacramento Kings">
+<p style="font-size:20px">For 1 game.</p>
 </div>
 </center>
-
+<br> 
 <center>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/GameDay.png" width="1000" title="Next NBA Baton Game">
 </center>
@@ -15,7 +15,7 @@
 <center>
 
     <h2>The Concept</h2>
-<<div class="LaBoite">>
+<div class="LaBoite">
     <p>On November 1st, 1946, the first NBA (at the time called the BAA) basketball game took place in Toronto. The New York Knicks defeated the Toronto Huskies and became the first team ever to own the NBA Baton, a fictitious trophy which belongs to the team that beat the current defender.</p>
 <p>Since this date, the Baton is virtually handed off by the NBA teams.</p>
 <p style="font-size:12px">(If the NBA Baton defender disappears, the trophy is given back to the previous defender)</p>
