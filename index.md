@@ -76,12 +76,13 @@ Folded teams
 
 
   
-  
+  <center>
+
   
    <h2>NBA Baton history</h2>
 
   <table align="center">
-<tr><th style="text-align:center">  Winning date</th><th style="text-align:center"> NBA Baton defender       </th><th style="text-align:center">  # of games</th></tr>
+<tr><th style="text-align:center; font-family: FuturaHeavy">  Winning date</th><th style="text-align:center; font-family: FuturaHeavy"> NBA Baton defender       </th><th style="text-align:center font-family: FuturaHeavy">  # of games</th></tr>
 <tr><td style="text-align:center">  April 10th, 2022</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="30" title="Sacramento Kings"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  April 8th, 2022</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="30" title="Phoenix Suns"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  April 5th, 2022</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="30" title="Utah Jazz"></td><td style="text-align:center"> 2 </td></tr>
