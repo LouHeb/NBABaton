@@ -32,13 +32,13 @@
 <table class="table table-header-rotated">
 <thead>
 <tr>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Team</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Longest streak</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Total number of games with the Baton</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Last time with the Baton</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Number of streaks with 10+ games</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Average streak</span></div></th>
-<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable"><span>Streak per season</span></div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Team</div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Longest streak</div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Total number of games with the Baton</div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Last time with the Baton</div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Number of streaks with 10+ games</div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Average streak</div></th>
+<th class="rotate"; style="text-align:center; font-family: FuturaHeavy"><div class="RotationTable">Streak per season</div></th>
 </tr>
 </thead>
 
