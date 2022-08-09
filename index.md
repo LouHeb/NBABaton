@@ -29,7 +29,7 @@
 
 <table>
 <tr>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Teams</div></th>
+<th><div class='vrt-header'>Teams</div></th>
 <th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Longest streak</div></th>
 <th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Total nb of Baton defense</div></th>
 <th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Last time with the Baton</div></th>
