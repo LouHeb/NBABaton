@@ -1,7 +1,7 @@
 
 <center>
 <div class="LaBoite">
-<p style="font-size:20px; font-family: FuturaHeavy;color: red;">Current Defender</p>
+<h2>Current Defender</h2>
 <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="100" title="Sacramento Kings">
 <p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
 </div>
