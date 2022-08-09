@@ -28,6 +28,10 @@
 <center>
     <h2>The Stats</h2>
 
+<br> 
+<br> 
+<br> 
+<br> 
 
 <table>
 <tr>
