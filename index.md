@@ -22,14 +22,12 @@
     <h2>The Stats</h2>
 
 <table>
-
 <tr>
 <th style="text-align:center; font-family: FuturaHeavy;font-size:11px;">Teams</th>
 <th style="text-align:center; font-family: FuturaHeavy;font-size:11px;">Longest streak</th>
 <th style="text-align:center; font-family: FuturaHeavy;font-size:11px;">Total nb of Baton games</th>
 <th style="text-align:center; font-family: FuturaHeavy;font-size:11px;">Last Baton time</th>
 </tr>
-
 <tr>
 <td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td>
 <td style="text-align:center;font-size:11px;">  11</td>
@@ -180,6 +178,7 @@
 <td style="text-align:center;font-size:11px;">  8</td>
 <td style="text-align:center;font-size:11px;">  209</td>
 <td style="text-align:center;font-size:11px;">  November 17th, 2021</td>
+</tr>
 </table>
 
 
