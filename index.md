@@ -30,13 +30,13 @@
 <table>
 
 <tr>
-<th><div class='vrt-header'>Teams</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Longest streak</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Total nb of Baton defense</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Last time with the Baton</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Nb of 10+ games streaks</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Games per streak</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Streaks per season</div></th>
+<th><div class='vrt-header'>Teams</th>
+<th style="text-align:center; font-family: FuturaHeavy">Longest streak</th>
+<th style="text-align:center; font-family: FuturaHeavy">Total nb of Baton defense</th>
+<th style="text-align:center; font-family: FuturaHeavy">Last time with the Baton</th>
+<th style="text-align:center; font-family: FuturaHeavy">Nb of 10+ games streaks</th>
+<th style="text-align:center; font-family: FuturaHeavy">Games per streak</th>
+<th style="text-align:center; font-family: FuturaHeavy">Streaks per season</th>
 </tr>
 
 <tr><td style="text-align:center;font-size:12px">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center;font-size:12px">  11</td><td style="text-align:center;font-size:12px">  343</td><td style="text-align:center;font-size:12px">  February 4th, 2022</td><td style="text-align:center;font-size:12px">  2</td><td style="text-align:center;font-size:12px">  1.97</td><td style="text-align:center;font-size:12px">  2.38</td></tr>
