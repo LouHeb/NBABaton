@@ -30,173 +30,164 @@
 <table>
 
 <tr>
-<th style="text-align:center; font-family: FuturaHeavy;font-size:11px"">Teams</th>
-<th style="text-align:center; font-family: FuturaHeavy;font-size:11px"">Longest streak</th>
-<th style="text-align:center; font-family: FuturaHeavy;font-size:11px"">Total nb of Baton games</th>
-<th style="text-align:center; font-family: FuturaHeavy;font-size:11px"">Last Baton time</th>
+<th style="text-align:center; font-family: FuturaHeavy;font-size:11px;">Teams</th>
+<th style="text-align:center; font-family: FuturaHeavy;font-size:11px;">Longest streak</th>
+<th style="text-align:center; font-family: FuturaHeavy;font-size:11px;">Total nb of Baton games</th>
+<th style="text-align:center; font-family: FuturaHeavy;font-size:11px;">Last Baton time</th>
 </tr>
 
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td>
-<td style="text-align:center;font-size:11px">  11</td>
-<td style="text-align:center;font-size:11px">  343</td>
-<td style="text-align:center;font-size:11px">  February 4th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td>
+<td style="text-align:center;font-size:11px;">  11</td>
+<td style="text-align:center;font-size:11px;">  343</td>
+<td style="text-align:center;font-size:11px;">  February 4th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="20" title="Boston Celtics"></td>
-<td style="text-align:center;font-size:11px">  17</td>
-<td style="text-align:center;font-size:11px">  844</td>
-<td style="text-align:center;font-size:11px">  December 25th, 2021</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="20" title="Boston Celtics"></td>
+<td style="text-align:center;font-size:11px;">  17</td>
+<td style="text-align:center;font-size:11px;">  844</td>
+<td style="text-align:center;font-size:11px;">  December 25th, 2021</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="20" title="Brooklyn Nets"></td>
-<td style="text-align:center;font-size:11px">  8</td>
-<td style="text-align:center;font-size:11px">  110</td>
-<td style="text-align:center;font-size:11px">  December 4th, 2021</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="20" title="Brooklyn Nets"></td>
+<td style="text-align:center;font-size:11px;">  8</td>
+<td style="text-align:center;font-size:11px;">  110</td>
+<td style="text-align:center;font-size:11px;">  December 4th, 2021</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Chicago_Bulls_logo.svg" width="20" title="Chicago Bulls"></td>
-<td style="text-align:center;font-size:11px">  13</td>
-<td style="text-align:center;font-size:11px">  249</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Chicago_Bulls_logo.svg" width="20" title="Chicago Bulls"></td>
+<td style="text-align:center;font-size:11px;">  13</td>
+<td style="text-align:center;font-size:11px;">  249</td>
 <td style="text-align:center;font-size:11px">  December 8th, 2021</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Charlotte_Hornets_%282014%29.svg" width="20" title="Charlotte Hornets"></td>
-<td style="text-align:center;font-size:11px">  4</td>
-<td style="text-align:center;font-size:11px">  54</td>
-<td style="text-align:center;font-size:11px">  January 14th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Charlotte_Hornets_%282014%29.svg" width="20" title="Charlotte Hornets"></td>
+<td style="text-align:center;font-size:11px;">  4</td>
+<td style="text-align:center;font-size:11px;">  54</td>
+<td style="text-align:center;font-size:11px;">  January 14th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Cleveland_Cavaliers_logo.svg" width="20" title="Cleveland Cavaliers"></td>
-<td style="text-align:center;font-size:11px">  11</td>
-<td style="text-align:center;font-size:11px">  200</td>
-<td style="text-align:center;font-size:11px">  March 21st, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Cleveland_Cavaliers_logo.svg" width="20" title="Cleveland Cavaliers"></td>
+<td style="text-align:center;font-size:11px;">  11</td>
+<td style="text-align:center;font-size:11px;">  200</td>
+<td style="text-align:center;font-size:11px;">  March 21st, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/9/97/Dallas_Mavericks_logo.svg" width="20" title="Dallas Mavericks"></td>
-<td style="text-align:center;font-size:11px">  6</td>
-<td style="text-align:center;font-size:11px">  106</td>
-<td style="text-align:center;font-size:11px">  January 20th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/9/97/Dallas_Mavericks_logo.svg" width="20" title="Dallas Mavericks"></td>
+<td style="text-align:center;font-size:11px;">  6</td>
+<td style="text-align:center;font-size:11px;">  106</td>
+<td style="text-align:center;font-size:11px;">  January 20th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/7/76/Denver_Nuggets.svg" width="20" title="Denver Nuggets"></td>
-<td style="text-align:center;font-size:11px">  9</td>
-<td style="text-align:center;font-size:11px">  127</td>
-<td style="text-align:center;font-size:11px">  March 18th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/7/76/Denver_Nuggets.svg" width="20" title="Denver Nuggets"></td>
+<td style="text-align:center;font-size:11px;">  9</td>
+<td style="text-align:center;font-size:11px;">  127</td>
+<td style="text-align:center;font-size:11px;">  March 18th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Pistons_logo17.svg" width="20" title="Detroit Pistons"></td>
-<td style="text-align:center;font-size:11px">  10</td>
-<td style="text-align:center;font-size:11px">  297</td>
-<td style="text-align:center;font-size:11px">  January 5th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Pistons_logo17.svg" width="20" title="Detroit Pistons"></td>
+<td style="text-align:center;font-size:11px;">  10</td>
+<td style="text-align:center;font-size:11px;">  297</td>
+<td style="text-align:center;font-size:11px;">  January 5th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/0/01/Golden_State_Warriors_logo.svg" width="20" title="Golden State Warriors"></td>
-<td style="text-align:center;font-size:11px">  27</td>
-<td style="text-align:center;font-size:11px">  369</td>
-<td style="text-align:center;font-size:11px">  May 19th, 2021</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/01/Golden_State_Warriors_logo.svg" width="20" title="Golden State Warriors"></td>
+<td style="text-align:center;font-size:11px;">  27</td>
+<td style="text-align:center;font-size:11px;">  369</td>
+<td style="text-align:center;font-size:11px;">  May 19th, 2021</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/2/28/Houston_Rockets.svg" width="20" title="Houston Rockets"></td>
-<td style="text-align:center;font-size:11px">  11</td>
-<td style="text-align:center;font-size:11px">  217</td>
-<td style="text-align:center;font-size:11px">  April 9th, 2021</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/28/Houston_Rockets.svg" width="20" title="Houston Rockets"></td>
+<td style="text-align:center;font-size:11px;">  11</td>
+<td style="text-align:center;font-size:11px;">  217</td>
+<td style="text-align:center;font-size:11px;">  April 9th, 2021</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Indiana_Pacers.svg" width="20" title="Indiana Pacers"></td>
-<td style="text-align:center;font-size:11px">  10</td>
-<td style="text-align:center;font-size:11px">  153</td>
-<td style="text-align:center;font-size:11px">  October 25th, 2021</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Indiana_Pacers.svg" width="20" title="Indiana Pacers"></td>
+<td style="text-align:center;font-size:11px;">  10</td>
+<td style="text-align:center;font-size:11px;">  153</td>
+<td style="text-align:center;font-size:11px;">  October 25th, 2021</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Los_Angeles_Clippers_%282015%29.svg" width="20" title="Los Angeles Clippers"></td>
-<td style="text-align:center;font-size:11px">  8</td>
-<td style="text-align:center;font-size:11px">  124</td>
-<td style="text-align:center;font-size:11px">  June 30th, 2021</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Los_Angeles_Clippers_%282015%29.svg" width="20" title="Los Angeles Clippers"></td>
+<td style="text-align:center;font-size:11px;">  8</td>
+<td style="text-align:center;font-size:11px;">  124</td>
+<td style="text-align:center;font-size:11px;">  June 30th, 2021</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg" width="20" title="Los Angeles Lakers"></td>
-<td style="text-align:center;font-size:11px">  18</td>
-<td style="text-align:center;font-size:11px">  626</td>
-<td style="text-align:center;font-size:11px">  March 23rd, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg" width="20" title="Los Angeles Lakers"></td>
+<td style="text-align:center;font-size:11px;">  18</td>
+<td style="text-align:center;font-size:11px;">  626</td>
+<td style="text-align:center;font-size:11px;">  March 23rd, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/Memphis_Grizzlies.svg" width="20" title="Memphis Grizzlies"></td>
-<td style="text-align:center;font-size:11px">  5</td>
-<td style="text-align:center;font-size:11px">  61</td>
-<td style="text-align:center;font-size:11px">  April 5th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/Memphis_Grizzlies.svg" width="20" title="Memphis Grizzlies"></td>
+<td style="text-align:center;font-size:11px;">  5</td>
+<td style="text-align:center;font-size:11px;">  61</td>
+<td style="text-align:center;font-size:11px;">  April 5th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" width="20" title="Miami Heat"></td>
-<td style="text-align:center;font-size:11px">  12</td>
-<td style="text-align:center;font-size:11px">  174</td>
-<td style="text-align:center;font-size:11px">  October 23rd, 2021</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" width="20" title="Miami Heat"></td>
+<td style="text-align:center;font-size:11px;">  12</td>
+<td style="text-align:center;font-size:11px;">  174</td>
+<td style="text-align:center;font-size:11px;">  October 23rd, 2021</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg" width="20" title="Milwaukee Bucks"></td>
-<td style="text-align:center;font-size:11px">  15</td>
-<td style="text-align:center;font-size:11px">  282</td>
-<td style="text-align:center;font-size:11px">  January 3rd, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg" width="20" title="Milwaukee Bucks"></td>
+<td style="text-align:center;font-size:11px;">  15</td>
+<td style="text-align:center;font-size:11px;">  282</td>
+<td style="text-align:center;font-size:11px;">  January 3rd, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Minnesota_Timberwolves_logo.svg" width="20" title="Minnesota Timberwolves"></td>
-<td style="text-align:center;font-size:11px">  6</td>
-<td style="text-align:center;font-size:11px">  46</td>
-<td style="text-align:center;font-size:11px">  March 11th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Minnesota_Timberwolves_logo.svg" width="20" title="Minnesota Timberwolves"></td>
+<td style="text-align:center;font-size:11px;">  6</td>
+<td style="text-align:center;font-size:11px;">  46</td>
+<td style="text-align:center;font-size:11px;">  March 11th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/New_Orleans_Pelicans_logo.svg" width="20" title="New Orleans Pelicans"></td>
-<td style="text-align:center;font-size:11px">  9</td>
-<td style="text-align:center;font-size:11px">  41</td>
-<td style="text-align:center;font-size:11px">  February 2nd, 2020</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/New_Orleans_Pelicans_logo.svg" width="20" title="New Orleans Pelicans"></td>
+<td style="text-align:center;font-size:11px;">  9</td>
+<td style="text-align:center;font-size:11px;">  41</td>
+<td style="text-align:center;font-size:11px;">  February 2nd, 2020</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg" width="20" title="New York Knicks"></td>
-<td style="text-align:center;font-size:11px">  12</td>
-<td style="text-align:center;font-size:11px">  395</td>
-<td style="text-align:center;font-size:11px">  November 30th, 2021</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg" width="20" title="New York Knicks"></td>
+<td style="text-align:center;font-size:11px;">  12</td>
+<td style="text-align:center;font-size:11px;">  395</td>
+<td style="text-align:center;font-size:11px;">  November 30th, 2021</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/5/5d/Oklahoma_City_Thunder.svg" width="20" title="Oklahoma City Thunder"></td>
-<td style="text-align:center;font-size:11px">  9</td>
-<td style="text-align:center;font-size:11px">  190</td>
-<td style="text-align:center;font-size:11px">  March 4th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/5/5d/Oklahoma_City_Thunder.svg" width="20" title="Oklahoma City Thunder"></td>
+<td style="text-align:center;font-size:11px;">  9</td>
+<td style="text-align:center;font-size:11px;">  190</td>
+<td style="text-align:center;font-size:11px;">  March 4th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="20" title="Orlando Magic"></td>
-<td style="text-align:center;font-size:11px">  8</td>
-<td style="text-align:center;font-size:11px">  79</td>
-<td style="text-align:center;font-size:11px">  March 13th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="20" title="Orlando Magic"></td>
+<td style="text-align:center;font-size:11px;">  8</td>
+<td style="text-align:center;font-size:11px;">  79</td>
+<td style="text-align:center;font-size:11px;">  March 13th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="20" title="Philadelphia 76ers"></td>
-<td style="text-align:center;font-size:11px">  11</td>
-<td style="text-align:center;font-size:11px">  429</td>
-<td style="text-align:center;font-size:11px">  March 27th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="20" title="Philadelphia 76ers"></td>
+<td style="text-align:center;font-size:11px;">  11</td>
+<td style="text-align:center;font-size:11px;">  429</td>
+<td style="text-align:center;font-size:11px;">  March 27th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="20" title="Phoenix Suns"></td>
-<td style="text-align:center;font-size:11px">  10</td>
-<td style="text-align:center;font-size:11px">  188</td>
-<td style="text-align:center;font-size:11px">  April 10th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="20" title="Phoenix Suns"></td>
+<td style="text-align:center;font-size:11px;">  10</td>
+<td style="text-align:center;font-size:11px;">  188</td>
+<td style="text-align:center;font-size:11px;">  April 10th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Portland_Trail_Blazers_logo.svg" width="20" title="Portland Trail Blazers"></td>
-<td style="text-align:center;font-size:11px">  12</td>
-<td style="text-align:center;font-size:11px">  164</td>
-<td style="text-align:center;font-size:11px">  August 20th, 2020</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Portland_Trail_Blazers_logo.svg" width="20" title="Portland Trail Blazers"></td>
+<td style="text-align:center;font-size:11px;">  12</td>
+<td style="text-align:center;font-size:11px;">  164</td>
+<td style="text-align:center;font-size:11px;">  August 20th, 2020</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="20" title="Sacramento Kings"></td>
-<td style="text-align:center;font-size:11px">  12</td>
-<td style="text-align:center;font-size:11px">  319</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="20" title="Sacramento Kings"></td>
+<td style="text-align:center;font-size:11px;">  12</td>
+<td style="text-align:center;font-size:11px;">  319</td>
 <td style="text-align:center;color: red; font-family: FuturaHeavy;">  Current defender</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/San_Antonio_Spurs.svg" width="20" title="San Antonio Spurs"></td>
-<td style="text-align:center;font-size:11px">  13</td>
-<td style="text-align:center;font-size:11px">  275</td>
-<td style="text-align:center;font-size:11px">  April 28th, 2021</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/San_Antonio_Spurs.svg" width="20" title="San Antonio Spurs"></td>
+<td style="text-align:center;font-size:11px;">  13</td>
+<td style="text-align:center;font-size:11px;">  275</td>
+<td style="text-align:center;font-size:11px;">  April 28th, 2021</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Toronto_Raptors_logo.svg" width="20" title="Toronto Raptors"></td>
-<td style="text-align:center;font-size:11px">  5</td>
-<td style="text-align:center;font-size:11px">  44</td>
-<td style="text-align:center;font-size:11px">  February 12th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Toronto_Raptors_logo.svg" width="20" title="Toronto Raptors"></td>
+<td style="text-align:center;font-size:11px;">  5</td>
+<td style="text-align:center;font-size:11px;">  44</td>
+<td style="text-align:center;font-size:11px;">  February 12th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="20" title="Utah Jazz"></td>
-<td style="text-align:center;font-size:11px">  12</td>
-<td style="text-align:center;font-size:11px">  213</td>
-<td style="text-align:center;font-size:11px">  April 8th, 2022</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="20" title="Utah Jazz"></td>
+<td style="text-align:center;font-size:11px;">  12</td>
+<td style="text-align:center;font-size:11px;">  213</td>
+<td style="text-align:center;font-size:11px;">  April 8th, 2022</td>
 <tr>
-<td style="text-align:center;font-size:11px">  <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Washington_Wizards_logo.svg" width="20" title="Washington Wizards"></td>
-<td style="text-align:center;font-size:11px">  8</td>
-<td style="text-align:center;font-size:11px">  209</td>
-<td style="text-align:center;font-size:11px">  November 17th, 2021</td>
+<td style="text-align:center;font-size:11px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Washington_Wizards_logo.svg" width="20" title="Washington Wizards"></td>
+<td style="text-align:center;font-size:11px;">  8</td>
+<td style="text-align:center;font-size:11px;">  209</td>
+<td style="text-align:center;font-size:11px;">  November 17th, 2021</td>
 </table>
 </center>
-  <br> 
-<center>
-
-<div class="LaBoite">
-<p style="font-size:20px;">Folded teams stats : IMAGE TO CLICK</p>
-</div>
-
-</center>
-
 
 
 
