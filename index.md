@@ -158,7 +158,7 @@
 <td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="20" title="Sacramento Kings"></td>
 <td style="text-align:center;font-size:13px;">  12</td>
 <td style="text-align:center;font-size:13px;">  319</td>
-<td style="text-align:center;color: red; font-family: FuturaHeavy;">  Current defender</td>
+<td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;"">  Current defender</td>
 </tr><tr>
 <td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/San_Antonio_Spurs.svg" width="20" title="San Antonio Spurs"></td>
 <td style="text-align:center;font-size:13px;">  13</td>
