@@ -30,10 +30,10 @@
 <table>
 
 <tr>
-<th style="text-align:center; font-family: FuturaHeavy">Teams</th>
-<th style="text-align:center; font-family: FuturaHeavy">Longest streak</th>
-<th style="text-align:center; font-family: FuturaHeavy">Total nb of Baton defense</th>
-<th style="text-align:center; font-family: FuturaHeavy">Last time with the Baton</th>
+<th style="text-align:center; font-family: FuturaHeavy;font-size:11px"">Teams</th>
+<th style="text-align:center; font-family: FuturaHeavy;font-size:11px"">Longest streak</th>
+<th style="text-align:center; font-family: FuturaHeavy;font-size:11px"">Total nb of Baton games</th>
+<th style="text-align:center; font-family: FuturaHeavy;font-size:11px"">Last Baton time</th>
 </tr>
 
 <tr>
