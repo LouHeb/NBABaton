@@ -5,15 +5,11 @@
 <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="100" title="Sacramento Kings">
 <p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
 </div>
-</center>
 
 <br> 
 
-<center>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/GameDay.png" width="1000" title="Next NBA Baton Game">
-</center>
 <br> 
-<center>
 
     <h2>The Concept</h2>
 <div class="LaBoite">
@@ -21,10 +17,8 @@
 <p>Since this date, the Baton is virtually handed off by the NBA teams.</p>
 <p style="font-size:12px">(If the NBA Baton defender disappears, the trophy is given back to the previous defender)</p>
 </div>
-</center>
 
 <br> 
-<center>
     <h2>The Stats</h2>
 
 <table>
@@ -187,17 +181,14 @@
 <td style="text-align:center;font-size:11px;">  209</td>
 <td style="text-align:center;font-size:11px;">  November 17th, 2021</td>
 </table>
-</center>
 
 
 
-  <br> 
-  <center>
+<br> 
 
   
-   <h2>The History</h2>
-
-  <table align="center">
+<h2>The History</h2>
+<table>
 <tr><th style="text-align:center; font-family: FuturaHeavy">  Winning date</th><th style="text-align:center; font-family: FuturaHeavy"> NBA Baton defender       </th><th style="text-align:center; font-family: FuturaHeavy">  # of games</th></tr>
 <tr><td style="text-align:center">  April 10th, 2022</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="30" title="Sacramento Kings"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  April 8th, 2022</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="30" title="Phoenix Suns"></td><td style="text-align:center"> 1 </td></tr>
@@ -720,8 +711,7 @@
 <tr><td style="text-align:center">  June 11th, 2009</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg" width="30" title="Los Angeles Lakers"></td><td style="text-align:center"> 3 </td></tr>
 
 </table>
-</center>
-<center>
+
   <p>Results before 2010 HERE (to complete by decade IMAGE TO CLICK)</p>
 </center>
 
