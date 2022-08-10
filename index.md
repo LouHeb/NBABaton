@@ -28,15 +28,6 @@
     <h2>The Stats</h2>
 
 <table>
-<tr>
-<th><div class='vrt-header'>Teams</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Longest streak</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Total nb of Baton defense</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Last time with the Baton</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Nb of 10+ games streaks</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Games per streak</div></th>
-<th style="text-align:right;vertical-align: middle;"><div class='vrt-header'>Streaks per season</div></th>
-</tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center">  11</td><td style="text-align:center">  343</td><td style="text-align:center">  February 4th, 2022</td><td style="text-align:center">  2</td><td style="text-align:center">  1.97</td><td style="text-align:center">  2.38</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="20" title="Boston Celtics"></td><td style="text-align:center">  17</td><td style="text-align:center">  844</td><td style="text-align:center">  December 25th, 2021</td><td style="text-align:center">  9</td><td style="text-align:center">  2.94</td><td style="text-align:center">  3.77</td></tr>
 <tr><td style="text-align:center">  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="20" title="Brooklyn Nets"></td><td style="text-align:center">  8</td><td style="text-align:center">  110</td><td style="text-align:center">  December 4th, 2021</td><td style="text-align:center">  0</td><td style="text-align:center">  2.03</td><td style="text-align:center">  1.17</td></tr>
@@ -79,48 +70,6 @@
 </center>
 
 
-
-<table>
-<tr>
-<th><div class='vrt-header'>Teams</th>
-<th style="text-align:right;vertical-align: middle;">Longest streak</th>
-<th style="text-align:right;vertical-align: middle;">Total nb of Baton defense</th>
-<th style="text-align:right;vertical-align: middle;">Last time with the Baton</th>
-<th style="text-align:right;vertical-align: middle;">Nb of 10+ games streaks</th>
-<th style="text-align:right;vertical-align: middle;">Games per streak</th>
-<th style="text-align:right;vertical-align: middle;">Streaks per season</th>
-</tr>
-<tr><td style="text-align:center"> Anderson Packers </td><td style="text-align:center">  2</td><td style="text-align:center">  2</td><td style="text-align:center">  April 5th, 1950</td><td style="text-align:center">  0</td><td style="text-align:center">  2.0</td><td style="text-align:center">  1.0</td></tr>
-
-<tr><td style="text-align:center"> Baltimore Bullets </td><td style="text-align:center">  5</td><td style="text-align:center">  39</td><td style="text-align:center">  February 14th, 1954</td><td style="text-align:center">  0</td><td style="text-align:center">  1.56</td><td style="text-align:center">  3.57</td></tr>
-
-<tr><td style="text-align:center"> Chicago Stags </td><td style="text-align:center">  6</td><td style="text-align:center">  44</td><td style="text-align:center">  February 4th, 1950</td><td style="text-align:center">  0</td><td style="text-align:center">  2.93</td><td style="text-align:center">  3.75</td></tr>
-
-<tr><td style="text-align:center"> Cleveland Rebels</td><td style="text-align:center">  1</td><td style="text-align:center">  1</td><td style="text-align:center">  December 10th, 1946</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  1.0</td></tr>
-
-<tr><td style="text-align:center"> Denver Nuggets <td><td style="text-align:center">  0</td><td style="text-align:center">  0</td><td style="text-align:center">  Never</td><td style="text-align:center">  0</td><td style="text-align:center">  0.0</td><td style="text-align:center">  0.0</td></tr>
-
-<tr><td style="text-align:center"> Detroit Falcons </td><td style="text-align:center">  3</td><td style="text-align:center">  7</td><td style="text-align:center">  November 12th, 1947</td><td style="text-align:center">  0</td><td style="text-align:center">  1.75</td><td style="text-align:center">  4.0</td></tr>
-
-<tr><td style="text-align:center"> Indianapolis Jets </td><td style="text-align:center">  1</td><td style="text-align:center">  1</td><td style="text-align:center">  December 13th, 1948</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  1.0</td></tr>
-
-<tr><td style="text-align:center"> Indianapolis Olympians </td><td style="text-align:center">  4</td><td style="text-align:center">  19</td><td style="text-align:center">  November 25th, 1952</td><td style="text-align:center">  0</td><td style="text-align:center">  1.58</td><td style="text-align:center">  3.0</td></tr>
-
-<tr><td style="text-align:center"> Pittsburgh Ironmen </td><td style="text-align:center">  1</td><td style="text-align:center">  2</td><td style="text-align:center">  January 23rd, 1947</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  2.0</td></tr>
-
-<tr><td style="text-align:center"> Providence Steamrollers </td><td style="text-align:center">  2</td><td style="text-align:center">  6</td><td style="text-align:center">  February 5th, 1949</td><td style="text-align:center">  0</td><td style="text-align:center">  1.5</td><td style="text-align:center">  1.33</td></tr>
-
-<tr><td style="text-align:center"> Sheboygan Red Skins</td><td style="text-align:center">  1</td><td style="text-align:center">  2</td><td style="text-align:center">  March 25th, 1950</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  2.0</td></tr>
-
-<tr><td style="text-align:center"> St Louis Bombers </td><td style="text-align:center">  1</td><td style="text-align:center">  4</td><td style="text-align:center">  February 9th, 1949</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  1.0</td></tr>
-
-<tr><td style="text-align:center"> Toronto Huskies </td><td style="text-align:center">  1</td><td style="text-align:center">  3</td><td style="text-align:center">  March 29th, 1947</td><td style="text-align:center">  0</td><td style="text-align:center">  1.0</td><td style="text-align:center">  3.0</td></tr>
-
-<tr><td style="text-align:center"> Waterloo Hawks </td><td style="text-align:center">  0</td><td style="text-align:center">  0</td><td style="text-align:center">  Never</td><td style="text-align:center">  0</td><td style="text-align:center">  0.0</td><td style="text-align:center">  0.0</td></tr>
-
-<tr><td style="text-align:center"> Washington Capitols</td><td style="text-align:center">  13</td><td style="text-align:center">  36</td><td style="text-align:center">  November 21st, 1950</td><td style="text-align:center">  1</td><td style="text-align:center">  3.6</td><td style="text-align:center">  2.0</td></tr>
-</table>
-</center>
 
 
   <br> 
@@ -611,8 +560,8 @@
 <tr><td style="text-align:center">  June 6th, 2010</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="30" title="Boston Celtics"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  June 3rd, 2010</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg" width="30" title="Los Angeles Lakers"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  May 28th, 2010</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="30" title="Boston Celtics"></td><td style="text-align:center"> 1 </td></tr>
-<tr><td style="text-align:center">  May 24th, 2010</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="30" title="Orlando Magic"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  May 9th, 2010</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="30" title="Boston Celtics"></td><td style="text-align:center"> 6 </td></tr>
+<tr><td style="text-align:center">  May 24th, 2010</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="30" title="Orlando Magic"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  May 7th, 2010</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Cleveland_Cavaliers_logo.svg" width="30" title="Cleveland Cavaliers"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  May 3rd, 2010</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="30" title="Boston Celtics"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  April 25th, 2010</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Cleveland_Cavaliers_logo.svg" width="30" title="Cleveland Cavaliers"></td><td style="text-align:center"> 3 </td></tr>
