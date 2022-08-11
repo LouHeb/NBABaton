@@ -26,7 +26,7 @@
 <th style="text-align:center; font-family: FuturaHeavy;font-size:13px;">Teams</th>
 <th style="text-align:center; font-family: FuturaHeavy;font-size:13px;">Longest streak</th>
 <th style="text-align:center; font-family: FuturaHeavy;font-size:13px;">Total nb of Baton games</th>
-<th style="text-align:center; font-family: FuturaHeavy;font-size:13px;">Last Baton time</th>
+<th style="text-align:center; font-family: FuturaHeavy;font-size:13px;">Last time with the Baton</th>
 </tr>
 <tr>
 <td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td>
