@@ -712,7 +712,13 @@
 
 </table>
 <br>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="500" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="300" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="300" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="300" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="300" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="300" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="300" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="300" title="Test">
 
 
 </center>
