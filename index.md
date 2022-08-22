@@ -711,8 +711,10 @@
 <tr><td style="text-align:center">  June 11th, 2009</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg" width="30" title="Los Angeles Lakers"></td><td style="text-align:center"> 3 </td></tr>
 
 </table>
+<br>
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="500" title="Test">
 
-  <p>Results before 2010 HERE (to complete by decade IMAGE TO CLICK)</p>
+
 </center>
 
 
