@@ -1,6 +1,6 @@
 <center><div class="LaBoite"><h2>Current Defender</h2>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Pistons_logo17.svg" width="100" title="Detroit Pistons"><p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Pistons_logo17.svg" width="100" title="Detroit Pistons"><p style="font-size:20px; font-family: FuturaHeavy;">For 2 games.</p>
 
 </div><br>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/0_GameDay.png" width="1000" title="Next NBA Baton Game">
@@ -14,7 +14,7 @@
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/4/4b/Cleveland_Cavaliers_logo.svg" width="20" title="Cleveland Cavaliers"></td><td style="text-align:center;font-size:13px;">  11</td><td style="text-align:center;font-size:13px;">  200</td><td style="text-align:center;font-size:13px;">  March 21st, 2022</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/9/97/Dallas_Mavericks_logo.svg" width="20" title="Dallas Mavericks"></td><td style="text-align:center;font-size:13px;">  6</td><td style="text-align:center;font-size:13px;">  106</td><td style="text-align:center;font-size:13px;">  January 20th, 2022</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/7/76/Denver_Nuggets.svg" width="20" title="Denver Nuggets"></td><td style="text-align:center;font-size:13px;">  9</td><td style="text-align:center;font-size:13px;">  127</td><td style="text-align:center;font-size:13px;">  March 18th, 2022</td></tr>
-<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Pistons_logo17.svg" width="20" title="Detroit Pistons"></td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
+<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Pistons_logo17.svg" width="20" title="Detroit Pistons"></td><td style="text-align:center;font-size:13px;">  10</td><td style="text-align:center;font-size:13px;">  299</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/01/Golden_State_Warriors_logo.svg" width="20" title="Golden State Warriors"></td><td style="text-align:center;font-size:13px;">  27</td><td style="text-align:center;font-size:13px;">  369</td><td style="text-align:center;font-size:13px;">  May 19th, 2021</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/28/Houston_Rockets.svg" width="20" title="Houston Rockets"></td><td style="text-align:center;font-size:13px;">  11</td><td style="text-align:center;font-size:13px;">  217</td><td style="text-align:center;font-size:13px;">  April 9th, 2021</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Indiana_Pacers.svg" width="20" title="Indiana Pacers"></td><td style="text-align:center;font-size:13px;">  10</td><td style="text-align:center;font-size:13px;">  153</td><td style="text-align:center;font-size:13px;">  October 25th, 2021</td></tr>
@@ -39,7 +39,7 @@
 
 </table><br><h2>The History</h2><table><tr><th style="text-align:center; font-family: FuturaHeavy">  Winning date</th><th style="text-align:center; font-family: FuturaHeavy"> NBA Baton defender</th><th style="text-align:center; font-family: FuturaHeavy">  # of games</th></tr>
 
-<tr><td style="text-align:center">  January 19th, 2022</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Pistons_logo17.svg" width="30" title="Detroit Pistons"></td><td style="text-align:center"> 1 </td></tr>
+<tr><td style="text-align:center">  January 19th, 2022</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Pistons_logo17.svg" width="30" title="Detroit Pistons"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  April 10th, 2022</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="30" title="Sacramento Kings"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  April 8th, 2022</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="30" title="Phoenix Suns"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  April 5th, 2022</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="30" title="Utah Jazz"></td><td style="text-align:center"> 2 </td></tr>
