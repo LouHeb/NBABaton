@@ -708,12 +708,14 @@
 <tr><td style="text-align:center">  November 6th, 2009</td><td style="text-align:center"><img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/OldLogos/TOR1.png" width="30" title="Toronto Raptors"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  November 4th, 2009</td><td style="text-align:center"><img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/OldLogos/NOH.png" width="30" title="New Orleans Hornets"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  October 30th, 2009</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/9/97/Dallas_Mavericks_logo.svg" width="30" title="Dallas Mavericks"></td><td style="text-align:center"> 3 </td></tr>
-<tr><td style="text-align:center">  June 11th, 2009</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg" width="30" title="Los Angeles Lakers"></td><td style="text-align:center"> 3 </td></tr>
 
 </table>
-<br>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/2000s.jpg" width="1000" title="00s">
-<br>
+
+    <br>
+
+    <a href="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/2000.jpg" target="_blank"><img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/2000.jpg" width="1000" title="00s"></a>
+    
+<hr>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/1990s.jpg" width="1000" title="90s">
 <br>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/1980s.jpg" width="1000" title="80s">
