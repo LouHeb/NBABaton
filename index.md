@@ -712,19 +712,19 @@
 
 </table>
 <br>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="200" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/2000s.jpg" width="1000" title="00s">
 <br>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="200" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/1990s.jpg" width="1000" title="90s">
 <br>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="200" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/1980s.jpg" width="1000" title="80s">
 <br>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="200" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/1970s.jpg" width="1000" title="70s">
 <br>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="200" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/1960s.jpg" width="1000" title="Test">
 <br>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="200" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/1950s.jpg" width="1000" title="Test">
 <br>
-<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/TestWebsite.jpg" width="200" title="Test">
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/1940s.jpg" width="300" title="Test">
 
 
 </center>
