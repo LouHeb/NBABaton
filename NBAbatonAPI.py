@@ -279,7 +279,7 @@ def SameHolders(SameHolder,Newstreak,Round = 'Bleu'):
 #  ==>   ------ Get yesterday's games and update the overall games list -------------
 
 # --- Get yesterday date
-Yesti = datetime.now() - timedelta(157)
+Yesti = datetime.now() - timedelta(155)
 
 # --- Get the season's last year
 Year = LaSaison(int(datetime.strftime(Yesti,"%m")),int(datetime.strftime(Yesti,"%Y")))
