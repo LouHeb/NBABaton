@@ -693,7 +693,7 @@ if len(GameIndexes)>0: # if there were games yesterday
         PathsHistory =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
         
         Holder = CurrentHolder
-        Today = datetime.strftime(Yesti,"%Y%m%d")
+        Today = int(datetime.strftime(Yesti,"%Y%m%d"))
 
         # Condition to know if the shorter path is controled by the date or by the nb of game
         SortByDate = True
