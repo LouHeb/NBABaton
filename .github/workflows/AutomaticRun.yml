@@ -1,7 +1,7 @@
 name: "Run the Workflow"
 on:
   workflow_dispatch: 
-    
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,7 +16,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas datetime requests Pillow basketball_reference_scraper lxml
+          pip install numpy datetime basketball_reference_scraper pandas requests bs4
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
       - name: execute py script
         run: |
