@@ -3049,4 +3049,4 @@
 14/03/2022 Denver_Nuggets 2 
 18/03/2022 Cleveland_Cavaliers 2 
 21/03/2022 Los_Angeles_Lakers 1 
-23/03/2022 Philadelphia_76ers 1 
+23/03/2022 Philadelphia_76ers 2 
