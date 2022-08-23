@@ -3046,4 +3046,4 @@
 04/03/2022 Minnesota_Timberwolves 4 
 11/03/2022 Orlando_Magic 1 
 13/03/2022 Philadelphia_76ers 1 
-14/03/2022 Denver_Nuggets 1 
+14/03/2022 Denver_Nuggets 2 
