@@ -596,7 +596,7 @@ if len(GameIndexes)>0: # if there were games yesterday
         # --- adjust the first lines
         lines[2]=['<img src="'+LOGOS[CurrentHolder]+'" width="100" title="'+TeamName[CurrentHolder]+'"><p style="font-size:20px; font-family: FuturaHeavy;">For '+str(Streak)+' game'+Ss+'.</p>']
         if NextOrNot == 'Next':
-            lines[5]=['<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Pictures/0_GameDay.png" width="1000" title="Next NBA Baton Game">']
+            lines[5]=['<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">']
         else:
             lines[5]=['']
 
