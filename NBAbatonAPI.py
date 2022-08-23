@@ -346,6 +346,7 @@ if len(GameIndexes)>0: # if there were games yesterday
             if HolderScore>ChallengerScore:
                 GameBaton = g[:3]+[Challenger]
                 Situation = 'Same'
+                FormerHolder = Challenger
             elif HolderScore<ChallengerScore:
                 GameBaton = g[:3]+['New']
                 Situation = 'New'
