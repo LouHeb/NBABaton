@@ -3047,4 +3047,4 @@
 11/03/2022 Orlando_Magic 1 
 13/03/2022 Philadelphia_76ers 1 
 14/03/2022 Denver_Nuggets 2 
-18/03/2022 Cleveland_Cavaliers 1 
+18/03/2022 Cleveland_Cavaliers 2 
