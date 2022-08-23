@@ -8,6 +8,10 @@ import os
 
 from basketball_reference_scraper.seasons import get_schedule
 
+def LaSaison(M,Y):
+    if M>=9:return(Y+1)
+    else:return(Y)
+
 Yest = datetime.now() - timedelta(216)
 
 # --- Get the season's last year
