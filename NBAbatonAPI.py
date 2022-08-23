@@ -6,7 +6,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 import requests
 
-from PIL import Image, ImageChops, ImageDraw, ImageFont
+from Pillow import Image, ImageChops, ImageDraw, ImageFont
 import os
 
 from basketball_reference_scraper.seasons import get_schedule
