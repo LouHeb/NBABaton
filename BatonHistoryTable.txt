@@ -3044,14 +3044,3 @@
 12/02/2022 Denver_Nuggets 6
 02/03/2022 Oklahoma_City_Thunder 1
 04/03/2022 Minnesota_Timberwolves 4
-11/03/2022 Orlando_Magic 1
-13/03/2022 Philadelphia_76ers 1
-14/03/2022 Denver_Nuggets 2
-18/03/2022 Cleveland_Cavaliers 2
-21/03/2022 Los_Angeles_Lakers 1
-23/03/2022 Philadelphia_76ers 2
-27/03/2022 Phoenix_Suns 2
-01/04/2022 Memphis_Grizzlies 1
-05/04/2022 Utah_Jazz 2
-08/04/2022 Phoenix_Suns 1
-10/04/2022 Sacramento_Kings 1
