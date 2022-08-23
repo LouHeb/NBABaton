@@ -5,11 +5,11 @@
 import pandas as pd
 from datetime import datetime, timedelta
 import requests
+from basketball_reference_scraper.seasons import get_schedule
 
 from PIL import Image, ImageChops, ImageDraw, ImageFont
 import os
 
-from basketball_reference_scraper.seasons import get_schedule
 
 #---
 #       DICTIONNARIES
