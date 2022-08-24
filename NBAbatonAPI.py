@@ -547,12 +547,14 @@ if len(GameIndexes)>0: # if there were games yesterday
 # --- find the next game with the current holder
 if len(GameIndexes)>0: # if there were games yesterday
     GameId = GameIndexes[-1]
+    NextOrNot = '?'
 else:   # if there were no games yesterday, we find if there will be after
     i = 0
     while i<len(Dates) and datetime.strftime(Dates[-1].to_pydatetime(),"%Y%m%d")<Yest_Nb:
         i+=1
     if i<len(Dates): # there will be after
         GameId = i
+        NextOrNot = '?'
     else:  # there wont be after
         NextOrNot = 'Not'
     
@@ -770,4 +772,3 @@ if NextOrNot == 'Next':  # --- if the holder has another scheduled game
                 file.write(' -> '+p[1]+'-'+p[0]+'@'+p[2])
         file.write('\n')
     file.close() 
-
