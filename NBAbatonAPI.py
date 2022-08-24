@@ -315,8 +315,6 @@ CurrentHolder = TeamAbbr[ReplaceUnderBySpace(BatonHolders[-1][1])]
 Streak = int(BatonHolders[-1][2])
 # --- Get the Big Statslder
 Big_Stats = ReadLeFile('BigStats.txt')    
-
-
     
 if len(GameIndexes)>0: # if there were games yesterday
     # --- Get the Games Overall List
@@ -547,7 +545,10 @@ if len(GameIndexes)>0: # if there were games yesterday
 #  ==>   ------ Check when is the next game -------------
         
 # --- find the next game with the current holder
-GameId = GameIndexes[-1]
+if len(GameIndexes)>0: # if there were games yesterday
+    GameId = GameIndexes[-1]
+else:
+    GameId = 0    
 LeMatch = GameExtractor(d,GameId)
 while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE']):
     GameId+=1
