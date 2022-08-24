@@ -290,6 +290,7 @@ d_PO = get_schedule(Year,True)
 d = pd.concat([d_RS,d_PO],ignore_index=True)
 
 # --- Put the date correctly formated
+Yest_Nb = datetime.strftime(Yesti,"%Y%m%d")
 Yest = datetime.strftime(Yesti,"%d/%m/%Y")
 
 # --- Write the date in a file
@@ -546,42 +547,50 @@ if len(GameIndexes)>0: # if there were games yesterday
 # --- find the next game with the current holder
 if len(GameIndexes)>0: # if there were games yesterday
     GameId = GameIndexes[-1]
-else:
-    GameId = 0    
-LeMatch = GameExtractor(d,GameId)
-while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE']):
-    GameId+=1
+else:   # if there were no games yesterday, we find if there will be after
+    i = 0
+    while i<len(Dates) and datetime.strftime(Dates[-1].to_pydatetime(),"%Y%m%d")<Yest_Nb:
+        i+=1
+    if i<len(Dates): # there will be after
+        GameId = i
+    else:  # there wont be after
+        NextOrNot = 'Not'
+    
+if NextOrNot != 'Not':     # if there will be after, we check if the holder will take part
     LeMatch = GameExtractor(d,GameId)
-print(LeMatch)
-# --- if the holder has another scheduled game
-if GameId < len(d['DATE']):
-    if CurrentHolder==LeMatch[0]:
-        BatonSitu = 'Away'
-        Cont = LeMatch[2]
-    elif CurrentHolder==LeMatch[2]:
-        BatonSitu = 'Home'
-        Cont = LeMatch[0]
-    Date = Lit_Month[LeMatch[1][4:6]]+', '+Lit_Day[LeMatch[1][6:]]
+    while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE']):
+        GameId+=1
+        LeMatch = GameExtractor(d,GameId)
     
-    # find last possession of the Contender
-    LaTeam = 3
-    while Big_Stats[LaTeam][0]!=Cont:LaTeam+=1
-    LastPos = Big_Stats[LaTeam][6]
-    LastPos = Lit_Month[LastPos[4:6]]+' '+Lit_Day[LastPos[6:]]+', '+LastPos[:4]
+    # --- if the holder has another scheduled game
+    if GameId < len(d['DATE']):
+        if CurrentHolder==LeMatch[0]:
+            BatonSitu = 'Away'
+            Cont = LeMatch[2]
+        elif CurrentHolder==LeMatch[2]:
+            BatonSitu = 'Home'
+            Cont = LeMatch[0]
+        Date = Lit_Month[LeMatch[1][4:6]]+', '+Lit_Day[LeMatch[1][6:]]
+        
+        # find last possession of the Contender
+        LaTeam = 3
+        while Big_Stats[LaTeam][0]!=Cont:LaTeam+=1
+        LastPos = Big_Stats[LaTeam][6]
+        LastPos = Lit_Month[LastPos[4:6]]+' '+Lit_Day[LastPos[6:]]+', '+LastPos[:4]
+        
+        os.chdir('Stock')
+        GameDay(Date, LeMatch[0],LeMatch[2],Streak,LastPos,BatonSitu)#,'Playoffs')
+        
+        NewHolders(Cont,LastPos)
+        SameHolders(CurrentHolder,Streak+1)
     
-    os.chdir('Stock')
-    GameDay(Date, LeMatch[0],LeMatch[2],Streak,LastPos,BatonSitu)#,'Playoffs')
-    
-    NewHolders(Cont,LastPos)
-    SameHolders(CurrentHolder,Streak+1)
-
-    os.chdir('..')
-    # --- Write the Situation in a variable
-    NextOrNot = 'Next'          
-else:
-    # --- Write the Situation in a variable
-    NextOrNot = 'Not'    
-    
+        os.chdir('..')
+        # --- Write the Situation in a variable
+        NextOrNot = 'Next'          
+    else:  # if the holder wont have another game
+        # --- Write the Situation in a variable
+        NextOrNot = 'Not'    
+        
 #  ==>  ------ Update the index.m file -------------
     
 # --- Read the actual file    
@@ -638,7 +647,6 @@ else:
         
 file.close()
 
-print(NextOrNot)
 #  ==>  ------ Update the Baton distance -------------
 if NextOrNot == 'Next':  # --- if the holder has another scheduled game
     def FindNeighbors(game,LaList):
