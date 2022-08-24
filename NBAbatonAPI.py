@@ -308,6 +308,7 @@ for i in range(0,len(Dates)):
 YestGames = [GameExtractor(d,index) for index in GameIndexes]
 
 #  ==>   ------ Get the current holder and the Big_Stats list for update the index.m later -------------
+BatonAtStake = False
 # --- Get the NBA holders list
 BatonHolders = ReadLeFile('BatonHistoryTable.txt')  
 # --- Get the current holder and the streak
@@ -328,8 +329,6 @@ if len(GameIndexes)>0: # if there were games yesterday
     WriteLeFile(All_Games_List,'Games_Database.txt')    
     
 #  ==>   ----------- Check if the Baton is at stake -------------
-    
-    BatonAtStake = False
     for g in YestGames:
         if CurrentHolder in [g[0],g[2]]:
             if CurrentHolder == g[0]:
