@@ -307,6 +307,17 @@ for i in range(0,len(Dates)):
 # --- Récuperer les matchs de la nuit derniere
 YestGames = [GameExtractor(d,index) for index in GameIndexes]
 
+#  ==>   ------ Get the current holder and the Big_Stats list for update the index.m later -------------
+# --- Get the NBA holders list
+BatonHolders = ReadLeFile('BatonHistoryTable.txt')  
+# --- Get the current holder and the streak
+CurrentHolder = TeamAbbr[ReplaceUnderBySpace(BatonHolders[-1][1])]
+Streak = int(BatonHolders[-1][2])
+# --- Get the Big Statslder
+Big_Stats = ReadLeFile('BigStats.txt')    
+
+
+    
 if len(GameIndexes)>0: # if there were games yesterday
     # --- Get the Games Overall List
     All_Games_List = ReadLeFile('Games_Database.txt')
@@ -318,15 +329,6 @@ if len(GameIndexes)>0: # if there were games yesterday
     # --- Write the updated file
     WriteLeFile(All_Games_List,'Games_Database.txt')    
     
-#  ==>   ------ Get the current holder -------------
-        
-    # --- Get the NBA holders list
-    BatonHolders = ReadLeFile('BatonHistoryTable.txt')  
-    
-    # --- Get the current holder
-    CurrentHolder = TeamAbbr[ReplaceUnderBySpace(BatonHolders[-1][1])]
-        
-        
 #  ==>   ----------- Check if the Baton is at stake -------------
     
     BatonAtStake = False
@@ -352,8 +354,6 @@ if len(GameIndexes)>0: # if there were games yesterday
                 Situation = 'New'
                 FormerHolder = CurrentHolder
                 CurrentHolder = Challenger          
-    
-                    
             
     if BatonAtStake:
             
@@ -385,8 +385,7 @@ if len(GameIndexes)>0: # if there were games yesterday
         # --- Write the updated file
         WriteLeFile(Baton_Holder_List,'BatonHistoryTable.txt')
         
-        # --- Get the Big Stats and get the line corresponding to the holder
-        Big_Stats = ReadLeFile('BigStats.txt')    
+        # --- Get the line corresponding to the holder
         index = 0
         while Big_Stats[index][0]!=CurrentHolder:index+=1
         
@@ -547,219 +546,219 @@ if len(GameIndexes)>0: # if there were games yesterday
         
 #  ==>   ------ Check when is the next game -------------
         
-        # --- find the next game with the current holder
-        GameId = GameIndexes[-1]
-        LeMatch = GameExtractor(d,GameId)
-        while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE']):
-            GameId+=1
-            LeMatch = GameExtractor(d,GameId)
-        
-        # --- if the holder has another scheduled game
-        if GameId < len(d['DATE']):
-            if CurrentHolder==LeMatch[0]:
-                BatonSitu = 'Away'
-                Cont = LeMatch[2]
-            elif CurrentHolder==LeMatch[2]:
-                BatonSitu = 'Home'
-                Cont = LeMatch[0]
-            Date = Lit_Month[LeMatch[1][4:6]]+', '+Lit_Day[LeMatch[1][6:]]
-            
-            # find last possession of the Contender
-            LaTeam = 3
-            while Big_Stats[LaTeam][0]!=Cont:LaTeam+=1
-            LastPos = Big_Stats[LaTeam][6]
-            LastPos = Lit_Month[LastPos[4:6]]+' '+Lit_Day[LastPos[6:]]+', '+LastPos[:4]
-            
-            os.chdir('Stock')
-            GameDay(Date, LeMatch[0],LeMatch[2],Streak,LastPos,BatonSitu)#,'Playoffs')
-            
-            NewHolders(Cont,LastPos)
-            SameHolders(CurrentHolder,Streak+1)
+# --- find the next game with the current holder
+GameId = GameIndexes[-1]
+LeMatch = GameExtractor(d,GameId)
+while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE']):
+    GameId+=1
+    LeMatch = GameExtractor(d,GameId)
 
-            os.chdir('..')
-            # --- Write the Situation in a variable
-            NextOrNot = 'Next'          
-        else:
-            # --- Write the Situation in a variable
-            NextOrNot = 'Not'    
-            
-#  ==>  ------ Update the index.m file -------------
-            
-        # --- Read the actual file    
-        with open("index.md","r", encoding="utf-8") as f:
-            lines = [line.strip().split("XXX") for line in f]    
-        
-        # -- add an S if many games
-        if Streak==1:Ss = ''
-        else:
-            Ss = 's'
-        
-        # --- adjust the first lines
-        lines[2]=['<img src="'+LOGOS[CurrentHolder]+'" width="100" title="'+TeamName[CurrentHolder]+'"><p style="font-size:20px; font-family: FuturaHeavy;">For '+str(Streak)+' game'+Ss+'.</p>']
-        if NextOrNot == 'Next':
-            lines[5]=['<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">']
-        else:
-            lines[5]=['']
-
-        # --- write the file
-        file = open("index.md","w") 
-        for l in lines[:8]:
-            file.write(l[0]+'\n')    
-        
-        # --- write the Stats table
-        for Team in ActualTeams:
-            # find last possession of the team
-            LaTeam = 3
-            while Big_Stats[LaTeam][0]!=Team:LaTeam+=1
-            LastPos = Big_Stats[LaTeam][6]
-            if LastPos=='Current_holder':
-                file.write('<tr><td style="text-align:center;font-size:13px;">  <img src="'+LOGOS[Team]+'" width="20" title="'+TeamName[Team]+'"></td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][1]+'</td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][2]+'</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>\n')    
-            else:
-                LastPos = Lit_Month[LastPos[4:6]]+' '+Lit_Day[LastPos[6:]]+', '+LastPos[:4]
-                file.write('<tr><td style="text-align:center;font-size:13px;">  <img src="'+LOGOS[Team]+'" width="20" title="'+TeamName[Team]+'"></td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][1]+'</td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][2]+'</td><td style="text-align:center;font-size:13px;">  '+LastPos+'</td></tr>\n')    
-            
-        for l in lines[38:41]:
-            file.write(l[0]+'\n')   
-        
-        
-        # --- write the History table
-        if Situation=='New':
-            Ajd = Lit_Month[Yest[3:5]]+' '+Lit_Day[Yest[:2]]+', '+Yest[6:]
-            file.write('<tr><td style="text-align:center">  '+Ajd+'</td><td style="text-align:center"><img src="'+LOGOS[CurrentHolder]+'" width="30" title="'+TeamName[CurrentHolder]+'"></td><td style="text-align:center"> 1 </td></tr>\n')
-            for l in lines[41:]:
-                file.write(l[0]+'\n')  
-        else:
-            file.write(lines[41][0][:-12]+str(Streak)+lines[41][0][-11:]+'\n')
-            for l in lines[42:]:
-                file.write(l[0]+'\n')              
-
-        file.close()
-
+# --- if the holder has another scheduled game
+if GameId < len(d['DATE']):
+    if CurrentHolder==LeMatch[0]:
+        BatonSitu = 'Away'
+        Cont = LeMatch[2]
+    elif CurrentHolder==LeMatch[2]:
+        BatonSitu = 'Home'
+        Cont = LeMatch[0]
+    Date = Lit_Month[LeMatch[1][4:6]]+', '+Lit_Day[LeMatch[1][6:]]
     
+    # find last possession of the Contender
+    LaTeam = 3
+    while Big_Stats[LaTeam][0]!=Cont:LaTeam+=1
+    LastPos = Big_Stats[LaTeam][6]
+    LastPos = Lit_Month[LastPos[4:6]]+' '+Lit_Day[LastPos[6:]]+', '+LastPos[:4]
+    
+    os.chdir('Stock')
+    GameDay(Date, LeMatch[0],LeMatch[2],Streak,LastPos,BatonSitu)#,'Playoffs')
+    
+    NewHolders(Cont,LastPos)
+    SameHolders(CurrentHolder,Streak+1)
 
-        
+    os.chdir('..')
+    # --- Write the Situation in a variable
+    NextOrNot = 'Next'          
+else:
+    # --- Write the Situation in a variable
+    NextOrNot = 'Not'    
+    
+#  ==>  ------ Update the index.m file -------------
+    
+# --- Read the actual file    
+with open("index.md","r", encoding="utf-8") as f:
+    lines = [line.strip().split("XXX") for line in f]    
+
+# -- add an S if many games
+if Streak==1:Ss = ''
+else:
+    Ss = 's'
+
+# --- adjust the first lines
+lines[2]=['<img src="'+LOGOS[CurrentHolder]+'" width="100" title="'+TeamName[CurrentHolder]+'"><p style="font-size:20px; font-family: FuturaHeavy;">For '+str(Streak)+' game'+Ss+'.</p>']
+if NextOrNot == 'Next':
+    lines[5]=['<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">']
+else:
+    lines[5]=['']
+
+# --- write the file
+file = open("index.md","w") 
+for l in lines[:8]:
+    file.write(l[0]+'\n')    
+
+# --- write the Stats table
+for Team in ActualTeams:
+    # find last possession of the team
+    LaTeam = 3
+    while Big_Stats[LaTeam][0]!=Team:LaTeam+=1
+    LastPos = Big_Stats[LaTeam][6]
+    if LastPos=='Current_holder':
+        file.write('<tr><td style="text-align:center;font-size:13px;">  <img src="'+LOGOS[Team]+'" width="20" title="'+TeamName[Team]+'"></td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][1]+'</td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][2]+'</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>\n')    
+    else:
+        LastPos = Lit_Month[LastPos[4:6]]+' '+Lit_Day[LastPos[6:]]+', '+LastPos[:4]
+        file.write('<tr><td style="text-align:center;font-size:13px;">  <img src="'+LOGOS[Team]+'" width="20" title="'+TeamName[Team]+'"></td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][1]+'</td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][2]+'</td><td style="text-align:center;font-size:13px;">  '+LastPos+'</td></tr>\n')    
+    
+for l in lines[38:41]:
+    file.write(l[0]+'\n')   
+
+
+# --- write the History table
+if Situation=='New':
+    Ajd = Lit_Month[Yest[3:5]]+' '+Lit_Day[Yest[:2]]+', '+Yest[6:]
+    file.write('<tr><td style="text-align:center">  '+Ajd+'</td><td style="text-align:center"><img src="'+LOGOS[CurrentHolder]+'" width="30" title="'+TeamName[CurrentHolder]+'"></td><td style="text-align:center"> 1 </td></tr>\n')
+    for l in lines[41:]:
+        file.write(l[0]+'\n')  
+else:
+    file.write(lines[41][0][:-12]+str(Streak)+lines[41][0][-11:]+'\n')
+    for l in lines[42:]:
+        file.write(l[0]+'\n')              
+
+file.close()
+
+
+
+
 #  ==>  ------ Update the Baton distance -------------
 
 
-        def FindNeighbors(game,LaList):
-            LeReturn =[]
-            counterA = game+1
-            counterB = game+1
-            TeamA = LaList[game][0]
-            TeamB = LaList[game][2]
-            while counterA<len(LaList) and LaList[counterA][0]!=TeamA and LaList[counterA][2]!=TeamA:
-                counterA+=1
-            while counterB<len(LaList) and LaList[counterB][0]!=TeamB and LaList[counterB][2]!=TeamB:
-                counterB+=1
-            
-            if counterA!=len(LaList):
-                if len(LaList[counterA][3])==0:
-                    LaList[counterA][3]=LaList[game][3]+[game]
-                    LeReturn.append(counterA)
-                elif len(LaList[counterA][3])>len(LaList[game][3]+[game]):
-                    LaList[counterA][3]=LaList[game][3]+[game]
-                    LeReturn.append(counterA)
-            if counterB!=len(LaList):
-                if len(LaList[counterB][3])==0:
-                    LaList[counterB][3]=LaList[game][3]+[game]
-                    LeReturn.append(counterB)
-                elif len(LaList[counterB][3])>len(LaList[game][3]+[game]):
-                    LaList[counterB][3]=LaList[game][3]+[game]
-                    LeReturn.append(counterB)
-            return (LeReturn)
+def FindNeighbors(game,LaList):
+    LeReturn =[]
+    counterA = game+1
+    counterB = game+1
+    TeamA = LaList[game][0]
+    TeamB = LaList[game][2]
+    while counterA<len(LaList) and LaList[counterA][0]!=TeamA and LaList[counterA][2]!=TeamA:
+        counterA+=1
+    while counterB<len(LaList) and LaList[counterB][0]!=TeamB and LaList[counterB][2]!=TeamB:
+        counterB+=1
+    
+    if counterA!=len(LaList):
+        if len(LaList[counterA][3])==0:
+            LaList[counterA][3]=LaList[game][3]+[game]
+            LeReturn.append(counterA)
+        elif len(LaList[counterA][3])>len(LaList[game][3]+[game]):
+            LaList[counterA][3]=LaList[game][3]+[game]
+            LeReturn.append(counterA)
+    if counterB!=len(LaList):
+        if len(LaList[counterB][3])==0:
+            LaList[counterB][3]=LaList[game][3]+[game]
+            LeReturn.append(counterB)
+        elif len(LaList[counterB][3])>len(LaList[game][3]+[game]):
+            LaList[counterB][3]=LaList[game][3]+[game]
+            LeReturn.append(counterB)
+    return (LeReturn)
 
-        def IsItGood(team, match,LaList):
-            if LaList[match][0]!=team and LaList[match][2]!=team:
-                return(False)
-            else:
-                return(True)
-                
-        def AfficherParcours(match,LaList):
-            leretour = []
-            for i in LaList[match][3]:
-                leretour.extend([LaList[i][:3]])
-            leretour.extend([LaList[match][:3]])
-            return(leretour)
-            
-        def SortByNbOfGames(Nexts,LaList):
-            PathsLength =[]
-            for j in Nexts:
-                PathsLength.append(len(LaList[j][3]))
-            Z = [x for _,x in sorted(zip(PathsLength,Nexts))] #sort Nexts according to PathsLength items
-            return (Z)
-
-        Teams = ['ATL','BOS', 'BRK', 'CHO', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK',  'OKC', 'ORL', 'PHI', 'PHO', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
-        Paths =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-        PathsHistory =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+def IsItGood(team, match,LaList):
+    if LaList[match][0]!=team and LaList[match][2]!=team:
+        return(False)
+    else:
+        return(True)
         
-        Holder = CurrentHolder
-        Today = int(datetime.strftime(Yesti,"%Y%m%d"))
+def AfficherParcours(match,LaList):
+    leretour = []
+    for i in LaList[match][3]:
+        leretour.extend([LaList[i][:3]])
+    leretour.extend([LaList[match][:3]])
+    return(leretour)
+    
+def SortByNbOfGames(Nexts,LaList):
+    PathsLength =[]
+    for j in Nexts:
+        PathsLength.append(len(LaList[j][3]))
+    Z = [x for _,x in sorted(zip(PathsLength,Nexts))] #sort Nexts according to PathsLength items
+    return (Z)
 
-        # Condition to know if the shorter path is controled by the date or by the nb of game
-        SortByDate = True
+Teams = ['ATL','BOS', 'BRK', 'CHO', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK',  'OKC', 'ORL', 'PHI', 'PHO', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
+Paths =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+PathsHistory =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
 
-        #-------------------------Games List-----------------------------
-        for Team in Teams :
-            Games = []
-            for g in range(0,len(d['DATE'])):
-                Games.append(GameExtractor(d,g)[:3])
-            for g in Games:         #   Add an empty list at the end of each game item
-                g.extend([[]])
+Holder = CurrentHolder
+Today = int(datetime.strftime(Yesti,"%Y%m%d"))
 
-        #-------------------------Main-----------------------------
-            #Find the next game of the holder
-            TodayGame = 0
-            while int(Games[TodayGame][1])<Today:
-                TodayGame+=1
-            while Games[TodayGame][0]!=Holder and Games[TodayGame][2]!=Holder :
-                TodayGame+=1
+# Condition to know if the shorter path is controled by the date or by the nb of game
+SortByDate = True
 
-            game = TodayGame
-            Condition = IsItGood(Team,game,Games)
-                
-            if Condition:
-                Paths[Teams.index(Team)]=AfficherParcours(game,Games)
-                PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
-            else :
-                Next = FindNeighbors(game,Games)
-            #    --
-                if SortByDate:
-                    Next.sort()
-                else:
-                    Next=SortByNbOfGames(Next,Games)
-            #    --
-                item = 0
-                while not Condition and item<len(Next):
-                    game = Next[item]
-                    Next.extend(FindNeighbors(game,Games))
-            #       --
-                    if SortByDate:
-                        Next.sort()
-                    else:
-                        Next=SortByNbOfGames(Next,Games)
-            #       --
-                    Condition = IsItGood(Team,game,Games)
-                    item+=1
-                if Condition:
-                    Paths[Teams.index(Team)]=AfficherParcours(game,Games)
-                    PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
-                else:
-                    Paths[Teams.index(Team)]=["No way!"]
-                    PathsHistory[Teams.index(Team)].append(100)
-            
-        # ------ Write result in a file ------   
-        file = open("DistanceToBaton.txt","w") 
-        for tim in range(0,len(Teams)):
-            file.write(Teams[tim]+' ')      # team name
-            if Paths[tim]==["No way!"]:
-                file.write('X ')            # nb game
-                file.write('X ')            # date
+#-------------------------Games List-----------------------------
+for Team in Teams :
+    Games = []
+    for g in range(0,len(d['DATE'])):
+        Games.append(GameExtractor(d,g)[:3])
+    for g in Games:         #   Add an empty list at the end of each game item
+        g.extend([[]])
+
+#-------------------------Main-----------------------------
+    #Find the next game of the holder
+    TodayGame = 0
+    while int(Games[TodayGame][1])<Today:
+        TodayGame+=1
+    while Games[TodayGame][0]!=Holder and Games[TodayGame][2]!=Holder :
+        TodayGame+=1
+
+    game = TodayGame
+    Condition = IsItGood(Team,game,Games)
+        
+    if Condition:
+        Paths[Teams.index(Team)]=AfficherParcours(game,Games)
+        PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
+    else :
+        Next = FindNeighbors(game,Games)
+    #    --
+        if SortByDate:
+            Next.sort()
+        else:
+            Next=SortByNbOfGames(Next,Games)
+    #    --
+        item = 0
+        while not Condition and item<len(Next):
+            game = Next[item]
+            Next.extend(FindNeighbors(game,Games))
+    #       --
+            if SortByDate:
+                Next.sort()
             else:
-                file.write(str(len(Paths[tim]))+' ')       #nb game
-                LaDate = Paths[tim][-1][1]                # date
-                file.write(LaDate[6:]+'/'+LaDate[4:6]+'/'+LaDate[:4]+' ')
-                for p in Paths[tim]:           # path
-                    file.write(' -> '+p[1]+'-'+p[0]+'@'+p[2])
-            file.write('\n')
-        file.close() 
+                Next=SortByNbOfGames(Next,Games)
+    #       --
+            Condition = IsItGood(Team,game,Games)
+            item+=1
+        if Condition:
+            Paths[Teams.index(Team)]=AfficherParcours(game,Games)
+            PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
+        else:
+            Paths[Teams.index(Team)]=["No way!"]
+            PathsHistory[Teams.index(Team)].append(100)
+    
+# ------ Write result in a file ------   
+file = open("DistanceToBaton.txt","w") 
+for tim in range(0,len(Teams)):
+    file.write(Teams[tim]+' ')      # team name
+    if Paths[tim]==["No way!"]:
+        file.write('X ')            # nb game
+        file.write('X ')            # date
+    else:
+        file.write(str(len(Paths[tim]))+' ')       #nb game
+        LaDate = Paths[tim][-1][1]                # date
+        file.write(LaDate[6:]+'/'+LaDate[4:6]+'/'+LaDate[:4]+' ')
+        for p in Paths[tim]:           # path
+            file.write(' -> '+p[1]+'-'+p[0]+'@'+p[2])
+    file.write('\n')
+file.close() 
 
