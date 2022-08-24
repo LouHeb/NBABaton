@@ -3,7 +3,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="100" title="Sacramento Kings"><p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
 
 </div><br>
-
+<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">
 <br><h2>The Concept</h2><div class="LaBoite"><p>On November 1st, 1946, the first NBA (at the time called the BAA) basketball game took place in Toronto. The New York Knicks defeated the Toronto Huskies and became the first team ever to own the NBA Baton, a fictitious trophy which belongs to the team that beat the current defender.</p><p>Since this date, the Baton is virtually handed off by the NBA teams.</p><p style="font-size:12px">(If the NBA Baton defender disappears, the trophy is given back to the previous defender)</p></div><br><h2>The Stats</h2><table><tr><th style="text-align:center; font-family: FuturaHeavy;font-size:13px;">Teams</th><th style="text-align:center; font-family: FuturaHeavy;font-size:13px;">Longest streak</th><th style="text-align:center; font-family: FuturaHeavy;font-size:13px;">Total nb of Baton games</th><th style="text-align:center; font-family: FuturaHeavy;font-size:13px;">Last time with the Baton</th></tr>
 
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center;font-size:13px;">  11</td><td style="text-align:center;font-size:13px;">  343</td><td style="text-align:center;font-size:13px;">  February 4th, 2022</td></tr>
