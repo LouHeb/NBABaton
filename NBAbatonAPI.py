@@ -638,7 +638,7 @@ else:
         
 file.close()
 
-
+print(NextOrNot)
 #  ==>  ------ Update the Baton distance -------------
 if NextOrNot == 'Next':  # --- if the holder has another scheduled game
     def FindNeighbors(game,LaList):
