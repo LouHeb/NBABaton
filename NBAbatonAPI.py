@@ -552,7 +552,7 @@ LeMatch = GameExtractor(d,GameId)
 while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE']):
     GameId+=1
     LeMatch = GameExtractor(d,GameId)
-
+print(LeMatch)
 # --- if the holder has another scheduled game
 if GameId < len(d['DATE']):
     if CurrentHolder==LeMatch[0]:
