@@ -622,24 +622,25 @@ for l in lines[38:41]:
     file.write(l[0]+'\n')   
 
 
-# --- write the History table
-if Situation=='New':
-    Ajd = Lit_Month[Yest[3:5]]+' '+Lit_Day[Yest[:2]]+', '+Yest[6:]
-    file.write('<tr><td style="text-align:center">  '+Ajd+'</td><td style="text-align:center"><img src="'+LOGOS[CurrentHolder]+'" width="30" title="'+TeamName[CurrentHolder]+'"></td><td style="text-align:center"> 1 </td></tr>\n')
+if BatonAtStake:
+    # --- write the History table
+    if Situation=='New':
+        Ajd = Lit_Month[Yest[3:5]]+' '+Lit_Day[Yest[:2]]+', '+Yest[6:]
+        file.write('<tr><td style="text-align:center">  '+Ajd+'</td><td style="text-align:center"><img src="'+LOGOS[CurrentHolder]+'" width="30" title="'+TeamName[CurrentHolder]+'"></td><td style="text-align:center"> 1 </td></tr>\n')
+        for l in lines[41:]:
+            file.write(l[0]+'\n')  
+    else:
+        file.write(lines[41][0][:-12]+str(Streak)+lines[41][0][-11:]+'\n')
+        for l in lines[42:]:
+            file.write(l[0]+'\n')              
+else:
     for l in lines[41:]:
         file.write(l[0]+'\n')  
-else:
-    file.write(lines[41][0][:-12]+str(Streak)+lines[41][0][-11:]+'\n')
-    for l in lines[42:]:
-        file.write(l[0]+'\n')              
-
+        
 file.close()
 
 
-
-
 #  ==>  ------ Update the Baton distance -------------
-
 
 def FindNeighbors(game,LaList):
     LeReturn =[]
