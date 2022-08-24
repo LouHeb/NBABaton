@@ -640,126 +640,126 @@ file.close()
 
 
 #  ==>  ------ Update the Baton distance -------------
-
-def FindNeighbors(game,LaList):
-    LeReturn =[]
-    counterA = game+1
-    counterB = game+1
-    TeamA = LaList[game][0]
-    TeamB = LaList[game][2]
-    while counterA<len(LaList) and LaList[counterA][0]!=TeamA and LaList[counterA][2]!=TeamA:
-        counterA+=1
-    while counterB<len(LaList) and LaList[counterB][0]!=TeamB and LaList[counterB][2]!=TeamB:
-        counterB+=1
-    
-    if counterA!=len(LaList):
-        if len(LaList[counterA][3])==0:
-            LaList[counterA][3]=LaList[game][3]+[game]
-            LeReturn.append(counterA)
-        elif len(LaList[counterA][3])>len(LaList[game][3]+[game]):
-            LaList[counterA][3]=LaList[game][3]+[game]
-            LeReturn.append(counterA)
-    if counterB!=len(LaList):
-        if len(LaList[counterB][3])==0:
-            LaList[counterB][3]=LaList[game][3]+[game]
-            LeReturn.append(counterB)
-        elif len(LaList[counterB][3])>len(LaList[game][3]+[game]):
-            LaList[counterB][3]=LaList[game][3]+[game]
-            LeReturn.append(counterB)
-    return (LeReturn)
-
-def IsItGood(team, match,LaList):
-    if LaList[match][0]!=team and LaList[match][2]!=team:
-        return(False)
-    else:
-        return(True)
+if NextOrNot == 'Next':  # --- if the holder has another scheduled game
+    def FindNeighbors(game,LaList):
+        LeReturn =[]
+        counterA = game+1
+        counterB = game+1
+        TeamA = LaList[game][0]
+        TeamB = LaList[game][2]
+        while counterA<len(LaList) and LaList[counterA][0]!=TeamA and LaList[counterA][2]!=TeamA:
+            counterA+=1
+        while counterB<len(LaList) and LaList[counterB][0]!=TeamB and LaList[counterB][2]!=TeamB:
+            counterB+=1
         
-def AfficherParcours(match,LaList):
-    leretour = []
-    for i in LaList[match][3]:
-        leretour.extend([LaList[i][:3]])
-    leretour.extend([LaList[match][:3]])
-    return(leretour)
+        if counterA!=len(LaList):
+            if len(LaList[counterA][3])==0:
+                LaList[counterA][3]=LaList[game][3]+[game]
+                LeReturn.append(counterA)
+            elif len(LaList[counterA][3])>len(LaList[game][3]+[game]):
+                LaList[counterA][3]=LaList[game][3]+[game]
+                LeReturn.append(counterA)
+        if counterB!=len(LaList):
+            if len(LaList[counterB][3])==0:
+                LaList[counterB][3]=LaList[game][3]+[game]
+                LeReturn.append(counterB)
+            elif len(LaList[counterB][3])>len(LaList[game][3]+[game]):
+                LaList[counterB][3]=LaList[game][3]+[game]
+                LeReturn.append(counterB)
+        return (LeReturn)
     
-def SortByNbOfGames(Nexts,LaList):
-    PathsLength =[]
-    for j in Nexts:
-        PathsLength.append(len(LaList[j][3]))
-    Z = [x for _,x in sorted(zip(PathsLength,Nexts))] #sort Nexts according to PathsLength items
-    return (Z)
-
-Teams = ['ATL','BOS', 'BRK', 'CHO', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK',  'OKC', 'ORL', 'PHI', 'PHO', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
-Paths =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-PathsHistory =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-
-Holder = CurrentHolder
-Today = int(datetime.strftime(Yesti,"%Y%m%d"))
-
-# Condition to know if the shorter path is controled by the date or by the nb of game
-SortByDate = True
-
-#-------------------------Games List-----------------------------
-for Team in Teams :
-    Games = []
-    for g in range(0,len(d['DATE'])):
-        Games.append(GameExtractor(d,g)[:3])
-    for g in Games:         #   Add an empty list at the end of each game item
-        g.extend([[]])
-
-#-------------------------Main-----------------------------
-    #Find the next game of the holder
-    TodayGame = 0
-    while int(Games[TodayGame][1])<Today:
-        TodayGame+=1
-    while Games[TodayGame][0]!=Holder and Games[TodayGame][2]!=Holder :
-        TodayGame+=1
-
-    game = TodayGame
-    Condition = IsItGood(Team,game,Games)
-        
-    if Condition:
-        Paths[Teams.index(Team)]=AfficherParcours(game,Games)
-        PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
-    else :
-        Next = FindNeighbors(game,Games)
-    #    --
-        if SortByDate:
-            Next.sort()
+    def IsItGood(team, match,LaList):
+        if LaList[match][0]!=team and LaList[match][2]!=team:
+            return(False)
         else:
-            Next=SortByNbOfGames(Next,Games)
-    #    --
-        item = 0
-        while not Condition and item<len(Next):
-            game = Next[item]
-            Next.extend(FindNeighbors(game,Games))
-    #       --
+            return(True)
+            
+    def AfficherParcours(match,LaList):
+        leretour = []
+        for i in LaList[match][3]:
+            leretour.extend([LaList[i][:3]])
+        leretour.extend([LaList[match][:3]])
+        return(leretour)
+        
+    def SortByNbOfGames(Nexts,LaList):
+        PathsLength =[]
+        for j in Nexts:
+            PathsLength.append(len(LaList[j][3]))
+        Z = [x for _,x in sorted(zip(PathsLength,Nexts))] #sort Nexts according to PathsLength items
+        return (Z)
+    
+    Teams = ['ATL','BOS', 'BRK', 'CHO', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK',  'OKC', 'ORL', 'PHI', 'PHO', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
+    Paths =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+    PathsHistory =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+    
+    Holder = CurrentHolder
+    Today = int(datetime.strftime(Yesti,"%Y%m%d"))
+    
+    # Condition to know if the shorter path is controled by the date or by the nb of game
+    SortByDate = True
+    
+    #-------------------------Games List-----------------------------
+    for Team in Teams :
+        Games = []
+        for g in range(0,len(d['DATE'])):
+            Games.append(GameExtractor(d,g)[:3])
+        for g in Games:         #   Add an empty list at the end of each game item
+            g.extend([[]])
+    
+    #-------------------------Main-----------------------------
+        #Find the next game of the holder
+        TodayGame = 0
+        while int(Games[TodayGame][1])<Today:
+            TodayGame+=1
+        while Games[TodayGame][0]!=Holder and Games[TodayGame][2]!=Holder :
+            TodayGame+=1
+    
+        game = TodayGame
+        Condition = IsItGood(Team,game,Games)
+            
+        if Condition:
+            Paths[Teams.index(Team)]=AfficherParcours(game,Games)
+            PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
+        else :
+            Next = FindNeighbors(game,Games)
+        #    --
             if SortByDate:
                 Next.sort()
             else:
                 Next=SortByNbOfGames(Next,Games)
-    #       --
-            Condition = IsItGood(Team,game,Games)
-            item+=1
-        if Condition:
-            Paths[Teams.index(Team)]=AfficherParcours(game,Games)
-            PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
+        #    --
+            item = 0
+            while not Condition and item<len(Next):
+                game = Next[item]
+                Next.extend(FindNeighbors(game,Games))
+        #       --
+                if SortByDate:
+                    Next.sort()
+                else:
+                    Next=SortByNbOfGames(Next,Games)
+        #       --
+                Condition = IsItGood(Team,game,Games)
+                item+=1
+            if Condition:
+                Paths[Teams.index(Team)]=AfficherParcours(game,Games)
+                PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
+            else:
+                Paths[Teams.index(Team)]=["No way!"]
+                PathsHistory[Teams.index(Team)].append(100)
+        
+    # ------ Write result in a file ------   
+    file = open("DistanceToBaton.txt","w") 
+    for tim in range(0,len(Teams)):
+        file.write(Teams[tim]+' ')      # team name
+        if Paths[tim]==["No way!"]:
+            file.write('X ')            # nb game
+            file.write('X ')            # date
         else:
-            Paths[Teams.index(Team)]=["No way!"]
-            PathsHistory[Teams.index(Team)].append(100)
-    
-# ------ Write result in a file ------   
-file = open("DistanceToBaton.txt","w") 
-for tim in range(0,len(Teams)):
-    file.write(Teams[tim]+' ')      # team name
-    if Paths[tim]==["No way!"]:
-        file.write('X ')            # nb game
-        file.write('X ')            # date
-    else:
-        file.write(str(len(Paths[tim]))+' ')       #nb game
-        LaDate = Paths[tim][-1][1]                # date
-        file.write(LaDate[6:]+'/'+LaDate[4:6]+'/'+LaDate[:4]+' ')
-        for p in Paths[tim]:           # path
-            file.write(' -> '+p[1]+'-'+p[0]+'@'+p[2])
-    file.write('\n')
-file.close() 
+            file.write(str(len(Paths[tim]))+' ')       #nb game
+            LaDate = Paths[tim][-1][1]                # date
+            file.write(LaDate[6:]+'/'+LaDate[4:6]+'/'+LaDate[:4]+' ')
+            for p in Paths[tim]:           # path
+                file.write(' -> '+p[1]+'-'+p[0]+'@'+p[2])
+        file.write('\n')
+    file.close() 
 
