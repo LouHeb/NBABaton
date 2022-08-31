@@ -270,505 +270,517 @@ def SameHolders(SameHolder,Newstreak,Round = 'Bleu'):
     dSame.text(((W-w)/2+1,807-h/2+1), msg, font=fnt, fill=(0,0,0))
     FinalSame.save('0_TheSameHolder.png',"PNG")
 
+def date_range(start, end):
+    delta = end - start  # as timedelta
+    days = [start + timedelta(days=i) for i in range(delta.days + 1)]
+    return days[1:]
 
 #---
 #       CODE
 #---
 
+# --- Get Last time run
+with open("date.txt","r", encoding="utf-8") as f:
+    lines = [line.strip().split("XXX") for line in f]
+Last = datetime.strptime(lines[0][0], '%m/%d/%Y')
+    
+# --- Get yesterday date
+Hier = datetime.now() - timedelta(1)
+
+# --- Evaluate the days between last run    
+LesDates = date_range(Last, Hier)
 
 #  ==>   ------ Get yesterday's games and update the overall games list -------------
+for Yesti in LesDates:   
 
-# --- Get yesterday date
-Yesti = datetime.now() - timedelta(1)
+    # --- Get the season's last year
+    Year = LaSaison(int(datetime.strftime(Yesti,"%m")),int(datetime.strftime(Yesti,"%Y")))
 
-# --- Get the season's last year
-Year = LaSaison(int(datetime.strftime(Yesti,"%m")),int(datetime.strftime(Yesti,"%Y")))
+    # --- Request the games of the current season
+    d_RS = get_schedule(Year)
+    d_PO = get_schedule(Year,True)
+    d = pd.concat([d_RS,d_PO],ignore_index=True)
 
-# --- Request the games of the current season
-d_RS = get_schedule(Year)
-d_PO = get_schedule(Year,True)
-d = pd.concat([d_RS,d_PO],ignore_index=True)
+    # --- Put the date correctly formated
+    Yest_Nb = datetime.strftime(Yesti,"%Y%m%d")
+    Yest = datetime.strftime(Yesti,"%d/%m/%Y")
 
-# --- Put the date correctly formated
-Yest_Nb = datetime.strftime(Yesti,"%Y%m%d")
-Yest = datetime.strftime(Yesti,"%d/%m/%Y")
+    # --- Write the date in a file
+    FileDate = open("date.txt","w") 
+    FileDate.write(Yest)
+    FileDate.close()
 
-# --- Write the date in a file
-FileDate = open("date.txt","w") 
-FileDate.write(Yest)
-FileDate.close()
+    # --- Récuperer les indices des matchs de la nuit derniere
+    GameIndexes = []
+    Dates = list(d['DATE'])
+    for i in range(0,len(Dates)):
+        LaDate = datetime.strftime(Dates[i].to_pydatetime(),"%d/%m/%Y")
+        if LaDate==Yest:GameIndexes.append(i)
 
-# --- Récuperer les indices des matchs de la nuit derniere
-GameIndexes = []
-Dates = list(d['DATE'])
-for i in range(0,len(Dates)):
-    LaDate = datetime.strftime(Dates[i].to_pydatetime(),"%d/%m/%Y")
-    if LaDate==Yest:GameIndexes.append(i)
+    # --- Récuperer les matchs de la nuit derniere
+    YestGames = [GameExtractor(d,index) for index in GameIndexes]
 
-# --- Récuperer les matchs de la nuit derniere
-YestGames = [GameExtractor(d,index) for index in GameIndexes]
+    #  ==>   ------ Get the current holder and the Big_Stats list for update the index.m later -------------
+    BatonAtStake = False
+    # --- Get the NBA holders list
+    BatonHolders = ReadLeFile('BatonHistoryTable.txt')  
+    # --- Get the current holder and the streak
+    CurrentHolder = TeamAbbr[ReplaceUnderBySpace(BatonHolders[-1][1])]
+    Streak = int(BatonHolders[-1][2])
+    # --- Get the Big Statslder
+    Big_Stats = ReadLeFile('BigStats.txt')    
 
-#  ==>   ------ Get the current holder and the Big_Stats list for update the index.m later -------------
-BatonAtStake = False
-# --- Get the NBA holders list
-BatonHolders = ReadLeFile('BatonHistoryTable.txt')  
-# --- Get the current holder and the streak
-CurrentHolder = TeamAbbr[ReplaceUnderBySpace(BatonHolders[-1][1])]
-Streak = int(BatonHolders[-1][2])
-# --- Get the Big Statslder
-Big_Stats = ReadLeFile('BigStats.txt')    
-    
-if len(GameIndexes)>0: # if there were games yesterday
-    # --- Get the Games Overall List
-    All_Games_List = ReadLeFile('Games_Database.txt')
-    
-    # --- Add yesterday games
-    for g in YestGames:
-        All_Games_List.append(g)
-        
-    # --- Write the updated file
-    WriteLeFile(All_Games_List,'Games_Database.txt')    
-    
-#  ==>   ----------- Check if the Baton is at stake -------------
-    for g in YestGames:
-        if CurrentHolder in [g[0],g[2]]:
-            if CurrentHolder == g[0]:
-                BatonAtStake = True
-                Challenger = g[2]
-                HolderScore = int(g[3])
-                ChallengerScore = int(g[4])
-            elif CurrentHolder == g[2]:
-                BatonAtStake = True
-                Challenger = g[0]
-                HolderScore = int(g[4])
-                ChallengerScore = int(g[3])
-            
-            if HolderScore>ChallengerScore:
-                GameBaton = g[:3]+[Challenger]
-                Situation = 'Same'
-                FormerHolder = Challenger
-            elif HolderScore<ChallengerScore:
-                GameBaton = g[:3]+['New']
-                Situation = 'New'
-                FormerHolder = CurrentHolder
-                CurrentHolder = Challenger          
-            
-    if BatonAtStake:
-            
-#  ==>   ------ Update List of games with baton at stake -------------
-        
-        # --- Get the Games Baton List
-        Baton_Games_List = ReadLeFile('Games_Baton.txt')
-        
-        # --- Add the game
-        Baton_Games_List.append(GameBaton)
-            
+    if len(GameIndexes)>0: # if there were games yesterday
+        # --- Get the Games Overall List
+        All_Games_List = ReadLeFile('Games_Database.txt')
+
+        # --- Add yesterday games
+        for g in YestGames:
+            All_Games_List.append(g)
+
         # --- Write the updated file
-        WriteLeFile(Baton_Games_List,'Games_Baton.txt')
-    
-                
-#  ==>   ------ Update Baton holder and the list of holders + Bigstats -------------
-        
-        # --- Get the Baton holders List
-        Baton_Holder_List = ReadLeFile('BatonHistoryTable.txt')    
-                
-        # --- Update the list
-        if Situation == 'Same':
-            Streak = int(Baton_Holder_List[-1][-1])+1
-            Baton_Holder_List[-1][-1]=str(Streak)
-        elif Situation == 'New':
-            Streak = 1
-            Baton_Holder_List.append([Yest, ReplaceSpaceByUnder(TeamName[CurrentHolder]), '1'])
-            
-        # --- Write the updated file
-        WriteLeFile(Baton_Holder_List,'BatonHistoryTable.txt')
-        
-        # --- Get the line corresponding to the holder
-        index = 0
-        while Big_Stats[index][0]!=CurrentHolder:index+=1
-        
-        # --- Update the Longest
-        if Streak>int(Big_Stats[index][1]):Big_Stats[index][1]=str(Streak)
-        
-        # --- Update the Cummulate
-        Big_Stats[index][2]=str(int(Big_Stats[index][2])+1)
+        WriteLeFile(All_Games_List,'Games_Database.txt')    
 
-        # --- Update the NbTake
-        if Situation=='New':Big_Stats[index][7]=str(int(Big_Stats[index][7])+1)
-        
-        # --- Update the Avg.Stk
-        Big_Stats[index][3] = str(Arr(int(Big_Stats[index][2])/int(Big_Stats[index][7])))
+    #  ==>   ----------- Check if the Baton is at stake -------------
+        for g in YestGames:
+            if CurrentHolder in [g[0],g[2]]:
+                if CurrentHolder == g[0]:
+                    BatonAtStake = True
+                    Challenger = g[2]
+                    HolderScore = int(g[3])
+                    ChallengerScore = int(g[4])
+                elif CurrentHolder == g[2]:
+                    BatonAtStake = True
+                    Challenger = g[0]
+                    HolderScore = int(g[4])
+                    ChallengerScore = int(g[3])
 
-        # --- Update the 10
-        if Streak==10:Big_Stats[index][4]=str(int(Big_Stats[index][4])+1)
+                if HolderScore>ChallengerScore:
+                    GameBaton = g[:3]+[Challenger]
+                    Situation = 'Same'
+                    FormerHolder = Challenger
+                elif HolderScore<ChallengerScore:
+                    GameBaton = g[:3]+['New']
+                    Situation = 'New'
+                    FormerHolder = CurrentHolder
+                    CurrentHolder = Challenger          
 
-        # --- Update the NbSeas every
-        for t in Big_Stats:
-            if t[0] in Creation:t[8]=str(Year-Creation[t[0]])
+        if BatonAtStake:
 
-        # --- Update the TakePerSeason
-        Big_Stats[index][5] = str(Arr(int(Big_Stats[index][7])/int(Big_Stats[index][8])))
+    #  ==>   ------ Update List of games with baton at stake -------------
 
-        # --- Update the LastHold
-        if Situation=='New':
-            Big_Stats[index][6] = 'Current_holder'
-            index2 = 0
-            while Big_Stats[index2][0]!=FormerHolder:index2+=1
-            Big_Stats[index2][6] = Yest[-4:]+Yest[3:5]+Yest[0:2]
-                        
-        # --- Update the Date at the beginning of the file
-        Big_Stats[0][1]=Yest
-            
-        # --- Write the updated file
-        WriteLeFile(Big_Stats,'BigStats.txt')
-        		
-#  ==>   ------ Update Players Stats in a NBA Baton game -------------
-        
-        # --- GetDataFromWebsites
-        url="https://www.basketball-reference.com/boxscores/"+GameBaton[1]+"0"+GameBaton[2]+".html"
-        SourceCode = requests.get(url).text
+            # --- Get the Games Baton List
+            Baton_Games_List = ReadLeFile('Games_Baton.txt')
 
-        Players = []
-        
-        # --- ExtractData
-        for team in [GameBaton[0],GameBaton[2]]:
-            phraseStart = '''<div id="all_box-'''+str(team)+'''-game-basic" class="table_wrapper">'''
-            phraseEnd = '''Team Totals'''
-                        
-            debut = 1
-            fin = 1
-            while SourceCode[debut:debut+len(phraseStart)]!=phraseStart:
-                debut+=1
-                fin+=1
-            while SourceCode[fin:fin+len(phraseEnd)]!=phraseEnd:
-                fin+=1
-            UsefulSourceCode=SourceCode[debut:fin]
-        
-            # --- Transform the string in a list
-            phrasePlayer = '''"player" csk="'''
-            phrasePoint = '''a-stat="pts" >'''
-            phraseCodePlayer = '''ref="/players/'''
-            letter = 1
-            while letter<len(UsefulSourceCode):
-                if UsefulSourceCode[letter:letter+len(phrasePlayer)]==phrasePlayer:                    
-                    player = []
-                    Name =''
-                    Surname =''
-                    letter+=14
-                    while UsefulSourceCode[letter]!=',':
-                        if UsefulSourceCode[letter]!=' ':
-                            Name+=UsefulSourceCode[letter]
-                        else :
-                            Name+='_'
+            # --- Add the game
+            Baton_Games_List.append(GameBaton)
+
+            # --- Write the updated file
+            WriteLeFile(Baton_Games_List,'Games_Baton.txt')
+
+
+    #  ==>   ------ Update Baton holder and the list of holders + Bigstats -------------
+
+            # --- Get the Baton holders List
+            Baton_Holder_List = ReadLeFile('BatonHistoryTable.txt')    
+
+            # --- Update the list
+            if Situation == 'Same':
+                Streak = int(Baton_Holder_List[-1][-1])+1
+                Baton_Holder_List[-1][-1]=str(Streak)
+            elif Situation == 'New':
+                Streak = 1
+                Baton_Holder_List.append([Yest, ReplaceSpaceByUnder(TeamName[CurrentHolder]), '1'])
+
+            # --- Write the updated file
+            WriteLeFile(Baton_Holder_List,'BatonHistoryTable.txt')
+
+            # --- Get the line corresponding to the holder
+            index = 0
+            while Big_Stats[index][0]!=CurrentHolder:index+=1
+
+            # --- Update the Longest
+            if Streak>int(Big_Stats[index][1]):Big_Stats[index][1]=str(Streak)
+
+            # --- Update the Cummulate
+            Big_Stats[index][2]=str(int(Big_Stats[index][2])+1)
+
+            # --- Update the NbTake
+            if Situation=='New':Big_Stats[index][7]=str(int(Big_Stats[index][7])+1)
+
+            # --- Update the Avg.Stk
+            Big_Stats[index][3] = str(Arr(int(Big_Stats[index][2])/int(Big_Stats[index][7])))
+
+            # --- Update the 10
+            if Streak==10:Big_Stats[index][4]=str(int(Big_Stats[index][4])+1)
+
+            # --- Update the NbSeas every
+            for t in Big_Stats:
+                if t[0] in Creation:t[8]=str(Year-Creation[t[0]])
+
+            # --- Update the TakePerSeason
+            Big_Stats[index][5] = str(Arr(int(Big_Stats[index][7])/int(Big_Stats[index][8])))
+
+            # --- Update the LastHold
+            if Situation=='New':
+                Big_Stats[index][6] = 'Current_holder'
+                index2 = 0
+                while Big_Stats[index2][0]!=FormerHolder:index2+=1
+                Big_Stats[index2][6] = Yest[-4:]+Yest[3:5]+Yest[0:2]
+
+            # --- Update the Date at the beginning of the file
+            Big_Stats[0][1]=Yest
+
+            # --- Write the updated file
+            WriteLeFile(Big_Stats,'BigStats.txt')
+
+    #  ==>   ------ Update Players Stats in a NBA Baton game -------------
+
+            # --- GetDataFromWebsites
+            url="https://www.basketball-reference.com/boxscores/"+GameBaton[1]+"0"+GameBaton[2]+".html"
+            SourceCode = requests.get(url).text
+
+            Players = []
+
+            # --- ExtractData
+            for team in [GameBaton[0],GameBaton[2]]:
+                phraseStart = '''<div id="all_box-'''+str(team)+'''-game-basic" class="table_wrapper">'''
+                phraseEnd = '''Team Totals'''
+
+                debut = 1
+                fin = 1
+                while SourceCode[debut:debut+len(phraseStart)]!=phraseStart:
+                    debut+=1
+                    fin+=1
+                while SourceCode[fin:fin+len(phraseEnd)]!=phraseEnd:
+                    fin+=1
+                UsefulSourceCode=SourceCode[debut:fin]
+
+                # --- Transform the string in a list
+                phrasePlayer = '''"player" csk="'''
+                phrasePoint = '''a-stat="pts" >'''
+                phraseCodePlayer = '''ref="/players/'''
+                letter = 1
+                while letter<len(UsefulSourceCode):
+                    if UsefulSourceCode[letter:letter+len(phrasePlayer)]==phrasePlayer:                    
+                        player = []
+                        Name =''
+                        Surname =''
+                        letter+=14
+                        while UsefulSourceCode[letter]!=',':
+                            if UsefulSourceCode[letter]!=' ':
+                                Name+=UsefulSourceCode[letter]
+                            else :
+                                Name+='_'
+                            letter+=1
                         letter+=1
-                    letter+=1
-                    while UsefulSourceCode[letter]!='"':
-                        if UsefulSourceCode[letter]!=' ':
-                            Surname+=UsefulSourceCode[letter]
-                        else :
-                            Surname+='_'
-                        letter+=1
-                    player.append(Name)
-                    player.append(Surname)
-                elif UsefulSourceCode[letter:letter+len(phraseCodePlayer)]==phraseCodePlayer:
-                    codePlayer =''
-                    letter+=16
-                    while UsefulSourceCode[letter]!='.':
-                        codePlayer+=UsefulSourceCode[letter]
-                        letter+=1
-                    player.append(codePlayer)
-                elif UsefulSourceCode[letter:letter+len(phrasePoint)]==phrasePoint:
+                        while UsefulSourceCode[letter]!='"':
+                            if UsefulSourceCode[letter]!=' ':
+                                Surname+=UsefulSourceCode[letter]
+                            else :
+                                Surname+='_'
+                            letter+=1
+                        player.append(Name)
+                        player.append(Surname)
+                    elif UsefulSourceCode[letter:letter+len(phraseCodePlayer)]==phraseCodePlayer:
+                        codePlayer =''
+                        letter+=16
+                        while UsefulSourceCode[letter]!='.':
+                            codePlayer+=UsefulSourceCode[letter]
+                            letter+=1
+                        player.append(codePlayer)
+                    elif UsefulSourceCode[letter:letter+len(phrasePoint)]==phrasePoint:
 
-                    points =''
-                    letter+=14
-                    while UsefulSourceCode[letter]!='<':
-                        points+=UsefulSourceCode[letter]
-                        letter+=1
-                    player.append(points)
-                    player.append(GameBaton[1])
-                    player.append(team)
-                    if team == CurrentHolder:player.append('1')  # 1 means game holding the baton
-                    elif team == FormerHolder:player.append('0')  # 0 = you have lost the bato
+                        points =''
+                        letter+=14
+                        while UsefulSourceCode[letter]!='<':
+                            points+=UsefulSourceCode[letter]
+                            letter+=1
+                        player.append(points)
+                        player.append(GameBaton[1])
+                        player.append(team)
+                        if team == CurrentHolder:player.append('1')  # 1 means game holding the baton
+                        elif team == FormerHolder:player.append('0')  # 0 = you have lost the bato
+                        else:
+                            player.append('2')                # 2 means missed-opportunity game
+                        Players.append(player)
                     else:
-                        player.append('2')                # 2 means missed-opportunity game
-                    Players.append(player)
-                else:
-                    letter+=1
+                        letter+=1
 
 
-        # --- Get the List of this year players stats
-        This_Year_Pl_Stats_List = ReadLeFile('PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Year)+'.txt')    
+            # --- Get the List of this year players stats
+            This_Year_Pl_Stats_List = ReadLeFile('PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Year)+'.txt')    
 
-        # --- Update the List of this year players stats
-        for p in Players: This_Year_Pl_Stats_List.append(p)
-            
-        # --- Write the updated file
-        WriteLeFile(This_Year_Pl_Stats_List,'PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Year)+'.txt')
-        
-        # --- Get the List of TOTAL players stats
-        Total_Pl_Stats_List = ReadLeFile('PlayerStatsAvg.txt')    
-        
-        for LeJoueur in Players:
-        # --- Check if the player already played for the baton
-            if LeJoueur[2] not in [x[2] for x in Total_Pl_Stats_List[2:]]:
-                Total_Pl_Stats_List.append([LeJoueur[1], LeJoueur[0], LeJoueur[2], '0', '0', 'XXXXXXXX', '0', '0', '0'])
-            
-        # --- Get the line corresponding to the player
-            index = 2
-            while Total_Pl_Stats_List[index][2]!=LeJoueur[2]:index+=1
-       
-        # --- Update the Best_Scoring
-            if int(LeJoueur[3])>int(Total_Pl_Stats_List[index][4]):
-                Total_Pl_Stats_List[index][4]=LeJoueur[3]
-        # --- Update the BestSc_Date
-                Total_Pl_Stats_List[index][5]=Yest[-4:]+Yest[3:5]+Yest[0:2]
-        
-        # --- Update the Games_played
-            Total_Pl_Stats_List[index][6]=str(int(Total_Pl_Stats_List[index][6])+1)
+            # --- Update the List of this year players stats
+            for p in Players: This_Year_Pl_Stats_List.append(p)
 
-        # --- Update the Games_w_Baton
-            if LeJoueur[6]=='1':Total_Pl_Stats_List[index][7]=str(int(Total_Pl_Stats_List[index][7])+1)
+            # --- Write the updated file
+            WriteLeFile(This_Year_Pl_Stats_List,'PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Year)+'.txt')
 
-        # --- Update the Missed_Opportunity
-            elif LeJoueur[6]=='2':Total_Pl_Stats_List[index][8]=str(int(Total_Pl_Stats_List[index][8])+1)
+            # --- Get the List of TOTAL players stats
+            Total_Pl_Stats_List = ReadLeFile('PlayerStatsAvg.txt')    
 
-        # --- Update the Pts/game
-            Total_Pl_Stats_List[index][3]= str((float(Total_Pl_Stats_List[index][3])*(int(Total_Pl_Stats_List[index][6])-1)+int(LeJoueur[3]))/int(Total_Pl_Stats_List[index][6]))
-                        
-        # --- Update the Date at the beginning of the file
-        Total_Pl_Stats_List[0][1]=Yest
-            
-        # --- Write the updated file
-        WriteLeFile(Total_Pl_Stats_List,'PlayerStatsAvg.txt')
-        
-        
-#  ==>   ------ Check when is the next game -------------
-        
-# --- find the next game with the current holder
-if len(GameIndexes)>0: # if there were games yesterday
-    GameId = GameIndexes[-1]
-    NextOrNot = '?'
-else:   # if there were no games yesterday, we find if there will be after
-    i = 0
-    while i<len(Dates) and datetime.strftime(Dates[-1].to_pydatetime(),"%Y%m%d")<Yest_Nb:
-        i+=1
-    if i<len(Dates): # there will be after
-        GameId = i
+            for LeJoueur in Players:
+            # --- Check if the player already played for the baton
+                if LeJoueur[2] not in [x[2] for x in Total_Pl_Stats_List[2:]]:
+                    Total_Pl_Stats_List.append([LeJoueur[1], LeJoueur[0], LeJoueur[2], '0', '0', 'XXXXXXXX', '0', '0', '0'])
+
+            # --- Get the line corresponding to the player
+                index = 2
+                while Total_Pl_Stats_List[index][2]!=LeJoueur[2]:index+=1
+
+            # --- Update the Best_Scoring
+                if int(LeJoueur[3])>int(Total_Pl_Stats_List[index][4]):
+                    Total_Pl_Stats_List[index][4]=LeJoueur[3]
+            # --- Update the BestSc_Date
+                    Total_Pl_Stats_List[index][5]=Yest[-4:]+Yest[3:5]+Yest[0:2]
+
+            # --- Update the Games_played
+                Total_Pl_Stats_List[index][6]=str(int(Total_Pl_Stats_List[index][6])+1)
+
+            # --- Update the Games_w_Baton
+                if LeJoueur[6]=='1':Total_Pl_Stats_List[index][7]=str(int(Total_Pl_Stats_List[index][7])+1)
+
+            # --- Update the Missed_Opportunity
+                elif LeJoueur[6]=='2':Total_Pl_Stats_List[index][8]=str(int(Total_Pl_Stats_List[index][8])+1)
+
+            # --- Update the Pts/game
+                Total_Pl_Stats_List[index][3]= str((float(Total_Pl_Stats_List[index][3])*(int(Total_Pl_Stats_List[index][6])-1)+int(LeJoueur[3]))/int(Total_Pl_Stats_List[index][6]))
+
+            # --- Update the Date at the beginning of the file
+            Total_Pl_Stats_List[0][1]=Yest
+
+            # --- Write the updated file
+            WriteLeFile(Total_Pl_Stats_List,'PlayerStatsAvg.txt')
+
+
+    #  ==>   ------ Check when is the next game -------------
+
+    # --- find the next game with the current holder
+    if len(GameIndexes)>0: # if there were games yesterday
+        GameId = GameIndexes[-1]
         NextOrNot = '?'
-    else:  # there wont be after
-        NextOrNot = 'Not'
-    
-if NextOrNot != 'Not':     # if there will be after, we check if the holder will take part
-    LeMatch = GameExtractor(d,GameId)
-    while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE']):
-        GameId+=1
+    else:   # if there were no games yesterday, we find if there will be after
+        i = 0
+        while i<len(Dates) and datetime.strftime(Dates[-1].to_pydatetime(),"%Y%m%d")<Yest_Nb:
+            i+=1
+        if i<len(Dates): # there will be after
+            GameId = i
+            NextOrNot = '?'
+        else:  # there wont be after
+            NextOrNot = 'Not'
+
+    if NextOrNot != 'Not':     # if there will be after, we check if the holder will take part
         LeMatch = GameExtractor(d,GameId)
-    
-    # --- if the holder has another scheduled game
-    if GameId < len(d['DATE']):
-        if CurrentHolder==LeMatch[0]:
-            BatonSitu = 'Away'
-            Cont = LeMatch[2]
-        elif CurrentHolder==LeMatch[2]:
-            BatonSitu = 'Home'
-            Cont = LeMatch[0]
-        Date = Lit_Month[LeMatch[1][4:6]]+', '+Lit_Day[LeMatch[1][6:]]
-        
-        # find last possession of the Contender
-        LaTeam = 3
-        while Big_Stats[LaTeam][0]!=Cont:LaTeam+=1
-        LastPos = Big_Stats[LaTeam][6]
-        LastPos = Lit_Month[LastPos[4:6]]+' '+Lit_Day[LastPos[6:]]+', '+LastPos[:4]
-        
-        os.chdir('Stock')
-        GameDay(Date, LeMatch[0],LeMatch[2],Streak,LastPos,BatonSitu)#,'Playoffs')
-        
-        NewHolders(Cont,LastPos)
-        SameHolders(CurrentHolder,Streak+1)
-    
-        os.chdir('..')
-        # --- Write the Situation in a variable
-        NextOrNot = 'Next'          
-    else:  # if the holder wont have another game
-        # --- Write the Situation in a variable
-        NextOrNot = 'Not'    
-        
-#  ==>  ------ Update the index.m file -------------
-    
-# --- Read the actual file    
-with open("index.md","r", encoding="utf-8") as f:
-    lines = [line.strip().split("XXX") for line in f]    
+        while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE']):
+            GameId+=1
+            LeMatch = GameExtractor(d,GameId)
 
-# -- add an S if many games
-if Streak==1:Ss = ''
-else:
-    Ss = 's'
+        # --- if the holder has another scheduled game
+        if GameId < len(d['DATE']):
+            if CurrentHolder==LeMatch[0]:
+                BatonSitu = 'Away'
+                Cont = LeMatch[2]
+            elif CurrentHolder==LeMatch[2]:
+                BatonSitu = 'Home'
+                Cont = LeMatch[0]
+            Date = Lit_Month[LeMatch[1][4:6]]+', '+Lit_Day[LeMatch[1][6:]]
 
-# --- adjust the first lines
-lines[2]=['<img src="'+LOGOS[CurrentHolder]+'" width="100" title="'+TeamName[CurrentHolder]+'"><p style="font-size:20px; font-family: FuturaHeavy;">For '+str(Streak)+' game'+Ss+'.</p>']
-if NextOrNot == 'Next':
-    lines[5]=['<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">']
-else:
-    lines[5]=['']
+            # find last possession of the Contender
+            LaTeam = 3
+            while Big_Stats[LaTeam][0]!=Cont:LaTeam+=1
+            LastPos = Big_Stats[LaTeam][6]
+            LastPos = Lit_Month[LastPos[4:6]]+' '+Lit_Day[LastPos[6:]]+', '+LastPos[:4]
 
-# --- write the file
-file = open("index.md","w") 
-for l in lines[:8]:
-    file.write(l[0]+'\n')    
+            os.chdir('Stock')
+            GameDay(Date, LeMatch[0],LeMatch[2],Streak,LastPos,BatonSitu)#,'Playoffs')
 
-# --- write the Stats table
-for Team in ActualTeams:
-    # find last possession of the team
-    LaTeam = 3
-    while Big_Stats[LaTeam][0]!=Team:LaTeam+=1
-    LastPos = Big_Stats[LaTeam][6]
-    if LastPos=='Current_holder':
-        file.write('<tr><td style="text-align:center;font-size:13px;">  <img src="'+LOGOS[Team]+'" width="20" title="'+TeamName[Team]+'"></td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][1]+'</td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][2]+'</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>\n')    
+            NewHolders(Cont,LastPos)
+            SameHolders(CurrentHolder,Streak+1)
+
+            os.chdir('..')
+            # --- Write the Situation in a variable
+            NextOrNot = 'Next'          
+        else:  # if the holder wont have another game
+            # --- Write the Situation in a variable
+            NextOrNot = 'Not'    
+
+    #  ==>  ------ Update the index.m file -------------
+
+    # --- Read the actual file    
+    with open("index.md","r", encoding="utf-8") as f:
+        lines = [line.strip().split("XXX") for line in f]    
+
+    # -- add an S if many games
+    if Streak==1:Ss = ''
     else:
-        LastPos = Lit_Month[LastPos[4:6]]+' '+Lit_Day[LastPos[6:]]+', '+LastPos[:4]
-        file.write('<tr><td style="text-align:center;font-size:13px;">  <img src="'+LOGOS[Team]+'" width="20" title="'+TeamName[Team]+'"></td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][1]+'</td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][2]+'</td><td style="text-align:center;font-size:13px;">  '+LastPos+'</td></tr>\n')    
-    
-for l in lines[38:41]:
-    file.write(l[0]+'\n')   
+        Ss = 's'
+
+    # --- adjust the first lines
+    lines[2]=['<img src="'+LOGOS[CurrentHolder]+'" width="100" title="'+TeamName[CurrentHolder]+'"><p style="font-size:20px; font-family: FuturaHeavy;">For '+str(Streak)+' game'+Ss+'.</p>']
+    if NextOrNot == 'Next':
+        lines[5]=['<img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">']
+    else:
+        lines[5]=['']
+
+    # --- write the file
+    file = open("index.md","w") 
+    for l in lines[:8]:
+        file.write(l[0]+'\n')    
+
+    # --- write the Stats table
+    for Team in ActualTeams:
+        # find last possession of the team
+        LaTeam = 3
+        while Big_Stats[LaTeam][0]!=Team:LaTeam+=1
+        LastPos = Big_Stats[LaTeam][6]
+        if LastPos=='Current_holder':
+            file.write('<tr><td style="text-align:center;font-size:13px;">  <img src="'+LOGOS[Team]+'" width="20" title="'+TeamName[Team]+'"></td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][1]+'</td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][2]+'</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>\n')    
+        else:
+            LastPos = Lit_Month[LastPos[4:6]]+' '+Lit_Day[LastPos[6:]]+', '+LastPos[:4]
+            file.write('<tr><td style="text-align:center;font-size:13px;">  <img src="'+LOGOS[Team]+'" width="20" title="'+TeamName[Team]+'"></td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][1]+'</td><td style="text-align:center;font-size:13px;">  '+Big_Stats[LaTeam][2]+'</td><td style="text-align:center;font-size:13px;">  '+LastPos+'</td></tr>\n')    
+
+    for l in lines[38:41]:
+        file.write(l[0]+'\n')   
 
 
-if BatonAtStake:
-    # --- write the History table
-    if Situation=='New':
-        Ajd = Lit_Month[Yest[3:5]]+' '+Lit_Day[Yest[:2]]+', '+Yest[6:]
-        file.write('<tr><td style="text-align:center">  '+Ajd+'</td><td style="text-align:center"><img src="'+LOGOS[CurrentHolder]+'" width="30" title="'+TeamName[CurrentHolder]+'"></td><td style="text-align:center"> 1 </td></tr>\n')
+    if BatonAtStake:
+        # --- write the History table
+        if Situation=='New':
+            Ajd = Lit_Month[Yest[3:5]]+' '+Lit_Day[Yest[:2]]+', '+Yest[6:]
+            file.write('<tr><td style="text-align:center">  '+Ajd+'</td><td style="text-align:center"><img src="'+LOGOS[CurrentHolder]+'" width="30" title="'+TeamName[CurrentHolder]+'"></td><td style="text-align:center"> 1 </td></tr>\n')
+            for l in lines[41:]:
+                file.write(l[0]+'\n')  
+        else:
+            file.write(lines[41][0][:-12]+str(Streak)+lines[41][0][-11:]+'\n')
+            for l in lines[42:]:
+                file.write(l[0]+'\n')              
+    else:
         for l in lines[41:]:
             file.write(l[0]+'\n')  
-    else:
-        file.write(lines[41][0][:-12]+str(Streak)+lines[41][0][-11:]+'\n')
-        for l in lines[42:]:
-            file.write(l[0]+'\n')              
-else:
-    for l in lines[41:]:
-        file.write(l[0]+'\n')  
-        
-file.close()
 
-#  ==>  ------ Update the Baton distance -------------
-if NextOrNot == 'Next':  # --- if the holder has another scheduled game
-    def FindNeighbors(game,LaList):
-        LeReturn =[]
-        counterA = game+1
-        counterB = game+1
-        TeamA = LaList[game][0]
-        TeamB = LaList[game][2]
-        while counterA<len(LaList) and LaList[counterA][0]!=TeamA and LaList[counterA][2]!=TeamA:
-            counterA+=1
-        while counterB<len(LaList) and LaList[counterB][0]!=TeamB and LaList[counterB][2]!=TeamB:
-            counterB+=1
-        
-        if counterA!=len(LaList):
-            if len(LaList[counterA][3])==0:
-                LaList[counterA][3]=LaList[game][3]+[game]
-                LeReturn.append(counterA)
-            elif len(LaList[counterA][3])>len(LaList[game][3]+[game]):
-                LaList[counterA][3]=LaList[game][3]+[game]
-                LeReturn.append(counterA)
-        if counterB!=len(LaList):
-            if len(LaList[counterB][3])==0:
-                LaList[counterB][3]=LaList[game][3]+[game]
-                LeReturn.append(counterB)
-            elif len(LaList[counterB][3])>len(LaList[game][3]+[game]):
-                LaList[counterB][3]=LaList[game][3]+[game]
-                LeReturn.append(counterB)
-        return (LeReturn)
-    
-    def IsItGood(team, match,LaList):
-        if LaList[match][0]!=team and LaList[match][2]!=team:
-            return(False)
-        else:
-            return(True)
-            
-    def AfficherParcours(match,LaList):
-        leretour = []
-        for i in LaList[match][3]:
-            leretour.extend([LaList[i][:3]])
-        leretour.extend([LaList[match][:3]])
-        return(leretour)
-        
-    def SortByNbOfGames(Nexts,LaList):
-        PathsLength =[]
-        for j in Nexts:
-            PathsLength.append(len(LaList[j][3]))
-        Z = [x for _,x in sorted(zip(PathsLength,Nexts))] #sort Nexts according to PathsLength items
-        return (Z)
-    
-    Teams = ['ATL','BOS', 'BRK', 'CHO', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK',  'OKC', 'ORL', 'PHI', 'PHO', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
-    Paths =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-    PathsHistory =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
-    
-    Holder = CurrentHolder
-    Today = int(datetime.strftime(Yesti,"%Y%m%d"))
-    
-    # Condition to know if the shorter path is controled by the date or by the nb of game
-    SortByDate = True
-    
-    #-------------------------Games List-----------------------------
-    for Team in Teams :
-        Games = []
-        for g in range(0,len(d['DATE'])):
-            Games.append(GameExtractor(d,g)[:3])
-        for g in Games:         #   Add an empty list at the end of each game item
-            g.extend([[]])
-    
-    #-------------------------Main-----------------------------
-        #Find the next game of the holder
-        TodayGame = 0
-        while int(Games[TodayGame][1])<Today:
-            TodayGame+=1
-        while Games[TodayGame][0]!=Holder and Games[TodayGame][2]!=Holder :
-            TodayGame+=1
-    
-        game = TodayGame
-        Condition = IsItGood(Team,game,Games)
-            
-        if Condition:
-            Paths[Teams.index(Team)]=AfficherParcours(game,Games)
-            PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
-        else :
-            Next = FindNeighbors(game,Games)
-        #    --
-            if SortByDate:
-                Next.sort()
+    file.close()
+
+    #  ==>  ------ Update the Baton distance -------------
+    if NextOrNot == 'Next':  # --- if the holder has another scheduled game
+        def FindNeighbors(game,LaList):
+            LeReturn =[]
+            counterA = game+1
+            counterB = game+1
+            TeamA = LaList[game][0]
+            TeamB = LaList[game][2]
+            while counterA<len(LaList) and LaList[counterA][0]!=TeamA and LaList[counterA][2]!=TeamA:
+                counterA+=1
+            while counterB<len(LaList) and LaList[counterB][0]!=TeamB and LaList[counterB][2]!=TeamB:
+                counterB+=1
+
+            if counterA!=len(LaList):
+                if len(LaList[counterA][3])==0:
+                    LaList[counterA][3]=LaList[game][3]+[game]
+                    LeReturn.append(counterA)
+                elif len(LaList[counterA][3])>len(LaList[game][3]+[game]):
+                    LaList[counterA][3]=LaList[game][3]+[game]
+                    LeReturn.append(counterA)
+            if counterB!=len(LaList):
+                if len(LaList[counterB][3])==0:
+                    LaList[counterB][3]=LaList[game][3]+[game]
+                    LeReturn.append(counterB)
+                elif len(LaList[counterB][3])>len(LaList[game][3]+[game]):
+                    LaList[counterB][3]=LaList[game][3]+[game]
+                    LeReturn.append(counterB)
+            return (LeReturn)
+
+        def IsItGood(team, match,LaList):
+            if LaList[match][0]!=team and LaList[match][2]!=team:
+                return(False)
             else:
-                Next=SortByNbOfGames(Next,Games)
-        #    --
-            item = 0
-            while not Condition and item<len(Next):
-                game = Next[item]
-                Next.extend(FindNeighbors(game,Games))
-        #       --
+                return(True)
+
+        def AfficherParcours(match,LaList):
+            leretour = []
+            for i in LaList[match][3]:
+                leretour.extend([LaList[i][:3]])
+            leretour.extend([LaList[match][:3]])
+            return(leretour)
+
+        def SortByNbOfGames(Nexts,LaList):
+            PathsLength =[]
+            for j in Nexts:
+                PathsLength.append(len(LaList[j][3]))
+            Z = [x for _,x in sorted(zip(PathsLength,Nexts))] #sort Nexts according to PathsLength items
+            return (Z)
+
+        Teams = ['ATL','BOS', 'BRK', 'CHO', 'CHI', 'CLE', 'DAL', 'DEN', 'DET', 'GSW', 'HOU', 'IND', 'LAC', 'LAL', 'MEM', 'MIA', 'MIL', 'MIN', 'NOP', 'NYK',  'OKC', 'ORL', 'PHI', 'PHO', 'POR', 'SAC', 'SAS', 'TOR', 'UTA', 'WAS']
+        Paths =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+        PathsHistory =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
+
+        Holder = CurrentHolder
+        Today = int(datetime.strftime(Yesti,"%Y%m%d"))
+
+        # Condition to know if the shorter path is controled by the date or by the nb of game
+        SortByDate = True
+
+        #-------------------------Games List-----------------------------
+        for Team in Teams :
+            Games = []
+            for g in range(0,len(d['DATE'])):
+                Games.append(GameExtractor(d,g)[:3])
+            for g in Games:         #   Add an empty list at the end of each game item
+                g.extend([[]])
+
+        #-------------------------Main-----------------------------
+            #Find the next game of the holder
+            TodayGame = 0
+            while int(Games[TodayGame][1])<Today:
+                TodayGame+=1
+            while Games[TodayGame][0]!=Holder and Games[TodayGame][2]!=Holder :
+                TodayGame+=1
+
+            game = TodayGame
+            Condition = IsItGood(Team,game,Games)
+
+            if Condition:
+                Paths[Teams.index(Team)]=AfficherParcours(game,Games)
+                PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
+            else :
+                Next = FindNeighbors(game,Games)
+            #    --
                 if SortByDate:
                     Next.sort()
                 else:
                     Next=SortByNbOfGames(Next,Games)
-        #       --
-                Condition = IsItGood(Team,game,Games)
-                item+=1
-            if Condition:
-                Paths[Teams.index(Team)]=AfficherParcours(game,Games)
-                PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
+            #    --
+                item = 0
+                while not Condition and item<len(Next):
+                    game = Next[item]
+                    Next.extend(FindNeighbors(game,Games))
+            #       --
+                    if SortByDate:
+                        Next.sort()
+                    else:
+                        Next=SortByNbOfGames(Next,Games)
+            #       --
+                    Condition = IsItGood(Team,game,Games)
+                    item+=1
+                if Condition:
+                    Paths[Teams.index(Team)]=AfficherParcours(game,Games)
+                    PathsHistory[Teams.index(Team)].append(len(Paths[Teams.index(Team)]))
+                else:
+                    Paths[Teams.index(Team)]=["No way!"]
+                    PathsHistory[Teams.index(Team)].append(100)
+
+        # ------ Write result in a file ------   
+        file = open("DistanceToBaton.txt","w") 
+        for tim in range(0,len(Teams)):
+            file.write(Teams[tim]+' ')      # team name
+            if Paths[tim]==["No way!"]:
+                file.write('X ')            # nb game
+                file.write('X ')            # date
             else:
-                Paths[Teams.index(Team)]=["No way!"]
-                PathsHistory[Teams.index(Team)].append(100)
-        
-    # ------ Write result in a file ------   
-    file = open("DistanceToBaton.txt","w") 
-    for tim in range(0,len(Teams)):
-        file.write(Teams[tim]+' ')      # team name
-        if Paths[tim]==["No way!"]:
-            file.write('X ')            # nb game
-            file.write('X ')            # date
-        else:
-            file.write(str(len(Paths[tim]))+' ')       #nb game
-            LaDate = Paths[tim][-1][1]                # date
-            file.write(LaDate[6:]+'/'+LaDate[4:6]+'/'+LaDate[:4]+' ')
-            for p in Paths[tim]:           # path
-                file.write(' -> '+p[1]+'-'+p[0]+'@'+p[2])
-        file.write('\n')
-    file.close() 
+                file.write(str(len(Paths[tim]))+' ')       #nb game
+                LaDate = Paths[tim][-1][1]                # date
+                file.write(LaDate[6:]+'/'+LaDate[4:6]+'/'+LaDate[:4]+' ')
+                for p in Paths[tim]:           # path
+                    file.write(' -> '+p[1]+'-'+p[0]+'@'+p[2])
+            file.write('\n')
+        file.close() 
