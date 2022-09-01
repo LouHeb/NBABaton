@@ -282,7 +282,7 @@ def date_range(start, end):
 # --- Get Last time run
 with open("date.txt","r", encoding="utf-8") as f:
     lines = [line.strip().split("XXX") for line in f]
-Last = datetime.strptime(lines[0][0], '%m/%d/%Y')
+Last = datetime.strptime(lines[0][0], '%d/%m/%Y')
     
 # --- Get yesterday date
 Hier = datetime.now() - timedelta(1)
