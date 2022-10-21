@@ -84,8 +84,11 @@ def LaSaison(M,Y):
     if M>=9:return(Y+1)
     else:return(Y)
 
-def GameExtractor(LeGet,Num):
-    return([TeamAbbr[LeGet['VISITOR'][Num]],datetime.strftime(LeGet['DATE'][Num].to_pydatetime(),"%Y%m%d"),TeamAbbr[LeGet['HOME'][Num]],str(LeGet['VISITOR_PTS'][Num]),str(LeGet['HOME_PTS'][Num])])
+def GameExtractor(LeGet,Num,IsNext='No'):
+    if IsNext=='Next':
+        return([TeamAbbr[LeGet['VISITOR'][Num]],datetime.strftime(LeGet['DATE'][Num].to_pydatetime(),"%Y%m%d"),TeamAbbr[LeGet['HOME'][Num]]])
+    elif IsNext=='No':
+        return([TeamAbbr[LeGet['VISITOR'][Num]],datetime.strftime(LeGet['DATE'][Num].to_pydatetime(),"%Y%m%d"),TeamAbbr[LeGet['HOME'][Num]],str(int(LeGet['VISITOR_PTS'][Num])),str(int(LeGet['HOME_PTS'][Num]))])
 
 
 def ReadLeFile(name):
@@ -509,13 +512,13 @@ for Yesti in LesDates:
 
 
             # --- Get the List of this year players stats
-            This_Year_Pl_Stats_List = ReadLeFile('PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Year)+'.txt')    
+            This_Year_Pl_Stats_List = ReadLeFile('PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Yest[-4:])+'.txt')    
 
             # --- Update the List of this year players stats
             for p in Players: This_Year_Pl_Stats_List.append(p)
 
             # --- Write the updated file
-            WriteLeFile(This_Year_Pl_Stats_List,'PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Year)+'.txt')
+            WriteLeFile(This_Year_Pl_Stats_List,'PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Yest[-4:])+'.txt')
 
             # --- Get the List of TOTAL players stats
             Total_Pl_Stats_List = ReadLeFile('PlayerStatsAvg.txt')    
@@ -571,10 +574,11 @@ for Yesti in LesDates:
             NextOrNot = 'Not'
 
     if NextOrNot != 'Not':     # if there will be after, we check if the holder will take part
-        LeMatch = GameExtractor(d,GameId)
+        GameId += 1
+        LeMatch = GameExtractor(d,GameId,'Next')
         while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE']):
             GameId+=1
-            LeMatch = GameExtractor(d,GameId)
+            LeMatch = GameExtractor(d,GameId,'Next')
 
         # --- if the holder has another scheduled game
         if GameId < len(d['DATE']):
@@ -724,7 +728,7 @@ for Yesti in LesDates:
         for Team in Teams :
             Games = []
             for g in range(0,len(d['DATE'])):
-                Games.append(GameExtractor(d,g)[:3])
+                Games.append(GameExtractor(d,g,'Next'))
             for g in Games:         #   Add an empty list at the end of each game item
                 g.extend([[]])
 
