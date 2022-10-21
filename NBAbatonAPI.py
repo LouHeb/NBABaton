@@ -285,7 +285,7 @@ with open("date.txt","r", encoding="utf-8") as f:
 Last = datetime.strptime(lines[0][0], '%d/%m/%Y')
     
 # --- Get yesterday date
-Hier = datetime.now() - timedelta(1)
+Hier = datetime.now() - timedelta(2)
 
 # --- Evaluate the days between last run    
 LesDates = date_range(Last, Hier)
