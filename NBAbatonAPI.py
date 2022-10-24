@@ -719,7 +719,7 @@ for Yesti in LesDates:
         PathsHistory =[[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[],[]]
 
         Holder = CurrentHolder
-        Today = int(datetime.strftime(Yesti,"%Y%m%d"))
+        Today = int(datetime.strftime(Yesti+timedelta(1),"%Y%m%d"))
 
         # Condition to know if the shorter path is controled by the date or by the nb of game
         SortByDate = True
