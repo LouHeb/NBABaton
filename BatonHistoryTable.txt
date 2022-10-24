@@ -3055,4 +3055,4 @@
 05/04/2022 Utah_Jazz 2 
 08/04/2022 Phoenix_Suns 1 
 10/04/2022 Sacramento_Kings 1 
-19/10/2022 Portland_Trail_Blazers 2 
+19/10/2022 Portland_Trail_Blazers 3 
