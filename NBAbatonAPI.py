@@ -565,7 +565,7 @@ for Yesti in LesDates:
         NextOrNot = '?'
     else:   # if there were no games yesterday, we find if there will be after
         i = 0
-        while i<len(Dates) and datetime.strftime(Dates[-1].to_pydatetime(),"%Y%m%d")<Yest_Nb:
+        while i<len(Dates) and datetime.strftime(Dates[i].to_pydatetime(),"%Y%m%d")<Yest_Nb:
             i+=1
         if i<len(Dates): # there will be after
             GameId = i
