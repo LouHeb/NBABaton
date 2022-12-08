@@ -3070,3 +3070,4 @@
 28/11/2022 Denver_Nuggets 2 
 02/12/2022 Atlanta_Hawks 1 
 05/12/2022 Oklahoma_City_Thunder 1 
+07/12/2022 Memphis_Grizzlies 1 
