@@ -1,1 +1,27 @@
-
+ 
+Fox De'Aaron foxde01 19 20230101 SAC 0 
+Sabonis Domantas sabondo01 18 20230101 SAC 0 
+Huerter Kevin huertke01 14 20230101 SAC 0 
+Barnes Harrison barneha02 16 20230101 SAC 0 
+Murray Keegan murrake02 10 20230101 SAC 0 
+Monk Malik monkma01 18 20230101 SAC 0 
+Lyles Trey lylestr01 7 20230101 SAC 0 
+Mitchell Davion mitchda01 2 20230101 SAC 0 
+Holmes Richaun holmeri01 2 20230101 SAC 0 
+Okpala KZ okpalkz01 0 20230101 SAC 0 
+Metu Chimezie metuch01 2 20230101 SAC 0 
+Davis Terence daviste02 0 20230101 SAC 0 
+Dellavedova Matthew dellama01 0 20230101 SAC 0 
+Len Alex lenal01 0 20230101 SAC 0 
+Brooks Dillon brookdi01 15 20230101 MEM 1 
+Adams Steven adamsst01 11 20230101 MEM 1 
+Morant Ja moranja01 35 20230101 MEM 1 
+Jackson Jaren jacksja02 14 20230101 MEM 1 
+Konchar John konchjo01 12 20230101 MEM 1 
+Jones Tyus jonesty01 18 20230101 MEM 1 
+Roddy David roddyda01 5 20230101 MEM 1 
+Chandler Kennedy chandke01 4 20230101 MEM 1 
+Tillman Xavier tillmxa01 4 20230101 MEM 1 
+LaRavia Jake laravja01 0 20230101 MEM 1 
+Lofton Kenneth loftoke01 0 20230101 MEM 1 
+Williams Vince willivi01 0 20230101 MEM 1 
