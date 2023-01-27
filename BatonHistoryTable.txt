@@ -3075,4 +3075,4 @@
 23/12/2022 New_Orleans_Pelicans 4 
 31/12/2022 Memphis_Grizzlies 10 
 20/01/2023 Los_Angeles_Lakers 2 
-24/01/2023 Los_Angeles_Clippers 1 
+24/01/2023 Los_Angeles_Clippers 2 
