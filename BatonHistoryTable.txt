@@ -3076,3 +3076,4 @@
 31/12/2022 Memphis_Grizzlies 10 
 20/01/2023 Los_Angeles_Lakers 2 
 24/01/2023 Los_Angeles_Clippers 3 
+29/01/2023 Cleveland_Cavaliers 1 
