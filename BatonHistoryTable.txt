@@ -3080,3 +3080,4 @@
 31/01/2023 Miami_Heat 1 
 02/02/2023 New_York_Knicks 1 
 04/02/2023 Los_Angeles_Clippers 2 
+08/02/2023 Dallas_Mavericks 1 
