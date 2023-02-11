@@ -290,6 +290,11 @@ Last = datetime.strptime(lines[0][0], '%d/%m/%Y')
 # --- Get yesterday date
 Hier = datetime.now() - timedelta(1)
 
+# Create a new file for the player stats each first af Jan.
+if Hier.month==1 and Hier.day==1:
+    Checkfile = open("PlayerStatsEachGame_byYear/PlayerStatsEachGame_"+str(Hier.year+1)+".txt",'w+')
+    Checkfile.close
+
 # --- Evaluate the days between last run    
 LesDates = date_range(Last, Hier)
 
