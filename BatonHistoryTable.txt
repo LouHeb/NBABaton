@@ -3082,3 +3082,4 @@
 04/02/2023 Los_Angeles_Clippers 2 
 08/02/2023 Dallas_Mavericks 2 
 11/02/2023 Sacramento_Kings 1 
+14/02/2023 Phoenix_Suns 1 
