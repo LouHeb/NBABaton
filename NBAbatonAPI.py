@@ -288,7 +288,7 @@ with open("date.txt","r", encoding="utf-8") as f:
 Last = datetime.strptime(lines[0][0], '%d/%m/%Y')
     
 # --- Get yesterday date
-Hier = datetime.now() - timedelta(3)
+Hier = datetime.now() - timedelta(1)
 
 # Create a new file for the player stats each first af Jan.
 if Hier.month==1 and Hier.day==1:
@@ -442,124 +442,124 @@ for Yesti in LesDates:
             # --- Write the updated file
             WriteLeFile(Big_Stats,'BigStats.txt')
 
-    # #  ==>   ------ Update Players Stats in a NBA Baton game -------------
+     #  ==>   ------ Update Players Stats in a NBA Baton game -------------
 
-    #         # --- GetDataFromWebsites
-    #         url="https://www.basketball-reference.com/boxscores/"+GameBaton[1]+"0"+GameBaton[2]+".html"
-    #         SourceCode = requests.get(url).text
+             # --- GetDataFromWebsites
+             url="https://www.basketball-reference.com/boxscores/"+GameBaton[1]+"0"+GameBaton[2]+".html"
+             SourceCode = requests.get(url).text
 
-    #         Players = []
+             Players = []
 
-    #         # --- ExtractData
-    #         for team in [GameBaton[0],GameBaton[2]]:
-    #             phraseStart = '''<div id="all_box-'''+str(team)+'''-game-basic" class="table_wrapper">'''
-    #             phraseEnd = '''Team Totals'''
+             # --- ExtractData
+             for team in [GameBaton[0],GameBaton[2]]:
+                 phraseStart = '''<div id="all_box-'''+str(team)+'''-game-basic" class="table_wrapper">'''
+                 phraseEnd = '''Team Totals'''
 
-    #             debut = 1
-    #             fin = 1
-    #             while SourceCode[debut:debut+len(phraseStart)]!=phraseStart:
-    #                 debut+=1
-    #                 fin+=1
-    #             while SourceCode[fin:fin+len(phraseEnd)]!=phraseEnd:
-    #                 fin+=1
-    #             UsefulSourceCode=SourceCode[debut:fin]
+                 debut = 1
+                 fin = 1
+                 while SourceCode[debut:debut+len(phraseStart)]!=phraseStart:
+                     debut+=1
+                     fin+=1
+                 while SourceCode[fin:fin+len(phraseEnd)]!=phraseEnd:
+                     fin+=1
+                 UsefulSourceCode=SourceCode[debut:fin]
 
-    #             # --- Transform the string in a list
-    #             phrasePlayer = '''"player" csk="'''
-    #             phrasePoint = '''a-stat="pts" >'''
-    #             phraseCodePlayer = '''ref="/players/'''
-    #             letter = 1
-    #             while letter<len(UsefulSourceCode):
-    #                 if UsefulSourceCode[letter:letter+len(phrasePlayer)]==phrasePlayer:                    
-    #                     player = []
-    #                     Name =''
-    #                     Surname =''
-    #                     letter+=14
-    #                     while UsefulSourceCode[letter]!=',':
-    #                         if UsefulSourceCode[letter]!=' ':
-    #                             Name+=UsefulSourceCode[letter]
-    #                         else :
-    #                             Name+='_'
-    #                         letter+=1
-    #                     letter+=1
-    #                     while UsefulSourceCode[letter]!='"':
-    #                         if UsefulSourceCode[letter]!=' ':
-    #                             Surname+=UsefulSourceCode[letter]
-    #                         else :
-    #                             Surname+='_'
-    #                         letter+=1
-    #                     player.append(Name)
-    #                     player.append(Surname)
-    #                 elif UsefulSourceCode[letter:letter+len(phraseCodePlayer)]==phraseCodePlayer:
-    #                     codePlayer =''
-    #                     letter+=16
-    #                     while UsefulSourceCode[letter]!='.':
-    #                         codePlayer+=UsefulSourceCode[letter]
-    #                         letter+=1
-    #                     player.append(codePlayer)
-    #                 elif UsefulSourceCode[letter:letter+len(phrasePoint)]==phrasePoint:
+                 # --- Transform the string in a list
+                 phrasePlayer = '''"player" csk="'''
+                 phrasePoint = '''a-stat="pts" >'''
+                 phraseCodePlayer = '''ref="/players/'''
+                 letter = 1
+                 while letter<len(UsefulSourceCode):
+                     if UsefulSourceCode[letter:letter+len(phrasePlayer)]==phrasePlayer:                    
+                         player = []
+                         Name =''
+                         Surname =''
+                         letter+=14
+                         while UsefulSourceCode[letter]!=',':
+                             if UsefulSourceCode[letter]!=' ':
+                                 Name+=UsefulSourceCode[letter]
+                             else :
+                                 Name+='_'
+                             letter+=1
+                         letter+=1
+                         while UsefulSourceCode[letter]!='"':
+                             if UsefulSourceCode[letter]!=' ':
+                                 Surname+=UsefulSourceCode[letter]
+                             else :
+                                 Surname+='_'
+                             letter+=1
+                         player.append(Name)
+                         player.append(Surname)
+                     elif UsefulSourceCode[letter:letter+len(phraseCodePlayer)]==phraseCodePlayer:
+                         codePlayer =''
+                         letter+=16
+                         while UsefulSourceCode[letter]!='.':
+                             codePlayer+=UsefulSourceCode[letter]
+                             letter+=1
+                         player.append(codePlayer)
+                     elif UsefulSourceCode[letter:letter+len(phrasePoint)]==phrasePoint:
 
-    #                     points =''
-    #                     letter+=14
-    #                     while UsefulSourceCode[letter]!='<':
-    #                         points+=UsefulSourceCode[letter]
-    #                         letter+=1
-    #                     player.append(points)
-    #                     player.append(GameBaton[1])
-    #                     player.append(team)
-    #                     if team == CurrentHolder:player.append('1')  # 1 means game holding the baton
-    #                     elif team == FormerHolder:player.append('0')  # 0 = you have lost the bato
-    #                     else:
-    #                         player.append('2')                # 2 means missed-opportunity game
-    #                     Players.append(player)
-    #                 else:
-    #                     letter+=1
+                         points =''
+                         letter+=14
+                         while UsefulSourceCode[letter]!='<':
+                             points+=UsefulSourceCode[letter]
+                             letter+=1
+                         player.append(points)
+                         player.append(GameBaton[1])
+                         player.append(team)
+                         if team == CurrentHolder:player.append('1')  # 1 means game holding the baton
+                         elif team == FormerHolder:player.append('0')  # 0 = you have lost the bato
+                         else:
+                             player.append('2')                # 2 means missed-opportunity game
+                         Players.append(player)
+                     else:
+                         letter+=1
 
 
-    #         # --- Get the List of this year players stats
-    #         This_Year_Pl_Stats_List = ReadLeFile('PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Yest[-4:])+'.txt')    
+             # --- Get the List of this year players stats
+             This_Year_Pl_Stats_List = ReadLeFile('PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Yest[-4:])+'.txt')    
 
-    #         # --- Update the List of this year players stats
-    #         for p in Players: This_Year_Pl_Stats_List.append(p)
+             # --- Update the List of this year players stats
+             for p in Players: This_Year_Pl_Stats_List.append(p)
 
-    #         # --- Write the updated file
-    #         WriteLeFile(This_Year_Pl_Stats_List,'PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Yest[-4:])+'.txt')
+             # --- Write the updated file
+             WriteLeFile(This_Year_Pl_Stats_List,'PlayerStatsEachGame_byYear/PlayerStatsEachGame_'+str(Yest[-4:])+'.txt')
 
-    #         # --- Get the List of TOTAL players stats
-    #         Total_Pl_Stats_List = ReadLeFile('PlayerStatsAvg.txt')    
+             # --- Get the List of TOTAL players stats
+             Total_Pl_Stats_List = ReadLeFile('PlayerStatsAvg.txt')    
 
-    #         for LeJoueur in Players:
-    #         # --- Check if the player already played for the baton
-    #             if LeJoueur[2] not in [x[2] for x in Total_Pl_Stats_List[2:]]:
-    #                 Total_Pl_Stats_List.append([LeJoueur[1], LeJoueur[0], LeJoueur[2], '0', '0', 'XXXXXXXX', '0', '0', '0'])
+             for LeJoueur in Players:
+             # --- Check if the player already played for the baton
+                 if LeJoueur[2] not in [x[2] for x in Total_Pl_Stats_List[2:]]:
+                     Total_Pl_Stats_List.append([LeJoueur[1], LeJoueur[0], LeJoueur[2], '0', '0', 'XXXXXXXX', '0', '0', '0'])
 
-    #         # --- Get the line corresponding to the player
-    #             index = 2
-    #             while Total_Pl_Stats_List[index][2]!=LeJoueur[2]:index+=1
+             # --- Get the line corresponding to the player
+                 index = 2
+                 while Total_Pl_Stats_List[index][2]!=LeJoueur[2]:index+=1
 
-    #         # --- Update the Best_Scoring
-    #             if int(LeJoueur[3])>int(Total_Pl_Stats_List[index][4]):
-    #                 Total_Pl_Stats_List[index][4]=LeJoueur[3]
-    #         # --- Update the BestSc_Date
-    #                 Total_Pl_Stats_List[index][5]=Yest[-4:]+Yest[3:5]+Yest[0:2]
+             # --- Update the Best_Scoring
+                 if int(LeJoueur[3])>int(Total_Pl_Stats_List[index][4]):
+                     Total_Pl_Stats_List[index][4]=LeJoueur[3]
+             # --- Update the BestSc_Date
+                     Total_Pl_Stats_List[index][5]=Yest[-4:]+Yest[3:5]+Yest[0:2]
 
-    #         # --- Update the Games_played
-    #             Total_Pl_Stats_List[index][6]=str(int(Total_Pl_Stats_List[index][6])+1)
+             # --- Update the Games_played
+                 Total_Pl_Stats_List[index][6]=str(int(Total_Pl_Stats_List[index][6])+1)
 
-    #         # --- Update the Games_w_Baton
-    #             if LeJoueur[6]=='1':Total_Pl_Stats_List[index][7]=str(int(Total_Pl_Stats_List[index][7])+1)
+             # --- Update the Games_w_Baton
+                 if LeJoueur[6]=='1':Total_Pl_Stats_List[index][7]=str(int(Total_Pl_Stats_List[index][7])+1)
 
-    #         # --- Update the Missed_Opportunity
-    #             elif LeJoueur[6]=='2':Total_Pl_Stats_List[index][8]=str(int(Total_Pl_Stats_List[index][8])+1)
+             # --- Update the Missed_Opportunity
+                 elif LeJoueur[6]=='2':Total_Pl_Stats_List[index][8]=str(int(Total_Pl_Stats_List[index][8])+1)
 
-    #         # --- Update the Pts/game
-    #             Total_Pl_Stats_List[index][3]= str((float(Total_Pl_Stats_List[index][3])*(int(Total_Pl_Stats_List[index][6])-1)+int(LeJoueur[3]))/int(Total_Pl_Stats_List[index][6]))
+             # --- Update the Pts/game
+                 Total_Pl_Stats_List[index][3]= str((float(Total_Pl_Stats_List[index][3])*(int(Total_Pl_Stats_List[index][6])-1)+int(LeJoueur[3]))/int(Total_Pl_Stats_List[index][6]))
 
-    #         # --- Update the Date at the beginning of the file
-    #         Total_Pl_Stats_List[0][1]=Yest
+             # --- Update the Date at the beginning of the file
+             Total_Pl_Stats_List[0][1]=Yest
 
-    #         # --- Write the updated file
-    #         WriteLeFile(Total_Pl_Stats_List,'PlayerStatsAvg.txt')
+             # --- Write the updated file
+             WriteLeFile(Total_Pl_Stats_List,'PlayerStatsAvg.txt')
 
 
     #  ==>   ------ Check when is the next game -------------
