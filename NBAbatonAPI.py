@@ -288,7 +288,7 @@ with open("date.txt","r", encoding="utf-8") as f:
 Last = datetime.strptime(lines[0][0], '%d/%m/%Y')
     
 # --- Get yesterday date
-Hier = datetime.now() - timedelta(1)
+Hier = datetime.now() - timedelta(2)
 
 # Create a new file for the player stats each first af Jan.
 if Hier.month==1 and Hier.day==1:
@@ -581,12 +581,12 @@ for Yesti in LesDates:
     if NextOrNot != 'Not':     # if there will be after, we check if the holder will take part
         GameId += 1
         LeMatch = GameExtractor(d,GameId,'Next')
-        while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE']):
+        while CurrentHolder not in [LeMatch[0],LeMatch[2]] and GameId<len(d['DATE'])-1:
             GameId+=1
             LeMatch = GameExtractor(d,GameId,'Next')
 
         # --- if the holder has another scheduled game
-        if GameId < len(d['DATE']):
+        if GameId < len(d['DATE'])-1:
             if CurrentHolder==LeMatch[0]:
                 BatonSitu = 'Away'
                 Cont = LeMatch[2]
