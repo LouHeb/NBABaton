@@ -288,7 +288,7 @@ with open("date.txt","r", encoding="utf-8") as f:
 Last = datetime.strptime(lines[0][0], '%d/%m/%Y')
     
 # --- Get yesterday date
-Hier = datetime.now() - timedelta(2)
+Hier = datetime.now() - timedelta(1)
 
 # Create a new file for the player stats each first af Jan.
 if Hier.month==1 and Hier.day==1:
