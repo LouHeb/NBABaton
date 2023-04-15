@@ -121,7 +121,7 @@ def ReplaceSpaceByUnder(x):
 def Arr(x):
     return(int(x*100)/100)
 
-def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Bleu'):
+def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Playoffs'):#'Bleu'):
     
     # Background
     bg = Image.open("bg_"+teamDom+".jpg").convert("RGBA")
@@ -207,7 +207,7 @@ def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Bleu'):
     Final.save('0_GameDay.png',"PNG")
 
 
-def NewHolders(NewHolder,lastHold,Round = 'Bleu'):
+def NewHolders(NewHolder,lastHold,Round = 'Playoffs'):#'Bleu'):
     BackgroundNew = Image.open("bg_"+NewHolder+".jpg").convert("RGBA")
 #    bgBleuNew = Image.open("bg_Bleu.jpg").convert("RGBA")
 #    BackgroundNew = ImageChops.multiply(bgNew, bgBleuNew)
@@ -241,7 +241,7 @@ def NewHolders(NewHolder,lastHold,Round = 'Bleu'):
 
 
 
-def SameHolders(SameHolder,Newstreak,Round = 'Bleu'):
+def SameHolders(SameHolder,Newstreak,Round = 'Playoffs'):#'Bleu'):
     BackgroundSame = Image.open("bg_"+SameHolder+".jpg").convert("RGBA")
 #    bgBleuSame = Image.open("bg_Bleu.jpg").convert("RGBA")
 #    BackgroundSame = ImageChops.multiply(bgSame, bgBleuSame)
