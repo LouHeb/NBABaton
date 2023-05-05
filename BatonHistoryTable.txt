@@ -3097,3 +3097,4 @@
 22/04/2023 Los_Angeles_Lakers 2 
 26/04/2023 Memphis_Grizzlies 1 
 28/04/2023 Los_Angeles_Lakers 2 
+04/05/2023 Golden_State_Warriors 1 
