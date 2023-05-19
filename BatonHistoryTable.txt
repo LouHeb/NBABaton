@@ -3101,4 +3101,4 @@
 06/05/2023 Los_Angeles_Lakers 2 
 10/05/2023 Golden_State_Warriors 1 
 12/05/2023 Los_Angeles_Lakers 1 
-16/05/2023 Denver_Nuggets 1 
+16/05/2023 Denver_Nuggets 2 
