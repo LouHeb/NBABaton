@@ -121,7 +121,7 @@ def ReplaceSpaceByUnder(x):
 def Arr(x):
     return(int(x*100)/100)
 
-def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Playoffs'):#'Bleu'):
+def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Finals'):#'Bleu'):
     
     # Background
     bg = Image.open("bg_"+teamDom+".jpg").convert("RGBA")
@@ -207,7 +207,7 @@ def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Playoffs'):#'Bleu
     Final.save('0_GameDay.png',"PNG")
 
 
-def NewHolders(NewHolder,lastHold,Round = 'Playoffs'):#'Bleu'):
+def NewHolders(NewHolder,lastHold,Round = 'Finals'):#'Bleu'):
     BackgroundNew = Image.open("bg_"+NewHolder+".jpg").convert("RGBA")
 #    bgBleuNew = Image.open("bg_Bleu.jpg").convert("RGBA")
 #    BackgroundNew = ImageChops.multiply(bgNew, bgBleuNew)
@@ -241,7 +241,7 @@ def NewHolders(NewHolder,lastHold,Round = 'Playoffs'):#'Bleu'):
 
 
 
-def SameHolders(SameHolder,Newstreak,Round = 'Playoffs'):#'Bleu'):
+def SameHolders(SameHolder,Newstreak,Round = 'Finals'):#'Bleu'):
     BackgroundSame = Image.open("bg_"+SameHolder+".jpg").convert("RGBA")
 #    bgBleuSame = Image.open("bg_Bleu.jpg").convert("RGBA")
 #    BackgroundSame = ImageChops.multiply(bgSame, bgBleuSame)
@@ -298,16 +298,17 @@ if Hier.month==1 and Hier.day==1:
 # --- Evaluate the days between last run    
 LesDates = date_range(Last, Hier)
 
+# --- Get the season's last year
+Year = LaSaison(int(datetime.strftime(Hier,"%m")),int(datetime.strftime(Hier,"%Y")))
+
+# --- Request the games of the current season
+d_RS = get_schedule(Year)
+d_PO = get_schedule(Year,True)
+d = pd.concat([d_RS,d_PO],ignore_index=True)
+
 #  ==>   ------ Get yesterday's games and update the overall games list -------------
 for Yesti in LesDates:   
 
-    # --- Get the season's last year
-    Year = LaSaison(int(datetime.strftime(Yesti,"%m")),int(datetime.strftime(Yesti,"%Y")))
-
-    # --- Request the games of the current season
-    d_RS = get_schedule(Year)
-    d_PO = get_schedule(Year,True)
-    d = pd.concat([d_RS,d_PO],ignore_index=True)
 
     # --- Put the date correctly formated
     Yest_Nb = datetime.strftime(Yesti,"%Y%m%d")
