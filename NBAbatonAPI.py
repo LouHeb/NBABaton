@@ -121,7 +121,7 @@ def ReplaceSpaceByUnder(x):
 def Arr(x):
     return(int(x*100)/100)
 
-def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Finals'):#'Bleu'):
+def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Bleu'):#'Finals'):
     
     # Background
     bg = Image.open("bg_"+teamDom+".jpg").convert("RGBA")
@@ -174,7 +174,7 @@ def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Finals'):#'Bleu')
     W, H = Final.size    
     fnt = ImageFont.truetype(font='Futura-CondensedLight.otf', size=61)
     msg = "- "+date+" -"
-    w, h = fnt.getsize(msg)
+    w, h = fnt.getbbox(msg)[2:]
     
     if Round=='Playoffs':d.text(((W-w)/2,195-h/2), msg, font=fnt, fill=(255, 203, 203))
     elif Round=='Finals':d.text(((W-w)/2,195-h/2), msg, font=fnt, fill=(252, 230, 200))
@@ -187,7 +187,7 @@ def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Finals'):#'Bleu')
     if streak==1: msg = "1 game"
     else:
         msg = str(streak)+ " games"
-    w, h = fnt.getsize(msg)
+    w, h = fnt.getbbox(msg)[2:]
 
     if Side=='Away': W = (264+668)/2
     elif Side=='Home': W = (982+1386)/2
@@ -197,7 +197,7 @@ def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Finals'):#'Bleu')
     # write last hold
     fnt = ImageFont.truetype(font='Futura-CondensedLight.otf', size=42)
     msg = lastHold
-    w, h = fnt.getsize(msg)
+    w, h = fnt.getbbox(msg)[2:]
     if Side=='Away': W = (1011+1357)/2
     elif Side=='Home': W = (293+639)/2
     d.text((W-w/2,818-h/2), msg, font=fnt, fill=(0, 0, 0))
@@ -207,7 +207,7 @@ def GameDay(date,teamExt,teamDom,streak,lastHold,Side,Round = 'Finals'):#'Bleu')
     Final.save('0_GameDay.png',"PNG")
 
 
-def NewHolders(NewHolder,lastHold,Round = 'Finals'):#'Bleu'):
+def NewHolders(NewHolder,lastHold,Round = 'Bleu'):#'Finals'):
     BackgroundNew = Image.open("bg_"+NewHolder+".jpg").convert("RGBA")
 #    bgBleuNew = Image.open("bg_Bleu.jpg").convert("RGBA")
 #    BackgroundNew = ImageChops.multiply(bgNew, bgBleuNew)
@@ -234,14 +234,14 @@ def NewHolders(NewHolder,lastHold,Round = 'Finals'):#'Bleu'):
     W, H = FinalNew.size
     fnt = ImageFont.truetype(font='Futura-CondensedLight.otf', size=42)
     msg = lastHold
-    w, h = fnt.getsize(msg)
+    w, h = fnt.getbbox(msg)[2:]
     dNew.text(((W-w)/2,807-h/2), msg, font=fnt, fill=(0,0,0))
     dNew.text(((W-w)/2+1,807-h/2+1), msg, font=fnt, fill=(0,0,0))
     FinalNew.save('0_TheNewHolder.png',"PNG")
 
 
 
-def SameHolders(SameHolder,Newstreak,Round = 'Finals'):#'Bleu'):
+def SameHolders(SameHolder,Newstreak,Round = 'Bleu'):#'Finals'):
     BackgroundSame = Image.open("bg_"+SameHolder+".jpg").convert("RGBA")
 #    bgBleuSame = Image.open("bg_Bleu.jpg").convert("RGBA")
 #    BackgroundSame = ImageChops.multiply(bgSame, bgBleuSame)
@@ -268,7 +268,7 @@ def SameHolders(SameHolder,Newstreak,Round = 'Finals'):#'Bleu'):
     W, H = FinalSame.size
     fnt = ImageFont.truetype(font='Futura-CondensedLight.otf', size=42)
     msg = str(Newstreak)+' games'
-    w, h = fnt.getsize(msg)
+    w, h = fnt.getbbox(msg)[2:]
     dSame.text(((W-w)/2,807-h/2), msg, font=fnt, fill=(0,0,0))
     dSame.text(((W-w)/2+1,807-h/2+1), msg, font=fnt, fill=(0,0,0))
     FinalSame.save('0_TheSameHolder.png',"PNG")
