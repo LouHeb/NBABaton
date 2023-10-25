@@ -1,4 +1,4 @@
-UpDate: 12/06/2023 
+UpDate: 24/10/2023 
  
 Name Surname Player_Id Pts/game Best_Scoring BestSc_Date Games_played Games_w_Baton Missed_Opportunity 
 Leo Gottlieb gottlle01 6.970588235294118 22 19470104 34 22 4 
@@ -2783,7 +2783,7 @@ Travis Hansen hansetr01 0 0 20031109 1 1 0
 Keith Bogans boganke01 5.446153846153846 15 20100305 65 27 25 
 Reece Gaines gainere01 0.6666666666666666 2 20031115 3 0 3 
 Zaza Pachulia pachuza01 4.875 13 20110510 80 36 30 
-LeBron James jamesle01 27.67557251908397 51 20080115 262 158 47 
+LeBron James jamesle01 27.65019011406844 51 20080115 263 158 47 
 Jarvis Hayes hayesja01 5.125 20 20080415 32 18 7 
 Steve Blake blakest01 6.1875 18 20130315 64 29 25 
 Carmelo Anthony anthoca01 22.653061224489797 42 20110210 98 49 24 
@@ -3274,7 +3274,7 @@ Klay Thompson thompkl01 19.155913978494628 45 20160127 186 132 22
 Nolan Smith smithno01 2.6666666666666665 6 20120323 3 1 1 
 Elliot Williams williel01 5.428571428571429 10 20140218 7 1 6 
 Jeremy Tyler tylerje01 3 8 20140415 11 8 1 
-Reggie Jackson jacksre01 10.341772151898734 29 20210414 79 42 20 
+Reggie Jackson jacksre01 10.3125 29 20210414 80 43 20 
 Cole Aldrich aldrico01 3.090909090909091 13 20140415 22 10 7 
 Trey Thompkins thomptr02 2 4 20120202 2 1 0 
 Enes Kanter kanteen01 10.28169014084507 27 20150322 71 33 21 
@@ -3336,7 +3336,7 @@ Brian Roberts roberbr01 6 19 20150208 23 5 15
 Evan Fournier fournev01 15.964285714285714 31 20210319 28 12 7 
 Perry Jones jonespe01 2.5 10 20150407 14 9 2 
 Mirza Teletović teletmi01 7.894736842105263 14 20150104 19 8 7 
-Anthony Davis davisan02 24.541666666666668 47 20180421 96 49 24 
+Anthony Davis davisan02 24.463917525773194 47 20180421 97 49 24 
 Thomas Robinson robinth01 4.9523809523809526 16 20170401 21 9 7 
 Nando De_Colo decolna01 4.647058823529412 15 20140208 17 10 3 
 Jeremy Lamb lambje01 10.685185185185185 32 20171220 54 30 12 
@@ -3431,7 +3431,7 @@ Erik Murphy murpher01 0 0 20140124 1 0 0
 Malcolm Thomas thomama01 0 0 20140131 1 0 1 
 Cody Zeller zelleco01 7.685714285714286 23 20161118 35 14 11 
 Andre Drummond drumman01 13.205128205128204 28 20210206 39 10 22 
-Kentavious Caldwell-Pope caldwke01 9.851851851851846 32 20190409 81 42 25 
+Kentavious Caldwell-Pope caldwke01 9.975609756097555 32 20190409 82 43 25 
 Henry Sims simshe01 6.5 16 20140321 8 3 5 
 Lorenzo Brown brownlo01 0.16666666666666666 1 20150131 6 2 4 
 Nick Calathes calatni01 3 10 20140305 9 2 4 
@@ -3499,7 +3499,7 @@ David Stockton stockda01 2 3 20180405 2 1 1
 Jordan Adams adamsjo01 1.8333333333333333 4 20151102 6 0 4 
 JaMychal Green greenja01 6.808510638297872 20 20220227 47 13 23 
 Joffrey Lauvergne lauvejo01 3.8181818181818183 16 20160317 11 4 5 
-Aaron Gordon gordoaa01 13.648148148148149 38 20210319 54 28 11 
+Aaron Gordon gordoaa01 13.672727272727272 38 20210319 55 29 11 
 Tyler Johnson johnsty01 9.263157894736842 23 20170119 38 25 4 
 Zoran Dragić dragizo01 0 0 20150320 3 1 1 
 Jabari Brown brownja01 7 7 20150324 1 0 1 
@@ -3515,7 +3515,7 @@ Montrezl Harrell harremo01 10.954545454545455 25 20180111 44 19 13
 Patrick Beverley beverpa01 6.3023255813953485 14 20160225 43 18 12 
 Sam Dekker dekkesa01 4.0625 13 20180113 16 6 7 
 Emmanuel Mudiay mudiaem01 13.083333333333334 34 20181214 12 2 9 
-Nikola Jokić jokicni01 23.41666666666667 41 20230604 72 35 22 
+Nikola Jokić jokicni01 23.493150684931514 41 20230604 73 36 22 
 Willie Cauley-Stein caulewi01 8.392857142857142 23 20180113 28 11 12 
 Stanley Johnson johnsst04 7.75 22 20181109 20 3 10 
 Karl-Anthony Towns townska01 22.52380952380952 36 20220305 21 7 8 
@@ -3523,7 +3523,7 @@ Nemanja Bjelica bjeline01 9.117647058823529 17 20191119 17 5 9
 Tyus Jones jonesty01 8.63076923076923 24 20220405 65 39 10 
 Adreian Payne paynead01 3 6 20161123 2 0 2 
 Rondae Hollis-Jefferson holliro01 8.5 20 20170316 8 1 5 
-D'Angelo Russell russeda01 15.85 34 20200112 40 18 10 
+D'Angelo Russell russeda01 15.731707317073171 34 20200112 41 18 10 
 Julius Randle randlju01 17.666666666666664 33 20190214 24 5 14 
 Larry Nance nancela02 7.961538461538461 20 20191125 26 5 16 
 Marcelo Huertas huertma01 2.3333333333333335 7 20151124 3 1 2 
@@ -3590,7 +3590,7 @@ Joel Embiid embiijo01 31.703703703703702 46 20230324 27 13 6
 Dario Šarić saricda01 9.457142857142857 23 20170319 35 17 7 
 Timothé Luwawu-Cabarrot luwawti01 5.407407407407407 24 20200811 27 15 6 
 Malcolm Delaney delanma01 5.75 10 20161109 12 7 2 
-Taurean Waller-Prince princta02 9.64102564102564 28 20180325 39 16 14 
+Taurean Waller-Prince princta02 9.85 28 20180325 40 16 14 
 Richaun Holmes holmeri01 8.142857142857142 24 20170320 21 7 9 
 DeAndre' Bembry bembrde01 5.125 16 20190331 16 4 9 
 Rodney McGruder mcgruro01 6.518518518518518 15 20170206 27 16 5 
@@ -3626,9 +3626,9 @@ Marquese Chriss chrisma01 6.818181818181818 20 20170330 11 1 10
 Alan Williams willial03 9.666666666666666 16 20170224 3 0 3 
 Derrick Jones jonesde02 5.611111111111111 12 20211206 18 7 5 
 Tyler Ulis ulisty01 9.5 16 20170330 6 0 6 
-Jamal Murray murraja01 21.979591836734688 37 20230518 49 26 11 
+Jamal Murray murraja01 21.959999999999994 37 20230518 50 27 11 
 Juan Hernangómez hernaju01 5.695652173913044 15 20181203 23 11 4 
-Christian Wood woodch01 12.0 23 20210409 8 4 1 
+Christian Wood woodch01 11.444444444444445 23 20210409 9 4 1 
 Rakeem Christmas chrisra01 3.6666666666666665 7 20170312 3 1 1 
 Fred VanVleet vanvlfr01 13.185185185185185 34 20191022 27 17 3 
 Shawn Long longsh01 6 8 20170319 2 1 0 
@@ -3833,7 +3833,7 @@ Darius Garland garlada01 18.173913043478258 29 20220321 23 9 9
 P.J. Washington washipj01 12.466666666666667 31 20221029 15 6 4 
 Cody Martin martico01 6.533333333333333 14 20211120 15 7 4 
 Caleb Martin martica02 7.294117647058823 18 20230131 17 6 4 
-Rui Hachimura hachiru01 12.545454545454545 29 20230416 22 11 4 
+Rui Hachimura hachiru01 12.26086956521739 29 20230416 23 11 4 
 Eric Paschall pascher01 12.833333333333334 23 20200227 6 1 5 
 Jordan Poole poolejo01 14.947368421052632 38 20220330 19 6 5 
 Ky Bowman bowmaky01 8.5 11 20200227 2 0 2 
@@ -3847,10 +3847,10 @@ Kevin Porter porteke02 15.375 30 20220210 8 2 3
 Kendrick Nunn nunnke01 10.647058823529411 22 20210501 17 9 3 
 Tyler Herro herroty01 16.166666666666668 30 20211023 18 8 3 
 Chris Silva silvach01 2 4 20191201 2 1 0 
-Michael Porter portemi01 12.517241379310345 27 20200806 29 11 13 
+Michael Porter portemi01 12.5 27 20200806 30 12 13 
 Goga Bitadze bitadgo01 3.7333333333333334 16 20220122 15 6 4 
 De'Andre Hunter huntede01 15.571428571428571 23 20220204 7 1 2 
-Cam Reddish reddica01 10.428571428571429 17 20211120 7 4 1 
+Cam Reddish reddica01 10.0 17 20211120 8 4 1 
 Jalen McDaniels mcdanja01 7.0 16 20230104 20 12 2 
 Markelle Fultz fultzma01 10.833333333333334 18 20200811 6 2 1 
 Khem Birch birchkh01 3.3846153846153846 12 20200811 13 6 4 
@@ -3872,7 +3872,7 @@ Grayson Allen allengr01 9.851851851851851 20 20210113 27 15 4
 Alen Smailagić smailal01 0 0 20200112 2 1 1 
 Marko Guduric gudurma01 2 6 20200304 9 7 1 
 Bruno Caboclo cabocbr01 0 0 20200112 2 1 1 
-Jaxson Hayes hayesja02 9.545454545454545 23 20220101 11 6 2 
+Jaxson Hayes hayesja02 8.75 23 20220101 12 6 2 
 Zion Williamson willizi01 27.625 43 20221228 8 3 1 
 Ty Jerome jeromty01 7.461538461538462 15 20211122 13 4 6 
 John Konchar konchjo01 4.833333333333333 18 20210511 42 29 2 
@@ -3968,7 +3968,7 @@ Garrison Mathews mathega01 5.777777777777778 19 20220210 9 4 2
 Anthony Gill gillan01 4.25 13 20210426 8 4 2 
 Cassius Winston winstca01 3 3 20210423 1 1 0 
 Justin Robinson robinju01 3 9 20220105 8 3 2 
-Gabe Vincent vincega01 8.277777777777779 23 20230604 18 8 2 
+Gabe Vincent vincega01 8.157894736842104 23 20230604 19 8 2 
 Max Strus strusma01 8.529411764705882 17 20210501 17 7 2 
 Precious Achiuwa achiupr01 4.333333333333333 12 20220119 9 6 1 
 KZ Okpala okpalkz01 1.0 3 20211021 8 4 1 
@@ -3976,7 +3976,7 @@ Tyler Bey beyty01 0.5 2 20210507 4 3 0
 Louis King kinglo02 15 27 20210514 2 0 2 
 Jahmi'us Ramsey ramseja01 10 10 20210514 1 0 1 
 Robert Woodard woodaro01 0 0 20210514 1 0 1 
-Zeke Nnaji nnajize01 4.545454545454546 15 20221128 11 3 4 
+Zeke Nnaji nnajize01 4.500000000000001 15 20221128 12 4 4 
 Jay Scrubb scrubja01 0 0 20210624 3 2 0 
 Elijah Bryant bryanel01 0 0 20210708 1 0 1 
 Ty-Shon Alexander alexaty01 2 2 20210711 1 0 0 
@@ -4071,7 +4071,7 @@ Vit Krejci krejcvi01 4.5 9 20220302 8 2 2
 Lindy Waters waterli01 5.2 12 20230226 10 4 2 
 Olivier Sarr sarrol01 3.6666666666666665 6 20220302 3 1 1 
 Isaiah Livers liveris01 3.5 4 20220319 2 0 1 
-Austin Reaves reaveau01 15.363636363636363 23 20230416 22 12 2 
+Austin Reaves reaveau01 15.304347826086957 23 20230416 23 12 2 
 Moses Moody moodymo01 5.1 10 20230504 10 4 1 
 Zavier Simpson simpsza01 4 4 20220406 1 0 1 
 Xavier Sneed sneedxa01 0 0 20220406 1 1 0 
@@ -4079,8 +4079,8 @@ Neemias Queta quetane01 6 6 20220410 1 1 0
 Gabriel Lundberg lundbga01 10 10 20220410 1 0 0 
 Shaedon Sharpe sharpsh01 6.777777777777778 15 20221026 9 4 0 
 Nassir Little littlna01 5.714285714285714 11 20221024 7 4 0 
-Christian Braun braunch01 4.071428571428571 15 20230406 14 9 0 
-Peyton Watson watsope01 3.0 5 20230331 4 1 0 
+Christian Braun braunch01 4.133333333333334 15 20230406 15 10 0 
+Peyton Watson watsope01 3.0 5 20230331 5 2 0 
 Jabari Walker walkeja01 2.0 2 20221024 2 1 0 
 Nikola Jović jovicni01 1.5 4 20221027 4 1 1 
 Haywood Highsmith highsha01 3.375 18 20230601 8 2 1 
@@ -4122,7 +4122,7 @@ Ochai Agbaji agbajoc01 4.0 8 20230409 2 0 0
 Jeremy Sochan sochaje01 9.0 11 20230111 2 0 0 
 Malaki Branham branhma01 10.5 21 20230404 4 0 0 
 Trevelin Queen queentr01 5.0 5 20230114 1 0 0 
-Max Christie chrisma02 1.5 6 20230506 14 8 1 
+Max Christie chrisma02 1.4 6 20230506 15 8 1 
 Moussa Diabaté diabamo01 3.0 13 20230129 5 3 0 
 Scotty Pippen_ pippesc02 3.0 3 20230124 1 0 0 
 Cole Swider swideco01 0.0 0 XXXXXXXX 2 1 0 
@@ -4145,3 +4145,7 @@ Dominick Barlow barlodo01 2.0 2 20230404 1 0 0
 Simone Fontecchio fontesi01 20.0 20 20230409 1 0 0 
 Johnny Juzang juzanjo01 8.0 8 20230409 1 0 0 
 Patrick Baldwin baldwpa01 0.0 0 XXXXXXXX 2 0 0 
+Maxwell Lewis lewisma05 0.0 0 XXXXXXXX 1 0 0 
+Jalen Pickett pickeja02 2.0 2 20231024 1 1 0 
+Collin Gillespie gilleco01 0.0 0 XXXXXXXX 1 1 0 
+Braxton Key keybr01 0.0 0 XXXXXXXX 1 1 0 
