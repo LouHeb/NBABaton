@@ -3103,4 +3103,4 @@
 12/05/2023 Los_Angeles_Lakers 1 
 16/05/2023 Denver_Nuggets 5 
 04/06/2023 Miami_Heat 1 
-07/06/2023 Denver_Nuggets 6 
+07/06/2023 Denver_Nuggets 7 
