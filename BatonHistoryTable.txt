@@ -3104,4 +3104,4 @@
 16/05/2023 Denver_Nuggets 5 
 04/06/2023 Miami_Heat 1 
 07/06/2023 Denver_Nuggets 7 
-01/11/2023 Minnesota_Timberwolves 3 
+01/11/2023 Minnesota_Timberwolves 4 
