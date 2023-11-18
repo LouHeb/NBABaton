@@ -1,6 +1,6 @@
 <center><div class="LaBoite"><h2>Current Defender</h2>
 
-<img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="100" title="Phoenix Suns"><p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
+<img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="100" title="Phoenix Suns"><p style="font-size:20px; font-family: FuturaHeavy;">For 2 games.</p>
 
 </div><br>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">
@@ -29,7 +29,7 @@
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/5/5d/Oklahoma_City_Thunder.svg" width="20" title="Oklahoma City Thunder"></td><td style="text-align:center;font-size:13px;">  9</td><td style="text-align:center;font-size:13px;">  195</td><td style="text-align:center;font-size:13px;">  December 23rd, 2022</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="20" title="Orlando Magic"></td><td style="text-align:center;font-size:13px;">  8</td><td style="text-align:center;font-size:13px;">  79</td><td style="text-align:center;font-size:13px;">  March 13th, 2022</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="20" title="Philadelphia 76ers"></td><td style="text-align:center;font-size:13px;">  11</td><td style="text-align:center;font-size:13px;">  436</td><td style="text-align:center;font-size:13px;">  March 24th, 2023</td></tr>
-<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="20" title="Phoenix Suns"></td><td style="text-align:center;font-size:13px;">  10</td><td style="text-align:center;font-size:13px;">  195</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
+<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="20" title="Phoenix Suns"></td><td style="text-align:center;font-size:13px;">  10</td><td style="text-align:center;font-size:13px;">  196</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Portland_Trail_Blazers_logo.svg" width="20" title="Portland Trail Blazers"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  168</td><td style="text-align:center;font-size:13px;">  October 26th, 2022</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="20" title="Sacramento Kings"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  325</td><td style="text-align:center;font-size:13px;">  March 4th, 2023</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/San_Antonio_Spurs.svg" width="20" title="San Antonio Spurs"></td><td style="text-align:center;font-size:13px;">  13</td><td style="text-align:center;font-size:13px;">  275</td><td style="text-align:center;font-size:13px;">  April 28th, 2021</td></tr>
@@ -39,7 +39,7 @@
 
 </table><br><h2>The History</h2><table><tr><th style="text-align:center; font-family: FuturaHeavy">  Winning date</th><th style="text-align:center; font-family: FuturaHeavy"> NBA Baton defender</th><th style="text-align:center; font-family: FuturaHeavy">  # of games</th></tr>
 
-<tr><td style="text-align:center">  November 15th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="30" title="Phoenix Suns"></td><td style="text-align:center"> 1 </td></tr>
+<tr><td style="text-align:center">  November 15th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="30" title="Phoenix Suns"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  November 1st, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Minnesota_Timberwolves_logo.svg" width="30" title="Minnesota Timberwolves"></td><td style="text-align:center"> 7 </td></tr>
 <tr><td style="text-align:center">  June 7th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/7/76/Denver_Nuggets.svg" width="30" title="Denver Nuggets"></td><td style="text-align:center"> 7 </td></tr>
 <tr><td style="text-align:center">  June 4th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" width="30" title="Miami Heat"></td><td style="text-align:center"> 1 </td></tr>
