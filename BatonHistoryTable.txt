@@ -3106,3 +3106,4 @@
 07/06/2023 Denver_Nuggets 7 
 01/11/2023 Minnesota_Timberwolves 7 
 15/11/2023 Phoenix_Suns 7 
+29/11/2023 Toronto_Raptors 1 
