@@ -3107,3 +3107,4 @@
 01/11/2023 Minnesota_Timberwolves 7 
 15/11/2023 Phoenix_Suns 7 
 29/11/2023 Toronto_Raptors 1 
+01/12/2023 New_York_Knicks 1 
