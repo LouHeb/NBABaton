@@ -1,6 +1,6 @@
 <center><div class="LaBoite"><h2>Current Defender</h2>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg" width="100" title="Los Angelers Lakers"><p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg" width="100" title="Los Angeles Lakers"><p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
 
 </div><br>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">
