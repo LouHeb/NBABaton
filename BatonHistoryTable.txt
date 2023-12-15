@@ -3112,3 +3112,4 @@
 07/12/2023 Indiana_Pacers 1 
 09/12/2023 Los_Angeles_Lakers 1 
 12/12/2023 Dallas_Mavericks 1 
+14/12/2023 Minnesota_Timberwolves 1 
