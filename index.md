@@ -1,6 +1,6 @@
 <center><div class="LaBoite"><h2>Current Defender</h2>
 
-<img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" width="100" title="Miami Heat"><p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
+<img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" width="100" title="Miami Heat"><p style="font-size:20px; font-family: FuturaHeavy;">For 2 games.</p>
 
 </div><br>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">
@@ -21,7 +21,7 @@
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/b/bb/Los_Angeles_Clippers_%282015%29.svg" width="20" title="Los Angeles Clippers"></td><td style="text-align:center;font-size:13px;">  8</td><td style="text-align:center;font-size:13px;">  130</td><td style="text-align:center;font-size:13px;">  February 24th, 2023</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Los_Angeles_Lakers_logo.svg" width="20" title="Los Angeles Lakers"></td><td style="text-align:center;font-size:13px;">  18</td><td style="text-align:center;font-size:13px;">  640</td><td style="text-align:center;font-size:13px;">  December 12th, 2023</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/f/f1/Memphis_Grizzlies.svg" width="20" title="Memphis Grizzlies"></td><td style="text-align:center;font-size:13px;">  10</td><td style="text-align:center;font-size:13px;">  77</td><td style="text-align:center;font-size:13px;">  April 28th, 2023</td></tr>
-<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" width="20" title="Miami Heat"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  179</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
+<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" width="20" title="Miami Heat"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  180</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/4/4a/Milwaukee_Bucks_logo.svg" width="20" title="Milwaukee Bucks"></td><td style="text-align:center;font-size:13px;">  15</td><td style="text-align:center;font-size:13px;">  283</td><td style="text-align:center;font-size:13px;">  December 7th, 2023</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Minnesota_Timberwolves_logo.svg" width="20" title="Minnesota Timberwolves"></td><td style="text-align:center;font-size:13px;">  7</td><td style="text-align:center;font-size:13px;">  59</td><td style="text-align:center;font-size:13px;">  December 20th, 2023</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/New_Orleans_Pelicans_logo.svg" width="20" title="New Orleans Pelicans"></td><td style="text-align:center;font-size:13px;">  9</td><td style="text-align:center;font-size:13px;">  45</td><td style="text-align:center;font-size:13px;">  December 31st, 2022</td></tr>
@@ -39,7 +39,7 @@
 
 </table><br><h2>The History</h2><table><tr><th style="text-align:center; font-family: FuturaHeavy">  Winning date</th><th style="text-align:center; font-family: FuturaHeavy"> NBA Baton defender</th><th style="text-align:center; font-family: FuturaHeavy">  # of games</th></tr>
 
-<tr><td style="text-align:center">  December 25th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" width="30" title="Miami Heat"></td><td style="text-align:center"> 1 </td></tr>
+<tr><td style="text-align:center">  December 25th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" width="30" title="Miami Heat"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  December 20th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="30" title="Philadelphia 76ers"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  December 14th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Minnesota_Timberwolves_logo.svg" width="30" title="Minnesota Timberwolves"></td><td style="text-align:center"> 3 </td></tr>
 <tr><td style="text-align:center">  December 12th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/9/97/Dallas_Mavericks_logo.svg" width="30" title="Dallas Mavericks"></td><td style="text-align:center"> 1 </td></tr>
