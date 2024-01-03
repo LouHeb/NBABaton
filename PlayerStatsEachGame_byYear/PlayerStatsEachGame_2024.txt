@@ -1,1 +1,26 @@
-
+ 
+Dončić Luka doncilu01 19 20240101 DAL 0 
+Irving Kyrie irvinky01 14 20240101 DAL 0 
+Lively Dereck livelde01 10 20240101 DAL 0 
+Jones Derrick jonesde02 6 20240101 DAL 0 
+Exum Dante exumda01 4 20240101 DAL 0 
+Hardaway Tim hardati02 6 20240101 DAL 0 
+Hardy Jaden hardyja02 17 20240101 DAL 0 
+Green Josh greenjo02 0 20240101 DAL 0 
+Williams Grant willigr01 4 20240101 DAL 0 
+Powell Dwight poweldw01 4 20240101 DAL 0 
+Williams Brandon willibr03 4 20240101 DAL 0 
+Holmes Richaun holmeri01 2 20240101 DAL 0 
+Prosper Olivier-Maxence prospol01 0 20240101 DAL 0 
+Fontecchio Simone fontesi01 24 20240101 UTA 1 
+Markkanen Lauri markkla01 17 20240101 UTA 1 
+Dunn Kris dunnkr01 7 20240101 UTA 1 
+Sexton Collin sextoco01 8 20240101 UTA 1 
+Collins John collijo01 15 20240101 UTA 1 
+George Keyonte georgke01 14 20240101 UTA 1 
+Clarkson Jordan clarkjo01 20 20240101 UTA 1 
+Kessler Walker kesslwa01 11 20240101 UTA 1 
+Olynyk Kelly olynyke01 7 20240101 UTA 1 
+Agbaji Ochai agbajoc01 2 20240101 UTA 1 
+Šamanić Luka samanlu01 2 20240101 UTA 1 
+Yurtseven Omer yurtsom01 0 20240101 UTA 1 
