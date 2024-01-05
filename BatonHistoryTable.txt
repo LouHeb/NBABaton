@@ -3115,4 +3115,4 @@
 14/12/2023 Minnesota_Timberwolves 3 
 20/12/2023 Philadelphia_76ers 2 
 25/12/2023 Miami_Heat 2 
-30/12/2023 Utah_Jazz 2 
+30/12/2023 Utah_Jazz 3 

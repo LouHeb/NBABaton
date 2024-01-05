@@ -1,6 +1,6 @@
 <center><div class="LaBoite"><h2>Current Defender</h2>
 
-<img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="100" title="Utah Jazz"><p style="font-size:20px; font-family: FuturaHeavy;">For 2 games.</p>
+<img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="100" title="Utah Jazz"><p style="font-size:20px; font-family: FuturaHeavy;">For 3 games.</p>
 
 </div><br>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">
@@ -34,12 +34,12 @@
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="20" title="Sacramento Kings"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  325</td><td style="text-align:center;font-size:13px;">  March 4th, 2023</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/a/a2/San_Antonio_Spurs.svg" width="20" title="San Antonio Spurs"></td><td style="text-align:center;font-size:13px;">  13</td><td style="text-align:center;font-size:13px;">  275</td><td style="text-align:center;font-size:13px;">  April 28th, 2021</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/3/36/Toronto_Raptors_logo.svg" width="20" title="Toronto Raptors"></td><td style="text-align:center;font-size:13px;">  5</td><td style="text-align:center;font-size:13px;">  45</td><td style="text-align:center;font-size:13px;">  December 1st, 2023</td></tr>
-<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="20" title="Utah Jazz"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  215</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
+<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="20" title="Utah Jazz"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  216</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/02/Washington_Wizards_logo.svg" width="20" title="Washington Wizards"></td><td style="text-align:center;font-size:13px;">  8</td><td style="text-align:center;font-size:13px;">  209</td><td style="text-align:center;font-size:13px;">  November 17th, 2021</td></tr>
 
 </table><br><h2>The History</h2><table><tr><th style="text-align:center; font-family: FuturaHeavy">  Winning date</th><th style="text-align:center; font-family: FuturaHeavy"> NBA Baton defender</th><th style="text-align:center; font-family: FuturaHeavy">  # of games</th></tr>
 
-<tr><td style="text-align:center">  December 30th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="30" title="Utah Jazz"></td><td style="text-align:center"> 2 </td></tr>
+<tr><td style="text-align:center">  December 30th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="30" title="Utah Jazz"></td><td style="text-align:center"> 3 </td></tr>
 <tr><td style="text-align:center">  December 25th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/f/fb/Miami_Heat_logo.svg" width="30" title="Miami Heat"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  December 20th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="30" title="Philadelphia 76ers"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  December 14th, 2023</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/c/c2/Minnesota_Timberwolves_logo.svg" width="30" title="Minnesota Timberwolves"></td><td style="text-align:center"> 3 </td></tr>

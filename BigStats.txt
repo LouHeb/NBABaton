@@ -1,4 +1,4 @@
-Until: 01/01/2024 
+Until: 03/01/2024 
  
 Team Longest Cummulate Avg.Stk 10+ TakePerSeason LastHold NbTake NbSeas 
 AND 2 2 2.0 0 1.0 19500405 1 1 
@@ -43,6 +43,6 @@ SHE 1 2 1.0 0 2.0 19500325 2 1
 STB 1 4 1.0 0 1.0 19490209 4 4 
 TOR 5 45 1.8 0 0.86 20231201 25 29 
 TRH 1 3 1.0 0 3.0 19470329 3 1 
-UTA 12 215 2.72 5 1.58 Current_holder 79 50 
+UTA 12 216 2.73 5 1.58 Current_holder 79 50 
 WAT 0 0 0.0 0 0.0 Never 0 1 
 WSC 13 36 3.6 1 2.0 19501121 10 5 
