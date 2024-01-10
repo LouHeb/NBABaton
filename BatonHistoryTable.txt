@@ -3117,3 +3117,4 @@
 25/12/2023 Miami_Heat 2 
 30/12/2023 Utah_Jazz 3 
 05/01/2024 Boston_Celtics 2 
+08/01/2024 Indiana_Pacers 1 
