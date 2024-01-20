@@ -1,6 +1,6 @@
 <center><div class="LaBoite"><h2>Current Defender</h2>
 
-<img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="100" title="Philadelphia 76ers"><p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
+<img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="100" title="Philadelphia 76ers"><p style="font-size:20px; font-family: FuturaHeavy;">For 2 games.</p>
 
 </div><br>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">
@@ -28,7 +28,7 @@
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg" width="20" title="New York Knicks"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  397</td><td style="text-align:center;font-size:13px;">  December 5th, 2023</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/5/5d/Oklahoma_City_Thunder.svg" width="20" title="Oklahoma City Thunder"></td><td style="text-align:center;font-size:13px;">  9</td><td style="text-align:center;font-size:13px;">  195</td><td style="text-align:center;font-size:13px;">  December 23rd, 2022</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="20" title="Orlando Magic"></td><td style="text-align:center;font-size:13px;">  8</td><td style="text-align:center;font-size:13px;">  79</td><td style="text-align:center;font-size:13px;">  March 13th, 2022</td></tr>
-<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="20" title="Philadelphia 76ers"></td><td style="text-align:center;font-size:13px;">  11</td><td style="text-align:center;font-size:13px;">  439</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
+<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="20" title="Philadelphia 76ers"></td><td style="text-align:center;font-size:13px;">  11</td><td style="text-align:center;font-size:13px;">  440</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="20" title="Phoenix Suns"></td><td style="text-align:center;font-size:13px;">  10</td><td style="text-align:center;font-size:13px;">  201</td><td style="text-align:center;font-size:13px;">  November 29th, 2023</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Portland_Trail_Blazers_logo.svg" width="20" title="Portland Trail Blazers"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  168</td><td style="text-align:center;font-size:13px;">  October 26th, 2022</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c7/SacramentoKings.svg" width="20" title="Sacramento Kings"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  325</td><td style="text-align:center;font-size:13px;">  March 4th, 2023</td></tr>
@@ -39,7 +39,7 @@
 
 </table><br><h2>The History</h2><table><tr><th style="text-align:center; font-family: FuturaHeavy">  Winning date</th><th style="text-align:center; font-family: FuturaHeavy"> NBA Baton defender</th><th style="text-align:center; font-family: FuturaHeavy">  # of games</th></tr>
 
-<tr><td style="text-align:center">  January 16th, 2024</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="30" title="Philadelphia 76ers"></td><td style="text-align:center"> 1 </td></tr>
+<tr><td style="text-align:center">  January 16th, 2024</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="30" title="Philadelphia 76ers"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  January 14th, 2024</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/7/76/Denver_Nuggets.svg" width="30" title="Denver Nuggets"></td><td style="text-align:center"> 1 </td></tr>
 <tr><td style="text-align:center">  January 8th, 2024</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/1/1b/Indiana_Pacers.svg" width="30" title="Indiana Pacers"></td><td style="text-align:center"> 3 </td></tr>
 <tr><td style="text-align:center">  January 5th, 2024</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="30" title="Boston Celtics"></td><td style="text-align:center"> 2 </td></tr>
