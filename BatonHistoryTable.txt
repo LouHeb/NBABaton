@@ -3123,3 +3123,4 @@
 25/01/2024 Indiana_Pacers 3 
 30/01/2024 Boston_Celtics 1 
 01/02/2024 Los_Angeles_Lakers 3 
+08/02/2024 Denver_Nuggets 1 
