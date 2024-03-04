@@ -3126,4 +3126,4 @@
 08/02/2024 Denver_Nuggets 1 
 09/02/2024 Sacramento_Kings 1 
 11/02/2024 Oklahoma_City_Thunder 6 
-29/02/2024 San_Antonio_Spurs 1 
+29/02/2024 San_Antonio_Spurs 2 
