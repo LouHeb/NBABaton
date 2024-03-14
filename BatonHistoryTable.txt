@@ -3130,4 +3130,4 @@
 05/03/2024 Houston_Rockets 1 
 06/03/2024 Los_Angeles_Clippers 2 
 10/03/2024 Milwaukee_Bucks 1 
-12/03/2024 Sacramento_Kings 1 
+12/03/2024 Sacramento_Kings 2 
