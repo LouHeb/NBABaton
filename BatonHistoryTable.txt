@@ -3135,4 +3135,4 @@
 21/03/2024 Denver_Nuggets 3 
 27/03/2024 Phoenix_Suns 1 
 29/03/2024 Oklahoma_City_Thunder 2 
-02/04/2024 Philadelphia_76ers 6 
+02/04/2024 Philadelphia_76ers 7 
