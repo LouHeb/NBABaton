@@ -1,9 +1,9 @@
-Until: 25/05/2024 
+Until: 27/05/2024 
  
 Team Longest Cummulate Avg.Stk 10+ TakePerSeason LastHold NbTake NbSeas 
 AND 2 2 2.0 0 1.0 19500405 1 1 
 ATL 11 344 1.96 2 2.36 20221205 175 75 
-BOS 17 855 2.93 9 3.73 Current_holder 291 78 
+BOS 17 856 2.94 9 3.73 Current_holder 291 78 
 BLB 5 39 1.56 0 3.57 19540214 25 7 
 BRK 8 110 2.03 0 1.17 20211204 54 48 
 LAC 8 132 2.06 0 1.18 20240310 64 54 
