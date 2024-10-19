@@ -634,7 +634,7 @@ for Yesti in LesDates:
         while i<len(Dates) and datetime.strftime(Dates[i].to_pydatetime(),"%Y%m%d")<Yest_Nb:
             i+=1
         if i<len(Dates): # there will be after
-            GameId = i
+            GameId = i-1
             NextOrNot = '?'
         else:  # there wont be after
             NextOrNot = 'Not'
