@@ -3148,3 +3148,4 @@
 14/06/2024 Dallas_Mavericks 1 
 17/06/2024 Boston_Celtics 5 
 30/10/2024 Indiana_Pacers 1 
+01/11/2024 New_Orleans_Pelicans 1 
