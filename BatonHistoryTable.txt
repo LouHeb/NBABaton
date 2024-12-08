@@ -3154,4 +3154,4 @@
 06/11/2024 Golden_State_Warriors 1 
 08/11/2024 Cleveland_Cavaliers 6 
 19/11/2024 Boston_Celtics 5 
-01/12/2024 Cleveland_Cavaliers 3 
+01/12/2024 Cleveland_Cavaliers 4 
