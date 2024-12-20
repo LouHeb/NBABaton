@@ -3157,3 +3157,4 @@
 01/12/2024 Cleveland_Cavaliers 4 
 08/12/2024 Miami_Heat 2 
 16/12/2024 Detroit_Pistons 1 
+19/12/2024 Utah_Jazz 1 
