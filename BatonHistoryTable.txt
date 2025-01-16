@@ -3160,3 +3160,4 @@
 19/12/2024 Utah_Jazz 2 
 23/12/2024 Cleveland_Cavaliers 8 
 12/01/2025 Indiana_Pacers 1 
+14/01/2025 Cleveland_Cavaliers 1 
