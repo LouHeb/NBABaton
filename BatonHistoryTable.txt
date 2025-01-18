@@ -3162,3 +3162,4 @@
 12/01/2025 Indiana_Pacers 1 
 14/01/2025 Cleveland_Cavaliers 1 
 16/01/2025 Oklahoma_City_Thunder 1 
+17/01/2025 Dallas_Mavericks 1 
