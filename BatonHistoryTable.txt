@@ -3164,4 +3164,4 @@
 16/01/2025 Oklahoma_City_Thunder 1 
 17/01/2025 Dallas_Mavericks 1 
 20/01/2025 Charlotte_Hornets 1 
-22/01/2025 Memphis_Grizzlies 1 
+22/01/2025 Memphis_Grizzlies 2 
