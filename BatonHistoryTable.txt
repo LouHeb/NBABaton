@@ -3166,3 +3166,4 @@
 20/01/2025 Charlotte_Hornets 1 
 22/01/2025 Memphis_Grizzlies 3 
 27/01/2025 New_York_Knicks 2 
+01/02/2025 Los_Angeles_Lakers 1 
