@@ -3168,3 +3168,4 @@
 27/01/2025 New_York_Knicks 2 
 01/02/2025 Los_Angeles_Lakers 5 
 12/02/2025 Utah_Jazz 1 
+13/02/2025 Los_Angeles_Clippers 1 
