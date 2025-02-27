@@ -1,4 +1,4 @@
-Until: 25/02/2025 
+Until: 26/02/2025 
  
 Team Longest Cummulate Avg.Stk 10+ TakePerSeason LastHold NbTake NbSeas 
 AND 2 2 2.0 0 1.0 19500405 1 1 
@@ -19,7 +19,7 @@ DET 10 298 2.06 1 1.87 20241219 144 77
 DNN 0 0 0.0 0 0.0 Never 0 1 
 DTF 3 7 1.75 0 4.0 19471112 4 1 
 GSW 27 374 2.3 2 2.05 20241108 162 79 
-HOU 11 220 2.07 2 1.82 Current_holder 106 58 
+HOU 11 221 2.08 2 1.82 Current_holder 106 58 
 IND 10 168 1.97 1 1.73 20250114 85 49 
 INJ 1 1 1.0 0 1.0 19481213 1 1 
 INO 4 19 1.58 0 3.0 19521125 12 4 
