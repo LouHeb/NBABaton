@@ -3171,4 +3171,4 @@
 13/02/2025 Los_Angeles_Clippers 1 
 20/02/2025 Milwaukee_Bucks 3 
 25/02/2025 Houston_Rockets 2 
-01/03/2025 Sacramento_Kings 1 
+01/03/2025 Sacramento_Kings 2 
