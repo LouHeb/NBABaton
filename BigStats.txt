@@ -1,4 +1,4 @@
-Until: 05/03/2025 
+Until: 07/03/2025 
  
 Team Longest Cummulate Avg.Stk 10+ TakePerSeason LastHold NbTake NbSeas 
 AND 2 2 2.0 0 1.0 19500405 1 1 
@@ -14,7 +14,7 @@ CHS 6 44 2.93 0 3.75 19500204 15 4
 CLE 11 220 2.75 2 1.45 20250116 80 55 
 CLR 1 1 1.0 0 1.0 19461210 1 1 
 DAL 6 111 1.98 0 1.24 20250120 56 45 
-DEN 9 148 2.05 0 1.46 Current_holder 72 49 
+DEN 9 149 2.06 0 1.46 Current_holder 72 49 
 DET 10 298 2.06 1 1.87 20241219 144 77 
 DNN 0 0 0.0 0 0.0 Never 0 1 
 DTF 3 7 1.75 0 4.0 19471112 4 1 
