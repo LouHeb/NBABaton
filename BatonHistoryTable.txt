@@ -3178,3 +3178,4 @@
 12/03/2025 Minnesota_Timberwolves 3 
 17/03/2025 Indiana_Pacers 5 
 26/03/2025 Los_Angeles_Lakers 1 
+27/03/2025 Chicago_Bulls 1 
