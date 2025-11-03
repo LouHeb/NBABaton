@@ -3196,4 +3196,4 @@
 11/06/2025 Indiana_Pacers 1 
 13/06/2025 Oklahoma_City_Thunder 2 
 19/06/2025 Indiana_Pacers 1 
-22/06/2025 Oklahoma_City_Thunder 7 
+22/06/2025 Oklahoma_City_Thunder 8 
