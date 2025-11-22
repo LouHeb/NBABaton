@@ -3200,4 +3200,4 @@
 05/11/2025 Portland_Trail_Blazers 1 
 08/11/2025 Miami_Heat 2 
 12/11/2025 Cleveland_Cavaliers 1 
-13/11/2025 Toronto_Raptors 4 
+13/11/2025 Toronto_Raptors 5 
