@@ -1,4 +1,4 @@
-Until: 21/11/2025 
+Until: 23/11/2025 
  
 Team Longest Cummulate Avg.Stk 10+ TakePerSeason LastHold NbTake NbSeas 
 AND 2 2 2.0 0 1.0 19500405 1 1 
@@ -41,7 +41,7 @@ SAC 12 330 2.14 3 2.0 20250305 154 78
 SAS 13 277 3.01 4 1.91 20240305 92 50 
 SHE 1 2 1.0 0 2.0 19500325 2 1 
 STB 1 4 1.0 0 1.0 19490209 4 4 
-TOR 5 50 1.92 0 0.83 Current_holder 26 31 
+TOR 6 51 1.96 0 0.83 Current_holder 26 31 
 TRH 1 3 1.0 0 3.0 19470329 3 1 
 UTA 12 219 2.7 5 1.58 20250213 81 52 
 WAT 0 0 0.0 0 0.0 Never 0 1 
