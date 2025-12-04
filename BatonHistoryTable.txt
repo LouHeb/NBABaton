@@ -3202,4 +3202,4 @@
 12/11/2025 Cleveland_Cavaliers 1 
 13/11/2025 Toronto_Raptors 8 
 29/11/2025 Charlotte_Hornets 1 
-01/12/2025 Brooklyn_Nets 1 
+01/12/2025 Brooklyn_Nets 2 
