@@ -3206,3 +3206,4 @@
 04/12/2025 Utah_Jazz 1 
 05/12/2025 New_York_Knicks 5 
 19/12/2025 Philadelphia_76ers 2 
+23/12/2025 Brooklyn_Nets 1 
