@@ -1,6 +1,6 @@
 <center><div class="LaBoite"><h2>Current Defender</h2>
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="100" title="Brooklyn Nets"><p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
+<img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="100" title="Brooklyn Nets"><p style="font-size:20px; font-family: FuturaHeavy;">For 2 games.</p>
 
 </div><br>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">
@@ -8,7 +8,7 @@
 
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="20" title="Atlanta Hawks"></td><td style="text-align:center;font-size:13px;">  11</td><td style="text-align:center;font-size:13px;">  345</td><td style="text-align:center;font-size:13px;">  November 4th, 2024</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Boston_Celtics.svg" width="20" title="Boston Celtics"></td><td style="text-align:center;font-size:13px;">  17</td><td style="text-align:center;font-size:13px;">  870</td><td style="text-align:center;font-size:13px;">  December 1st, 2024</td></tr>
-<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="20" title="Brooklyn Nets"></td><td style="text-align:center;font-size:13px;">  8</td><td style="text-align:center;font-size:13px;">  114</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
+<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="20" title="Brooklyn Nets"></td><td style="text-align:center;font-size:13px;">  8</td><td style="text-align:center;font-size:13px;">  115</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Chicago_Bulls_logo.svg" width="20" title="Chicago Bulls"></td><td style="text-align:center;font-size:13px;">  13</td><td style="text-align:center;font-size:13px;">  253</td><td style="text-align:center;font-size:13px;">  March 29th, 2025</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Charlotte_Hornets_%282014%29.svg" width="20" title="Charlotte Hornets"></td><td style="text-align:center;font-size:13px;">  4</td><td style="text-align:center;font-size:13px;">  57</td><td style="text-align:center;font-size:13px;">  December 1st, 2025</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cleveland_Cavaliers_logo.svg/800px-Cleveland_Cavaliers_logo.svg.png" width="20" title="Cleveland Cavaliers"></td><td style="text-align:center;font-size:13px;">  11</td><td style="text-align:center;font-size:13px;">  222</td><td style="text-align:center;font-size:13px;">  November 13th, 2025</td></tr>
@@ -39,7 +39,7 @@
 
 </table><br><h2>The History</h2><table><tr><th style="text-align:center; font-family: FuturaHeavy">  Winning date</th><th style="text-align:center; font-family: FuturaHeavy"> NBA Baton defender</th><th style="text-align:center; font-family: FuturaHeavy">  # of games</th></tr>
 
-<tr><td style="text-align:center">  December 23rd, 2025</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="30" title="Brooklyn Nets"></td><td style="text-align:center"> 1 </td></tr>
+<tr><td style="text-align:center">  December 23rd, 2025</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Brooklyn_Nets_newlogo.svg" width="30" title="Brooklyn Nets"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  December 19th, 2025</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="30" title="Philadelphia 76ers"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  December 5th, 2025</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg" width="30" title="New York Knicks"></td><td style="text-align:center"> 5 </td></tr>
 <tr><td style="text-align:center">  December 4th, 2025</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/5/52/Utah_Jazz_logo_2022.svg" width="30" title="Utah Jazz"></td><td style="text-align:center"> 1 </td></tr>
