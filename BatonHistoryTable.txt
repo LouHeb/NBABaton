@@ -3208,3 +3208,4 @@
 19/12/2025 Philadelphia_76ers 2 
 23/12/2025 Brooklyn_Nets 2 
 29/12/2025 Golden_State_Warriors 2 
+02/01/2026 Oklahoma_City_Thunder 1 
