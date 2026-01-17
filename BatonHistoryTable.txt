@@ -3213,4 +3213,4 @@
 05/01/2026 Houston_Rockets 1 
 07/01/2026 Portland_Trail_Blazers 2 
 11/01/2026 New_York_Knicks 1 
-14/01/2026 Sacramento_Kings 1 
+14/01/2026 Sacramento_Kings 2 
