@@ -3216,4 +3216,4 @@
 14/01/2026 Sacramento_Kings 2 
 18/01/2026 Portland_Trail_Blazers 2 
 23/01/2026 Toronto_Raptors 2 
-28/01/2026 New_York_Knicks 4 
+28/01/2026 New_York_Knicks 5 
