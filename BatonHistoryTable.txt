@@ -3220,3 +3220,4 @@
 06/02/2026 Detroit_Pistons 5 
 23/02/2026 San_Antonio_Spurs 3 
 01/03/2026 New_York_Knicks 2 
+04/03/2026 Oklahoma_City_Thunder 1 
