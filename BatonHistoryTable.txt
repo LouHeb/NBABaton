@@ -3222,4 +3222,4 @@
 01/03/2026 New_York_Knicks 2 
 04/03/2026 Oklahoma_City_Thunder 9 
 25/03/2026 Boston_Celtics 3 
-30/03/2026 Atlanta_Hawks 2 
+30/03/2026 Atlanta_Hawks 3 
