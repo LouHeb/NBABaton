@@ -1,6 +1,6 @@
 <center><div class="LaBoite"><h2>Current Defender</h2>
 
-<img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="100" title="Orlando Magic"><p style="font-size:20px; font-family: FuturaHeavy;">For 1 game.</p>
+<img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="100" title="Orlando Magic"><p style="font-size:20px; font-family: FuturaHeavy;">For 2 games.</p>
 
 </div><br>
 <img src="https://raw.githubusercontent.com/LouHeb/NBABaton/gh-pages/Stock/0_GameDay.png" width="1000" title="Next NBA Baton Game">
@@ -27,7 +27,7 @@
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0d/New_Orleans_Pelicans_logo.svg" width="20" title="New Orleans Pelicans"></td><td style="text-align:center;font-size:13px;">  9</td><td style="text-align:center;font-size:13px;">  46</td><td style="text-align:center;font-size:13px;">  November 3rd, 2024</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg" width="20" title="New York Knicks"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  426</td><td style="text-align:center;font-size:13px;">  April 12th, 2026</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/5/5d/Oklahoma_City_Thunder.svg" width="20" title="Oklahoma City Thunder"></td><td style="text-align:center;font-size:13px;">  9</td><td style="text-align:center;font-size:13px;">  227</td><td style="text-align:center;font-size:13px;">  March 25th, 2026</td></tr>
-<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="20" title="Orlando Magic"></td><td style="text-align:center;font-size:13px;">  8</td><td style="text-align:center;font-size:13px;">  80</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
+<tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="20" title="Orlando Magic"></td><td style="text-align:center;font-size:13px;">  8</td><td style="text-align:center;font-size:13px;">  81</td><td style="text-align:center;color: red; font-family: FuturaHeavy;font-size:13px;">  Current defender</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/0/0e/Philadelphia_76ers_logo.svg" width="20" title="Philadelphia 76ers"></td><td style="text-align:center;font-size:13px;">  11</td><td style="text-align:center;font-size:13px;">  454</td><td style="text-align:center;font-size:13px;">  December 23rd, 2025</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/d/dc/Phoenix_Suns_logo.svg" width="20" title="Phoenix Suns"></td><td style="text-align:center;font-size:13px;">  10</td><td style="text-align:center;font-size:13px;">  203</td><td style="text-align:center;font-size:13px;">  January 5th, 2026</td></tr>
 <tr><td style="text-align:center;font-size:13px;">  <img src="https://upload.wikimedia.org/wikipedia/en/2/21/Portland_Trail_Blazers_logo.svg" width="20" title="Portland Trail Blazers"></td><td style="text-align:center;font-size:13px;">  12</td><td style="text-align:center;font-size:13px;">  173</td><td style="text-align:center;font-size:13px;">  January 23rd, 2026</td></tr>
@@ -39,7 +39,7 @@
 
 </table><br><h2>The History</h2><table><tr><th style="text-align:center; font-family: FuturaHeavy">  Winning date</th><th style="text-align:center; font-family: FuturaHeavy"> NBA Baton defender</th><th style="text-align:center; font-family: FuturaHeavy">  # of games</th></tr>
 
-<tr><td style="text-align:center">  April 17th, 2026</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="30" title="Orlando Magic"></td><td style="text-align:center"> 1 </td></tr>
+<tr><td style="text-align:center">  April 17th, 2026</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/1/10/Orlando_Magic_logo.svg" width="30" title="Orlando Magic"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  April 12th, 2026</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/c/c4/Charlotte_Hornets_%282014%29.svg" width="30" title="Charlotte Hornets"></td><td style="text-align:center"> 2 </td></tr>
 <tr><td style="text-align:center">  April 6th, 2026</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/2/25/New_York_Knicks_logo.svg" width="30" title="New York Knicks"></td><td style="text-align:center"> 3 </td></tr>
 <tr><td style="text-align:center">  March 30th, 2026</td><td style="text-align:center"><img src="https://upload.wikimedia.org/wikipedia/en/2/24/Atlanta_Hawks_logo.svg" width="30" title="Atlanta Hawks"></td><td style="text-align:center"> 3 </td></tr>
