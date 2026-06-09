@@ -3233,3 +3233,4 @@
 15/05/2026 Detroit_Pistons 1 
 17/05/2026 Cleveland_Cavaliers 1 
 19/05/2026 New_York_Knicks 6 
+08/06/2026 San_Antonio_Spurs 1 
